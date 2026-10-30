@@ -150,9 +150,12 @@ def main():
     (ROOT / '404.html').write_text(error)
     # Preview uses the identical built bytes that are committed for GitHub Pages.
     dist = ROOT / 'dist'
-    if dist.exists():
-        shutil.rmtree(dist)
-    dist.mkdir()
+    dist.mkdir(exist_ok=True)
+    for item in dist.iterdir():
+        if item.is_dir():
+            shutil.rmtree(item)
+        else:
+            item.unlink()
     for name in ['index.html', '404.html', 'publications.bib', 'robots.txt', 'sitemap.xml', 'SHprofile.jpg', '.nojekyll']:
         shutil.copy2(ROOT / name, dist / name)
     for name in ['assets', 'publications']:
