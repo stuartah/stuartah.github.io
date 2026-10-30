@@ -1,0 +1,814 @@
+[
+  {
+    "id": "2610.09584",
+    "arxiv": "2610.09584",
+    "title": "Quantum Approximation Complexity of Classical Optimization Problems",
+    "authors": [
+      "Stuart Hadfield"
+    ],
+    "year": 2026,
+    "date": "2026-10-07",
+    "venue": "Preprint",
+    "topics": [
+      "Complexity",
+      "Optimization"
+    ],
+    "summary": "A framework for quantum approximation guarantees, with conditional separations between quantum and classical algorithms.",
+    "doi": ""
+  },
+  {
+    "id": "2609.31520",
+    "arxiv": "2609.31520",
+    "title": "Complexity Barriers to State Preparation in Quantum Approximate Optimization",
+    "authors": [
+      "Stuart Hadfield"
+    ],
+    "year": 2026,
+    "date": "2026-09-25",
+    "venue": "Preprint",
+    "topics": [
+      "Complexity",
+      "Optimization"
+    ],
+    "summary": "Why the existence of good quantum states does not make those states efficiently accessible.",
+    "doi": ""
+  },
+  {
+    "id": "2609.07090",
+    "arxiv": "2609.07090",
+    "title": "Complexity Amplification from Compression in Quantum Random Access Optimization",
+    "authors": [
+      "Stuart Hadfield"
+    ],
+    "year": 2026,
+    "date": "2026-09-07",
+    "venue": "Preprint",
+    "topics": [
+      "Complexity",
+      "Encodings"
+    ],
+    "summary": "How packing classical variables into fewer qubits can increase the worst-case complexity of optimization.",
+    "doi": ""
+  },
+  {
+    "id": "2608.25151",
+    "arxiv": "2608.25151",
+    "title": "No Free Compression in Quantum Relaxations for Optimization",
+    "authors": [
+      "Stuart Hadfield"
+    ],
+    "year": 2026,
+    "date": "2026-08-25",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization",
+      "Encodings"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2608.11385",
+    "arxiv": "2608.11385",
+    "title": "Evaluating QAOA expectation values can be as hard as counting optimal solutions",
+    "authors": [
+      "Stuart Hadfield"
+    ],
+    "year": 2026,
+    "date": "2026-08-11",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization",
+      "Complexity"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2607.13630",
+    "arxiv": "2607.13630",
+    "title": "Separating Geometry From Interference in Constrained Quantum Optimization",
+    "authors": [
+      "Chinonso Onah",
+      "Stuart Hadfield",
+      "Kristel Michielsen"
+    ],
+    "year": 2026,
+    "date": "2026-07-15",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2607.09368",
+    "arxiv": "2607.09368",
+    "title": "Quantum Approximate Optimization via Noise-Directed Adaptive Warm-Starting",
+    "authors": [
+      "Filip B. Maciejewski",
+      "Stuart Hadfield",
+      "Oscar Wallis",
+      "George Pennington",
+      "Sebastian Brandhofer",
+      "Stefan Woerner",
+      "Daniel J. Egger",
+      "Davide Venturelli"
+    ],
+    "year": 2026,
+    "date": "2026-07-10",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2606.28234",
+    "arxiv": "2606.28234",
+    "title": "Noise-Directed Adaptive Remapping for Integer Optimization: from qubits to (encoded) qudits",
+    "authors": [
+      "Stuart Hadfield",
+      "Filip B. Maciejewski",
+      "Davide Venturelli"
+    ],
+    "year": 2026,
+    "date": "2026-06-26",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2604.26047",
+    "arxiv": "2604.26047",
+    "title": "Iterative warm-start optimization with quantum imaginary time evolution",
+    "authors": [
+      "Phillip C. Lotshaw",
+      "Titus Morris",
+      "Stuart Hadfield",
+      "Ryan Bennink"
+    ],
+    "year": 2026,
+    "date": "2026-04-28",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2512.21046",
+    "arxiv": "2512.21046",
+    "title": "Measurement-driven Quantum Approximate Optimization",
+    "authors": [
+      "Stollenwerk, Tobias",
+      "Hadfield, Stuart"
+    ],
+    "year": 2026,
+    "date": "2026-01-01",
+    "venue": "Accepted, Physical Review A",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "A measurement-driven approach to approximate optimization, connecting weak measurement with alternating-operator methods.",
+    "doi": "",
+    "journal_url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc"
+  },
+  {
+    "id": "2509.02689",
+    "arxiv": "2509.02689",
+    "title": "Quantum DPLL and Generalized Constraints in Iterative Quantum Algorithms",
+    "authors": [
+      "Lucas T. Brady",
+      "Stuart Hadfield"
+    ],
+    "year": 2025,
+    "date": "2025-09-02",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2404.01412",
+    "arxiv": "2404.01412",
+    "title": "Improving Quantum Approximate Optimization by Noise-Directed Adaptive Remapping",
+    "authors": [
+      "Filip B. Maciejewski",
+      "Jacob Biamonte",
+      "Stuart Hadfield",
+      "Davide Venturelli"
+    ],
+    "year": 2025,
+    "date": "2024-04-01",
+    "venue": "Quantum 9, 1906",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "An adaptive remapping strategy that uses knowledge of device noise to guide quantum optimization.",
+    "doi": "10.22331/q-2025-11-06-1906"
+  },
+  {
+    "id": "2409.15426",
+    "arxiv": "2409.15426",
+    "title": "FOCQS: Feedback Optimally Controlled Quantum States",
+    "authors": [
+      "Lucas T. Brady",
+      "Stuart Hadfield"
+    ],
+    "year": 2024,
+    "date": "2024-09-23",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2408.00075",
+    "arxiv": "2408.00075",
+    "title": "Highly-efficient quantum Fourier transformations for some nonabelian groups",
+    "authors": [
+      "Edison M. Murairi",
+      "M. Sohaib Alam",
+      "Henry Lamm",
+      "Stuart Hadfield",
+      "Erik Gustafson"
+    ],
+    "year": 2024,
+    "date": "2024-07-31",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Simulation"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2406.15601",
+    "arxiv": "2406.15601",
+    "title": "Assessing and Advancing the Potential of Quantum Computing: A NASA Case Study",
+    "authors": [
+      "Eleanor G. Rieffel",
+      "Ata Akbari Asanjan",
+      "M. Sohaib Alam",
+      "Namit Anand",
+      "David E. Bernal Neira",
+      "Sophie Block",
+      "Lucas T. Brady",
+      "Steve Cotton",
+      "Zoe Gonzalez Izquierdo",
+      "Shon Grabbe",
+      "Erik Gustafson",
+      "Stuart Hadfield",
+      "P. Aaron Lott",
+      "Filip B. Maciejewski",
+      "Salvatore Mandrà",
+      "Jeffrey Marshall",
+      "Gianni Mossi",
+      "Humberto Munoz Bauza",
+      "Jason Saied",
+      "Nishchay Suri",
+      "Davide Venturelli",
+      "Zhihui Wang",
+      "Rupak Biswas"
+    ],
+    "year": 2024,
+    "date": "2024-06-21",
+    "venue": "Future Generation Computer Systems (2024)",
+    "doi": "10.1016/j.future.2024.06.012",
+    "topics": [],
+    "summary": ""
+  },
+  {
+    "id": "2403.11514",
+    "arxiv": "2403.11514",
+    "title": "Measurement-Based Quantum Approximate Optimization",
+    "authors": [
+      "Tobias Stollenwerk",
+      "Stuart Hadfield"
+    ],
+    "year": 2024,
+    "date": "2024-03-18",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2312.02279",
+    "arxiv": "2312.02279",
+    "title": "Challenges and Opportunities in Quantum Optimization",
+    "authors": [
+      "Amira Abbas",
+      "Andris Ambainis",
+      "Brandon Augustino",
+      "Andreas Bärtschi",
+      "Harry Buhrman",
+      "Carleton Coffrin",
+      "Giorgio Cortiana",
+      "Vedran Dunjko",
+      "Daniel J. Egger",
+      "Bruce G. Elmegreen",
+      "Nicola Franco",
+      "Filippo Fratini",
+      "Bryce Fuller",
+      "Julien Gacon",
+      "Constantin Gonciulea",
+      "Sander Gribling",
+      "Swati Gupta",
+      "Stuart Hadfield",
+      "Raoul Heese",
+      "Gerhard Kircher",
+      "Thomas Kleinert",
+      "Thorsten Koch",
+      "Georgios Korpas",
+      "Steve Lenk",
+      "Jakub Marecek",
+      "Vanio Markov",
+      "Guglielmo Mazzola",
+      "Stefano Mensa",
+      "Naeimeh Mohseni",
+      "Giacomo Nannicini",
+      "Corey O'Meara",
+      "Elena Peña Tapia",
+      "Sebastian Pokutta",
+      "Manuel Proissl",
+      "Patrick Rebentrost",
+      "Emre Sahin",
+      "Benjamin C. B. Symons",
+      "Sabine Tornow",
+      "Victor Valls",
+      "Stefan Woerner",
+      "Mira L. Wolf-Bauwens",
+      "Jon Yard",
+      "Sheir Yarkoni",
+      "Dirk Zechiel",
+      "Sergiy Zhuk",
+      "Christa Zoufal"
+    ],
+    "year": 2024,
+    "date": "2023-12-04",
+    "venue": "Nature Reviews Physics 6, 718–735",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "A field-wide review of quantum optimization, its building blocks, benchmarks, and open questions.",
+    "doi": "10.1038/s42254-024-00770-9"
+  },
+  {
+    "id": "2211.09270",
+    "arxiv": "2211.09270",
+    "title": "A Parameter Setting Heuristic for the Quantum Alternating Operator Ansatz",
+    "authors": [
+      "James Sud",
+      "Stuart Hadfield",
+      "Eleanor Rieffel",
+      "Norm Tubman",
+      "Tad Hogg"
+    ],
+    "year": 2024,
+    "date": "2022-11-16",
+    "venue": "Physical Review Research 6:023171 (2024)",
+    "doi": "10.1103/PhysRevResearch.6.023171",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2309.13110",
+    "arxiv": "2309.13110",
+    "title": "Iterative Quantum Algorithms for Maximum Independent Set: A Tale of Low-Depth Quantum Algorithms",
+    "authors": [
+      "Lucas T. Brady",
+      "Stuart Hadfield"
+    ],
+    "year": 2023,
+    "date": "2023-09-22",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [],
+    "summary": ""
+  },
+  {
+    "id": "2308.12423",
+    "arxiv": "2308.12423",
+    "title": "Design and execution of quantum circuits using tens of superconducting qubits and thousands of gates for dense Ising optimization problems",
+    "authors": [
+      "Filip B. Maciejewski",
+      "Stuart Hadfield",
+      "Benjamin Hall",
+      "Mark Hodson",
+      "Maxime Dupont",
+      "Bram Evert",
+      "James Sud",
+      "M. Sohaib Alam",
+      "Zhihui Wang",
+      "Stephen Jeffrey",
+      "Bhuvanesh Sundar",
+      "P. Aaron Lott",
+      "Shon Grabbe",
+      "Eleanor G. Rieffel",
+      "Matthew J. Reagor",
+      "Davide Venturelli"
+    ],
+    "year": 2023,
+    "date": "2023-08-17",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2305.04455",
+    "arxiv": "2305.04455",
+    "title": "Quantum Alternating Operator Ansatz (QAOA) beyond low depth with gradually changing unitaries",
+    "authors": [
+      "Vladimir Kremenetski",
+      "Anuj Apte",
+      "Tad Hogg",
+      "Stuart Hadfield",
+      "Norm M. Tubman"
+    ],
+    "year": 2023,
+    "date": "2023-05-08",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2207.10007",
+    "arxiv": "2207.10007",
+    "title": "Two-Unitary Decomposition Algorithm and Open Quantum System Simulation",
+    "authors": [
+      "Nishchay Suri",
+      "Joseph Barreto",
+      "Stuart Hadfield",
+      "Nathan Wiebe",
+      "Filip Wudarski",
+      "Jeffrey Marshall"
+    ],
+    "year": 2023,
+    "date": "2022-07-20",
+    "venue": "Quantum 7, 1002",
+    "topics": [
+      "Simulation"
+    ],
+    "summary": "Using two-unitary decompositions to implement non-unitary processes in quantum simulation.",
+    "doi": "10.22331/q-2023-05-15-1002"
+  },
+  {
+    "id": "2204.01307",
+    "arxiv": "2204.01307",
+    "title": "Diagrammatic Analysis for Parameterized Quantum Circuits",
+    "authors": [
+      "Tobias Stollenwerk",
+      "Stuart Hadfield"
+    ],
+    "year": 2023,
+    "date": "2022-04-04",
+    "venue": "EPTCS 394, 2023, pp. 262-301",
+    "doi": "10.4204/EPTCS.394.15",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2203.14432",
+    "arxiv": "2203.14432",
+    "title": "Encoding trade-offs and design toolkits in quantum algorithms for discrete optimization: coloring, routing, scheduling, and other problems",
+    "authors": [
+      "Nicolas PD Sawaya",
+      "Albert T Schmitz",
+      "Stuart Hadfield"
+    ],
+    "year": 2023,
+    "date": "2022-03-27",
+    "venue": "Quantum 7, 1111",
+    "topics": [
+      "Encodings",
+      "Optimization"
+    ],
+    "summary": "Encoding-independent tools for designing quantum algorithms for discrete optimization.",
+    "doi": "10.22331/q-2023-09-14-1111"
+  },
+  {
+    "id": "2211.16522",
+    "arxiv": "2211.16522",
+    "title": "Self-consistent Quantum Iteratively Sparsified Hamiltonian method (SQuISH): A new algorithm for efficient Hamiltonian simulation and compression",
+    "authors": [
+      "Diana B. Chamaki",
+      "Stuart Hadfield",
+      "Katherine Klymko",
+      "Bryan O'Gorman",
+      "Norm M. Tubman"
+    ],
+    "year": 2022,
+    "date": "2022-11-29",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Encodings",
+      "Simulation"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2109.10833",
+    "arxiv": "2109.10833",
+    "title": "Bounds on approximating Max kXOR with quantum and classical local algorithms",
+    "authors": [
+      "Kunal Marwaha",
+      "Stuart Hadfield"
+    ],
+    "year": 2022,
+    "date": "2021-09-22",
+    "venue": "Quantum 6, 757 (2022)",
+    "doi": "10.22331/q-2022-07-07-757",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2108.13305",
+    "arxiv": "2108.13305",
+    "title": "Primitive Quantum Gates for Dihedral Gauge Theories",
+    "authors": [
+      "M. Sohaib Alam",
+      "Stuart Hadfield",
+      "Henry Lamm",
+      "Andy C. Y. Li"
+    ],
+    "year": 2022,
+    "date": "2021-08-30",
+    "venue": "Phys. Rev. D 105, 114501 (2022)",
+    "doi": "10.1103/PhysRevD.105.114501",
+    "topics": [
+      "Simulation"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2105.06996",
+    "arxiv": "2105.06996",
+    "title": "Analytical Framework for Quantum Alternating Operator Ansätze",
+    "authors": [
+      "Stuart Hadfield",
+      "Tad Hogg",
+      "Eleanor G. Rieffel"
+    ],
+    "year": 2022,
+    "date": "2021-05-14",
+    "venue": "Quantum Science and Technology 8, 015017",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "An analytical connection between alternating quantum circuits and the structure of classical cost functions.",
+    "doi": "10.1088/2058-9565/aca3ce"
+  },
+  {
+    "id": "2108.13056",
+    "arxiv": "2108.13056",
+    "title": "Quantum Alternating Operator Ansatz (QAOA) Phase Diagrams and Applications for Quantum Chemistry",
+    "authors": [
+      "Vladimir Kremenetski",
+      "Tad Hogg",
+      "Stuart Hadfield",
+      "Stephen J. Cotton",
+      "Norm M. Tubman"
+    ],
+    "year": 2021,
+    "date": "2021-08-30",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2103.04502",
+    "arxiv": "2103.04502",
+    "title": "Quantum-accelerated constraint programming",
+    "authors": [
+      "Kyle E. C. Booth",
+      "Bryan O'Gorman",
+      "Jeffrey Marshall",
+      "Stuart Hadfield",
+      "Eleanor Rieffel"
+    ],
+    "year": 2021,
+    "date": "2021-03-07",
+    "venue": "Quantum 5, 550 (2021)",
+    "doi": "10.22331/q-2021-09-28-550",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "2012.04713",
+    "arxiv": "2012.04713",
+    "title": "Classical symmetries and the Quantum Approximate Optimization Algorithm",
+    "authors": [
+      "Ruslan Shaydulin",
+      "Stuart Hadfield",
+      "Tad Hogg",
+      "Ilya Safro"
+    ],
+    "year": 2021,
+    "date": "2020-12-08",
+    "venue": "Quantum Information Processing 20, 359",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "How the classical symmetries of an objective function constrain QAOA dynamics.",
+    "doi": "10.1007/s11128-021-03298-4"
+  },
+  {
+    "id": "2006.08526",
+    "arxiv": "2006.08526",
+    "title": "Ferromagnetically shifting the power of pausing",
+    "authors": [
+      "Zoe Gonzalez Izquierdo",
+      "Shon Grabbe",
+      "Stuart Hadfield",
+      "Jeffrey Marshall",
+      "Zhihui Wang",
+      "Eleanor Rieffel"
+    ],
+    "year": 2021,
+    "date": "2020-06-15",
+    "venue": "Phys. Rev. Applied 15, 044013 (2021)",
+    "doi": "10.1103/PhysRevApplied.15.044013",
+    "topics": [],
+    "summary": ""
+  },
+  {
+    "id": "1804.09130",
+    "arxiv": "1804.09130",
+    "title": "On the representation of Boolean and real functions as Hamiltonians for quantum computing",
+    "authors": [
+      "Stuart Hadfield"
+    ],
+    "year": 2021,
+    "date": "2018-04-24",
+    "venue": "ACM Transactions on Quantum Computing 2(4)",
+    "topics": [
+      "Encodings"
+    ],
+    "summary": "A toolkit for constructing Hamiltonians that represent Boolean and real-valued functions.",
+    "doi": "10.1145/3478519"
+  },
+  {
+    "id": "2002.11682",
+    "arxiv": "2002.11682",
+    "title": "Characterizing local noise in QAOA circuits",
+    "authors": [
+      "Jeffrey Marshall",
+      "Filip Wudarski",
+      "Stuart Hadfield",
+      "Tad Hogg"
+    ],
+    "year": 2020,
+    "date": "2020-02-26",
+    "venue": "IOP SciNotes 1, 025208 (2020)",
+    "doi": "10.1088/2633-1357/abb0d7",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "1908.03185",
+    "arxiv": "1908.03185",
+    "title": "Optimizing quantum heuristics with meta-learning",
+    "authors": [
+      "Max Wilson",
+      "Sam Stromswold",
+      "Filip Wudarski",
+      "Stuart Hadfield",
+      "Norm M. Tubman",
+      "Eleanor Rieffel"
+    ],
+    "year": 2019,
+    "date": "2019-08-08",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [],
+    "summary": ""
+  },
+  {
+    "id": "1709.03489",
+    "arxiv": "1709.03489",
+    "title": "From the Quantum Approximate Optimization Algorithm to a Quantum Alternating Operator Ansatz",
+    "authors": [
+      "Stuart Hadfield",
+      "Zhihui Wang",
+      "Bryan O'Gorman",
+      "Eleanor G. Rieffel",
+      "Davide Venturelli",
+      "Rupak Biswas"
+    ],
+    "year": 2019,
+    "date": "2017-09-11",
+    "venue": "Algorithms 12(2), 34",
+    "topics": [
+      "Optimization",
+      "Encodings"
+    ],
+    "summary": "The quantum alternating operator ansatz extends QAOA to a wider range of operators and constrained problems.",
+    "doi": "10.3390/a12020034"
+  },
+  {
+    "id": "1805.03265",
+    "arxiv": "1805.03265",
+    "title": "Quantum Algorithms for Scientific Computing and Approximate Optimization",
+    "authors": [
+      "Stuart Hadfield"
+    ],
+    "year": 2018,
+    "date": "2018-05-08",
+    "venue": "Ph.D. dissertation, Columbia University",
+    "topics": [
+      "Optimization",
+      "Simulation"
+    ],
+    "summary": "My dissertation on quantum algorithms for scientific computing, Hamiltonian simulation, and approximate optimization.",
+    "doi": ""
+  },
+  {
+    "id": "1706.02998",
+    "arxiv": "1706.02998",
+    "title": "Quantum Approximate Optimization Algorithm for MaxCut: A Fermionic View",
+    "authors": [
+      "Zhihui Wang",
+      "Stuart Hadfield",
+      "Zhang Jiang",
+      "Eleanor G. Rieffel"
+    ],
+    "year": 2018,
+    "date": "2017-06-09",
+    "venue": "Phys. Rev. A 97, 022304 (2018)",
+    "doi": "10.1103/PhysRevA.97.022304",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "1511.08253",
+    "arxiv": "1511.08253",
+    "title": "Quantum Algorithms and Circuits for Scientific Computing",
+    "authors": [
+      "Mihir K. Bhaskar",
+      "Stuart Hadfield",
+      "Anargyros Papageorgiou",
+      "Iasonas Petras"
+    ],
+    "year": 2016,
+    "date": "2015-11-25",
+    "venue": "Quantum Information and Computation. 16, no. 3&4 (2016): 0197-0236",
+    "doi": "",
+    "topics": [
+      "Simulation"
+    ],
+    "summary": ""
+  },
+  {
+    "id": "1508.01544",
+    "arxiv": "1508.01544",
+    "title": "Approximating Ground and Excited State Energies on a Quantum Computer",
+    "authors": [
+      "Stuart Hadfield",
+      "Anargyros Papageorgiou"
+    ],
+    "year": 2015,
+    "date": "2015-08-06",
+    "venue": "Quantum Information Processing 14.4 (2015): 1151-1178",
+    "doi": "10.1007/s11128-015-0927-y",
+    "topics": [
+      "Simulation"
+    ],
+    "summary": ""
+  }
+]

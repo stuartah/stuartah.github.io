@@ -1,0 +1,132 @@
+{
+  "2610.09584": {
+    "topics": [
+      "Complexity",
+      "Optimization"
+    ],
+    "summary": "A framework for quantum approximation guarantees, with conditional separations between quantum and classical algorithms."
+  },
+  "2609.31520": {
+    "topics": [
+      "Complexity",
+      "Optimization"
+    ],
+    "summary": "Why the existence of good quantum states does not make those states efficiently accessible."
+  },
+  "2609.07090": {
+    "topics": [
+      "Complexity",
+      "Encodings"
+    ],
+    "summary": "How packing classical variables into fewer qubits can increase the worst-case complexity of optimization."
+  },
+  "2512.21046": {
+    "year": 2026,
+    "venue": "Accepted, Physical Review A",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "A measurement-driven approach to approximate optimization, connecting weak measurement with alternating-operator methods.",
+    "doi": "",
+    "journal_url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc"
+  },
+  "2404.01412": {
+    "year": 2025,
+    "venue": "Quantum 9, 1906",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "An adaptive remapping strategy that uses knowledge of device noise to guide quantum optimization.",
+    "doi": "10.22331/q-2025-11-06-1906"
+  },
+  "2312.02279": {
+    "year": 2024,
+    "venue": "Nature Reviews Physics 6, 718–735",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "A field-wide review of quantum optimization, its building blocks, benchmarks, and open questions.",
+    "doi": "10.1038/s42254-024-00770-9"
+  },
+  "2203.14432": {
+    "year": 2023,
+    "venue": "Quantum 7, 1111",
+    "topics": [
+      "Encodings",
+      "Optimization"
+    ],
+    "summary": "Encoding-independent tools for designing quantum algorithms for discrete optimization.",
+    "doi": "10.22331/q-2023-09-14-1111"
+  },
+  "2207.10007": {
+    "year": 2023,
+    "venue": "Quantum 7, 1002",
+    "topics": [
+      "Simulation"
+    ],
+    "summary": "Using two-unitary decompositions to implement non-unitary processes in quantum simulation.",
+    "doi": "10.22331/q-2023-05-15-1002"
+  },
+  "2105.06996": {
+    "year": 2022,
+    "venue": "Quantum Science and Technology 8, 015017",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "An analytical connection between alternating quantum circuits and the structure of classical cost functions.",
+    "doi": "10.1088/2058-9565/aca3ce"
+  },
+  "2012.04713": {
+    "year": 2021,
+    "venue": "Quantum Information Processing 20, 359",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "How the classical symmetries of an objective function constrain QAOA dynamics.",
+    "doi": "10.1007/s11128-021-03298-4"
+  },
+  "1804.09130": {
+    "year": 2021,
+    "venue": "ACM Transactions on Quantum Computing 2(4)",
+    "topics": [
+      "Encodings"
+    ],
+    "summary": "A toolkit for constructing Hamiltonians that represent Boolean and real-valued functions.",
+    "doi": "10.1145/3478519"
+  },
+  "1709.03489": {
+    "year": 2019,
+    "venue": "Algorithms 12(2), 34",
+    "topics": [
+      "Optimization",
+      "Encodings"
+    ],
+    "summary": "The quantum alternating operator ansatz extends QAOA to a wider range of operators and constrained problems.",
+    "doi": "10.3390/a12020034"
+  },
+  "1805.03265": {
+    "year": 2018,
+    "venue": "Ph.D. dissertation, Columbia University",
+    "topics": [
+      "Optimization",
+      "Simulation"
+    ],
+    "summary": "My dissertation on quantum algorithms for scientific computing, Hamiltonian simulation, and approximate optimization.",
+    "doi": ""
+  },
+  "2509.02689": {
+    "topics": [
+      "Optimization"
+    ]
+  },
+  "2409.15426": {
+    "topics": [
+      "Optimization"
+    ]
+  },
+  "2204.01307": {
+    "topics": [
+      "Optimization"
+    ]
+  }
+}
