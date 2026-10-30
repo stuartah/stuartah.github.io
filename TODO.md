@@ -2,7 +2,8 @@
 
 ## Design decision
 
-- [ ] Choose a direction before implementing the full aesthetic pass: **Classic academic** (Georgia and blue links), **Quiet modern** (restrained sans serif), or **Compact editorial** (a narrow profile sidebar and serif headings).
+- [x] Style chosen: **Quiet modern**, with restrained sans serif typography (owner decision, October 30, 2026).
+- [ ] Choose a color palette before implementing the full aesthetic pass: **Ink and blue**, **Warm slate**, **Deep teal**, or **Burgundy**.
 - [ ] Apply the chosen typography, spacing, and layout consistently to the homepage and publications page.
 - [ ] Replace decorative branding, oversized display text, numbered sections, and promotional copy with a more personal academic presentation.
 - [ ] Review the exact public biography, affiliations, contact address, portrait, and featured-paper choices with Stuart.
