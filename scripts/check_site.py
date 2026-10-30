@@ -25,6 +25,7 @@ class Page(HTMLParser):
             self.h1s += 1
         if tag == 'article' and 'publication' in attrs.get('class', '').split():
             assert attrs.get('data-status') in ('published', 'unpublished', 'thesis')
+            assert attrs.get('data-type') in ('journal', 'conference', 'preprint', 'thesis')
             self.publications.append(attrs['id'])
         for attr in ('href', 'src'):
             if attr in attrs:
@@ -74,7 +75,7 @@ def main():
             checked += 1
     records = json.loads((ROOT.parent / 'data/publications.json').read_text())
     assert len(records) == len({p['id'] for p in records})
-    assert (ROOT / 'publications.bib').read_text().count('@misc{') == len(records)
+    assert sum((ROOT / 'publications.bib').read_text().count('@' + kind + '{') for kind in ('misc', 'article', 'inproceedings', 'phdthesis')) == len(records)
     assert 'https://stuartah.github.io/sitemap.xml' in (ROOT / 'robots.txt').read_text()
     print(f'Site checks passed: two pages, {checked} local links/assets, {len(records)} unique publication records.')
 

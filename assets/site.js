@@ -25,6 +25,7 @@ if (tools) {
   const topic = document.querySelector('#publication-topic');
   const year = document.querySelector('#publication-year');
   const status = document.querySelector('#publication-status');
+  const type = document.querySelector('#publication-type');
   const papers = [...document.querySelectorAll('.publication')];
   const count = document.querySelector('#publication-count');
   const empty = document.querySelector('#empty-state');
@@ -37,18 +38,19 @@ if (tools) {
       const match = query.every(term => searchable.get(paper).includes(term)) &&
         (!topic.value || paper.dataset.topics.split('|').includes(topic.value)) &&
         (!year.value || paper.dataset.year === year.value) &&
-        (!status.value || paper.dataset.status === status.value);
+        (!status.value || paper.dataset.status === status.value) &&
+        (!type.value || paper.dataset.type === type.value);
       paper.hidden = !match;
       shown += Number(match);
     });
     count.textContent = `${shown} of ${papers.length} works`;
     empty.hidden = shown > 0;
     document.querySelectorAll('.reset-filters').forEach(button => {
-      button.hidden = !search.value && !topic.value && !year.value && !status.value;
+      button.hidden = !search.value && !topic.value && !year.value && !status.value && !type.value;
     });
     if (writeUrl) {
       const url = new URL(window.location.href);
-      for (const [key, value] of [['q', search.value.trim()], ['topic', topic.value], ['year', year.value], ['status', status.value]]) {
+      for (const [key, value] of [['q', search.value.trim()], ['topic', topic.value], ['year', year.value], ['status', status.value], ['type', type.value]]) {
         if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);
       }
       window.history.replaceState(null, '', url);
@@ -60,6 +62,7 @@ if (tools) {
     topic.value = params.get('topic') || '';
     year.value = params.get('year') || '';
     status.value = params.get('status') || '';
+    type.value = params.get('type') || '';
     update(false);
   };
   tools.hidden = false;
@@ -67,8 +70,9 @@ if (tools) {
   topic.addEventListener('change', () => update());
   year.addEventListener('change', () => update());
   status.addEventListener('change', () => update());
+  type.addEventListener('change', () => update());
   document.querySelectorAll('.reset-filters').forEach(button => button.addEventListener('click', () => {
-    search.value = ''; topic.value = ''; year.value = ''; status.value = ''; update(); search.focus();
+    search.value = ''; topic.value = ''; year.value = ''; status.value = ''; type.value = ''; update(); search.focus();
   }));
   window.addEventListener('popstate', restore);
   restore();

@@ -159,12 +159,18 @@
     ],
     "year": 2026,
     "date": "2026-06-26",
-    "venue": "Preprint",
+    "venue": "2026 IEEE International Conference on Quantum Computing and Engineering (QCE / Quantum Week)",
     "doi": "",
     "topics": [
       "Optimization"
     ],
-    "summary": ""
+    "summary": "",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "publication_stage": "accepted",
+    "publication_url": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_source": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_checked": "2026-10-30"
   },
   {
     "id": "2604.26047",
@@ -178,12 +184,18 @@
     ],
     "year": 2026,
     "date": "2026-04-28",
-    "venue": "Preprint",
+    "venue": "2026 IEEE International Conference on Quantum Computing and Engineering (QCE / Quantum Week)",
     "doi": "",
     "topics": [
       "Optimization"
     ],
-    "summary": ""
+    "summary": "",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "publication_stage": "accepted",
+    "publication_url": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_source": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_checked": "2026-10-30"
   },
   {
     "id": "2512.21046",
@@ -195,13 +207,16 @@
     ],
     "year": 2026,
     "date": "2026-01-01",
-    "venue": "Accepted, Physical Review A",
+    "venue": "Physical Review A",
     "topics": [
       "Optimization"
     ],
     "summary": "A measurement-driven approach to approximate optimization, connecting weak measurement with alternating-operator methods.",
     "doi": "",
-    "journal_url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc"
+    "journal_url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "publication_stage": "accepted"
   },
   {
     "id": "2409.15426",
@@ -380,7 +395,8 @@
     "summary": "",
     "publication_status": "published",
     "metadata_source": "https://api.crossref.org/works/10.1109/ipdpsw63119.2024.00183",
-    "metadata_checked": "2026-10-30"
+    "metadata_checked": "2026-10-30",
+    "publication_type": "conference"
   },
   {
     "id": "2312.02279",
@@ -464,6 +480,27 @@
     "summary": ""
   },
   {
+    "id": "2204.01307",
+    "arxiv": "2204.01307",
+    "title": "Diagrammatic Analysis for Parameterized Quantum Circuits",
+    "authors": [
+      "Tobias Stollenwerk",
+      "Stuart Hadfield"
+    ],
+    "year": 2023,
+    "date": "2023-11-16",
+    "venue": "Quantum Physics and Logic (QPL 2022), EPTCS 394, 262–301 (2023)",
+    "doi": "10.4204/EPTCS.394.15",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "metadata_source": "https://arxiv.org/abs/2204.01307",
+    "metadata_checked": "2026-10-30"
+  },
+  {
     "id": "2305.04455",
     "arxiv": "2305.04455",
     "title": "Quantum Alternating Operator Ansatz (QAOA) beyond low depth with gradually changing unitaries",
@@ -503,23 +540,6 @@
     ],
     "summary": "Using two-unitary decompositions to implement non-unitary processes in quantum simulation.",
     "doi": "10.22331/q-2023-05-15-1002"
-  },
-  {
-    "id": "2204.01307",
-    "arxiv": "2204.01307",
-    "title": "Diagrammatic Analysis for Parameterized Quantum Circuits",
-    "authors": [
-      "Tobias Stollenwerk",
-      "Stuart Hadfield"
-    ],
-    "year": 2023,
-    "date": "2022-04-04",
-    "venue": "EPTCS 394, 2023, pp. 262-301",
-    "doi": "10.4204/EPTCS.394.15",
-    "topics": [
-      "Optimization"
-    ],
-    "summary": ""
   },
   {
     "id": "2203.14432",
@@ -807,6 +827,32 @@
       "Optimization"
     ],
     "summary": ""
+  },
+  {
+    "id": "pmes-2017-hard-soft-constraints",
+    "title": "Quantum Approximate Optimization with Hard and Soft Constraints",
+    "authors": [
+      "Stuart Hadfield",
+      "Zhihui Wang",
+      "Eleanor G. Rieffel",
+      "Bryan O’Gorman",
+      "Davide Venturelli",
+      "Rupak Biswas"
+    ],
+    "year": 2017,
+    "date": "2017-11-12",
+    "venue": "Second International Workshop on Post Moore’s Era Supercomputing (PMES 2017), 15–21",
+    "doi": "10.1145/3149526.3149530",
+    "publication_url": "https://doi.org/10.1145/3149526.3149530",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "topics": [
+      "Optimization",
+      "Encodings"
+    ],
+    "summary": "",
+    "metadata_source": "https://api.crossref.org/works/10.1145/3149526.3149530",
+    "metadata_checked": "2026-10-30"
   },
   {
     "id": "1511.08253",

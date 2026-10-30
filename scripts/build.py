@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import shutil
 
-from publication_metadata import publication_status
+from publication_metadata import is_to_appear, publication_status, publication_type, publication_venue
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = 'https://stuartah.github.io'
@@ -31,16 +31,26 @@ def authors(paper):
 
 
 def paper_url(paper):
-    return f"https://arxiv.org/abs/{paper['arxiv']}"
+    return f"https://arxiv.org/abs/{paper['arxiv']}" if paper.get('arxiv') else paper['publication_url']
 
 
 def bibtex(paper):
     title = paper['title'].replace('{', '').replace('}', '')
-    fields = {'title': '{' + title + '}', 'author': ' and '.join(paper['authors']), 'year': str(paper['year']), 'eprint': paper['arxiv'], 'archivePrefix': 'arXiv', 'url': paper_url(paper)}
+    fields = {'title': '{' + title + '}', 'author': ' and '.join(paper['authors']), 'year': str(paper['year']), 'url': paper_url(paper)}
+    if paper.get('arxiv'):
+        fields.update(eprint=paper['arxiv'], archivePrefix='arXiv')
+    kind = publication_type(paper)
+    entry_type = {'journal': 'article', 'conference': 'inproceedings', 'thesis': 'phdthesis'}.get(kind, 'misc')
+    if kind in ('journal', 'conference'):
+        fields['journal' if kind == 'journal' else 'booktitle'] = paper['venue']
+    elif kind == 'thesis':
+        fields['school'] = 'Columbia University'
+    if is_to_appear(paper):
+        fields['note'] = 'To appear'
     if paper.get('doi'):
         fields['doi'] = paper['doi']
-    key = 'Hadfield' + str(paper['year']) + '_' + paper['arxiv'].replace('.', '').replace('/', '')
-    return '@misc{' + key + ',\n' + ''.join('  ' + k + ' = {' + v + '},\n' for k, v in fields.items()) + '}\n'
+    key = 'Hadfield' + str(paper['year']) + '_' + paper['id'].replace('.', '').replace('/', '')
+    return '@' + entry_type + '{' + key + ',\n' + ''.join('  ' + k + ' = {' + v + '},\n' for k, v in fields.items()) + '}\n'
 
 
 def shell(page, title, description, body):
@@ -117,7 +127,7 @@ def selected_paper(ident):
     p = BY_ID[ident]
     return f'''<li class="selected-paper">
   <h3><a href="{paper_url(p)}">{e(p['title'])}</a></h3>
-  <p class="paper-meta">{authors(p)} · {e(p['venue'])}, {p['year']}</p>
+  <p class="paper-meta">{authors(p)} · {e(publication_venue(p))}, {p['year']}</p>
   <p class="paper-summary">{e(p['summary'])}</p>
 </li>'''
 
@@ -145,12 +155,17 @@ def home():
     <h2 id="research-title">Research</h2>
     <div class="research-areas">
       <div><h3><a href="publications/?topic=Optimization">Quantum optimization</a></h3><p>QAOA, the quantum alternating operator ansatz, and constrained combinatorial problems.</p></div>
-      <div><h3><a href="publications/?topic=Complexity">Computational complexity</a></h3><p>Approximation guarantees, state preparation, and the limits of quantum advantage.</p></div>
+      <div><h3><a href="publications/?topic=Complexity">Algorithms &amp; Complexity</a></h3><p>Algorithm design and analysis, approximation guarantees, state preparation, and the limits of quantum advantage.</p></div>
       <div><h3><a href="publications/?topic=Simulation">Quantum simulation</a></h3><p>Algorithms and circuit primitives for scientific computing and physical systems, including lattice gauge theories.</p></div>
     </div>
   </section>
   <section class="selected-work" aria-labelledby="selected-title"><h2 id="selected-title">Selected publications</h2><ul class="selected-list">{selection}</ul><a class="browse-papers" href="publications/">All publications and preprints</a></section>
-  <section class="background" id="about" aria-labelledby="background-title"><h2 id="background-title">Background</h2><p>I received my Ph.D. from <a href="https://www.cs.columbia.edu/">Columbia University’s Department of Computer Science</a> in 2018. My dissertation, <a href="https://arxiv.org/abs/1805.03265">Quantum Algorithms for Scientific Computing and Approximate Optimization</a>, is available on arXiv.</p></section>
+  <section class="background" id="about" aria-labelledby="background-title">
+    <h2 id="background-title">Background</h2>
+    <p>I received my Ph.D. in computer science from <a href="https://www.cs.columbia.edu/">Columbia University</a> in 2018, working in theoretical computer science and quantum computing. My advisers were Joseph F. Traub, Alfred V. Aho, and Anargyros Papageorgiou. My dissertation, <a href="https://arxiv.org/abs/1805.03265">Quantum Algorithms for Scientific Computing and Approximate Optimization</a>, is freely available on arXiv. I joined the NASA QuAIL collaboration in spring 2018.</p>
+    <p>Before my Ph.D., I received a master’s degree in computer science from Columbia, an honours degree in theoretical physics from the University of Melbourne, and a bachelor’s degree in engineering physics from the University of British Columbia. My honours thesis studied fault-tolerant quantum computation. I also worked in software and hardware engineering, specializing in embedded systems and performance optimization.</p>
+    <p>My broader interests include the mathematical foundations of quantum physics and computation, and the ways science and technology can improve people’s lives. I am a founding member of <a href="https://q4climate.org/">Q4Climate</a>, an initiative exploring quantum computing and climate change.</p>
+  </section>
   <section class="contact" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p><a class="contact-email" href="mailto:shadfield@usra.edu">shadfield@usra.edu</a></p></section>
 </div>
 '''
@@ -160,16 +175,19 @@ def home():
 def publication(paper):
     topics = paper.get('topics') or ['Other']
     status = publication_status(paper)
-    searchable = ' '.join([paper['title'], *paper.get('alternate_titles', []), *paper['authors'], paper.get('venue', ''), str(paper['year']), *topics, paper.get('summary', ''), paper['arxiv']])
-    journal = paper.get('journal_url') or ('https://doi.org/' + paper['doi'] if paper.get('doi') else '')
-    journal_label = 'Accepted paper' if status == 'unpublished' else 'Publication'
+    kind = publication_type(paper)
+    venue = publication_venue(paper)
+    searchable = ' '.join([paper['title'], *paper.get('alternate_titles', []), *paper['authors'], venue, str(paper['year']), *topics, paper.get('summary', ''), paper.get('arxiv', '')])
+    journal = paper.get('journal_url') or paper.get('publication_url') or ('https://doi.org/' + paper['doi'] if paper.get('doi') else '')
+    journal_label = 'Conference' if kind == 'conference' else 'Publication'
     journal_link = f'<a href="{e(journal, quote=True)}">{journal_label}</a>' if journal else ''
+    preprint_links = f'<a href="{paper_url(paper)}">arXiv</a><a href="https://arxiv.org/pdf/{paper["arxiv"]}">PDF</a>' if paper.get('arxiv') else ''
     summary = f'<details><summary>Summary</summary><div>{e(paper["summary"])}</div></details>' if paper.get('summary') else ''
-    return f'''<article class="publication" id="paper-{paper['id'].replace('/', '-')}" data-year="{paper['year']}" data-status="{status}" data-topics="{e('|'.join(topics), quote=True)}" data-search="{e(searchable, quote=True)}">
+    return f'''<article class="publication" id="paper-{paper['id'].replace('/', '-')}" data-year="{paper['year']}" data-status="{status}" data-type="{kind}" data-topics="{e('|'.join(topics), quote=True)}" data-search="{e(searchable, quote=True)}">
   <div class="pub-year">{paper['year']}</div>
   <div><h2><a href="{paper_url(paper)}">{e(paper['title'])}</a></h2>
-    <div class="pub-authors">{authors(paper)}</div><p class="pub-venue">{e(paper['venue'])}</p>
-    <div class="pub-links"><a href="{paper_url(paper)}">arXiv</a><a href="https://arxiv.org/pdf/{paper['arxiv']}">PDF</a>{journal_link}{summary}
+    <div class="pub-authors">{authors(paper)}</div><p class="pub-venue">{e(venue)}</p>
+    <div class="pub-links">{preprint_links}{journal_link}{summary}
       <details class="citation"><summary>BibTeX</summary><div><pre><code>{e(bibtex(paper))}</code></pre><button class="copy-citation" type="button" aria-label="Copy citation for {e(paper['title'], quote=True)}">Copy citation</button></div></details>
     </div>
   </div>
@@ -188,11 +206,12 @@ def publications():
       <div class="filter-fields">
         <div class="field"><label for="publication-search">Search publications</label><input id="publication-search" type="search" placeholder="Title, author, keyword…" autocomplete="off"></div>
         <div class="field"><label for="publication-status">Publication status</label><select id="publication-status" aria-describedby="publication-status-note"><option value="">All statuses</option><option value="published">Published</option><option value="unpublished">Not yet published</option><option value="thesis">Thesis</option></select></div>
+        <div class="field"><label for="publication-type">Publication type</label><select id="publication-type"><option value="">All types</option><option value="journal">Journals</option><option value="conference">Conferences</option><option value="preprint">Preprints</option><option value="thesis">Thesis</option></select></div>
         <div class="field"><label for="publication-topic">Topic</label><select id="publication-topic"><option value="">All topics</option>{options}</select></div>
         <div class="field"><label for="publication-year">Year</label><select id="publication-year"><option value="">All years</option>{year_options}</select></div>
       </div>
       <div class="filter-status"><span id="publication-count" role="status" aria-live="polite">{len(PAPERS)} works</span><button class="reset-filters" type="button" hidden>Clear filters</button></div>
-      <p class="status-note" id="publication-status-note">Status follows available publication details. Accepted papers remain under “Not yet published” until publication; the dissertation is listed separately.</p>
+      <p class="status-note" id="publication-status-note">Published includes accepted papers, marked “to appear.” The dissertation is listed separately.</p>
     </div>
     <div class="pub-list">{''.join(publication(p) for p in PAPERS)}</div>
     <div class="empty-state" id="empty-state" hidden><h2>No matching publications</h2><p>Try a different title, author, or keyword.</p></div>

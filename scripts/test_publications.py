@@ -1,6 +1,6 @@
 import unittest
 from sync_publications import merge_records, parse_feed
-from publication_metadata import publication_status
+from publication_metadata import publication_status, publication_type, publication_venue
 
 
 def feed(author='Stuart Hadfield', ident='2609.07090v2', title='A paper'):
@@ -11,9 +11,33 @@ def feed(author='Stuart Hadfield', ident='2609.07090v2', title='A paper'):
 
 
 class PublicationImportTests(unittest.TestCase):
-    def test_accepted_and_preprint_dois_do_not_count_as_published(self):
-        self.assertEqual(publication_status({'venue': 'Accepted, Physical Review A', 'doi': '10.1103/example'}), 'unpublished')
+    def test_accepted_counts_as_published_and_shows_to_appear(self):
+        paper = {'venue': 'Accepted, Physical Review A', 'doi': '10.1103/example'}
+        self.assertEqual(publication_status(paper), 'published')
+        self.assertEqual(publication_venue(paper), 'Physical Review A (to appear)')
+
+    def test_preprint_doi_is_not_evidence_of_publication(self):
         self.assertEqual(publication_status({'venue': 'Preprint', 'doi': '10.48550/arXiv.1234.56789'}), 'unpublished')
+
+    def test_proceedings_series_and_explicit_types(self):
+        self.assertEqual(publication_type({'venue': 'EPTCS 394, 2023, pp. 262-301'}), 'conference')
+        self.assertEqual(publication_type({'venue': 'Physical Review A'}), 'journal')
+        self.assertEqual(publication_type({'venue': 'Preprint'}), 'preprint')
+
+    def test_current_conference_and_acceptance_records_survive_refresh(self):
+        import json
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        existing = json.loads((root / 'data/publications.json').read_text())
+        overrides = json.loads((root / 'data/overrides.json').read_text())
+        imported = [{'id': ident, 'year': 2026, 'venue': 'Preprint', 'doi': ''} for ident in ('2606.28234', '2604.26047', '2512.21046')]
+        result = {p['id']: p for p in merge_records(existing, imported, overrides)}
+        for ident in ('2606.28234', '2604.26047', '2512.21046'):
+            self.assertEqual(publication_status(result[ident]), 'published')
+            self.assertIn('to appear', publication_venue(result[ident]))
+        for ident in ('2606.28234', '2604.26047', '2204.01307', '2403.11514', 'pmes-2017-hard-soft-constraints'):
+            self.assertEqual(publication_type(result[ident]), 'conference')
+        self.assertIn('QPL 2022', result['2204.01307']['venue'])
 
     def test_thesis_is_separate_from_the_published_paper_filter(self):
         self.assertEqual(publication_status({'venue': 'Ph.D. dissertation, Columbia University'}), 'thesis')

@@ -7,15 +7,18 @@
 - [x] Apply Quiet modern typography, spacing, and layout consistently to both pages.
 - [x] Replace decorative branding, oversized display text, numbered sections, and promotional copy with a simpler academic presentation.
 - [x] Use the owner-supplied new portrait, retaining its original bytes and framing it with CSS.
+- [x] Expand Background from the older Columbia/GitHub sites: advisers, education, QuAIL history, engineering work, broader interests, and Q4Climate. Rename the research area Algorithms & Complexity.
 - [ ] Review the exact public biography, affiliations, contact address, portrait, and featured-paper choices with Stuart.
 
 ## Publications
 
-- [x] Add a publication-status filter alongside search, topic, and year. Distinguish **Published**, **Not yet published**, and **Thesis**. Accepted work remains not yet published until a published version is documented.
+- [x] Add a publication-status filter alongside search, topic, and year. Distinguish **Published**, **Not yet published**, and **Thesis**. By owner instruction, accepted papers count as Published and are marked “to appear.”
+- [x] Add an independent journal/conference/preprint/thesis filter; show QPL 2022 and other conference names explicitly, include both IEEE Quantum Week papers as to appear, and restore the distinct PMES 2017 conference paper.
 - [x] Combine status filtering with the existing filters and shareable URLs; verify reset and empty-result behavior.
 - [x] Correct seven verified published records: QDPLL, dense Ising circuits, non-Abelian Fourier transforms, measurement-based QAOA, meta-learning, FOCQS, and iterative MIS. Preserve sources and check dates in the publication overrides.
 - [ ] Owner reviews the final publication list, including records without a confirmed journal/conference reference. Status follows the available publication metadata.
 - [x] Preserve editorial corrections and acceptance information during refreshes; validate stable IDs, duplicate handling, published status, acceptance, and the separate thesis category.
+- [ ] Replace “to appear” details with final proceedings/journal metadata when available.
 - [ ] Confirm the weekly/manual publication-refresh workflow after public deployment.
 
 ## Public launch

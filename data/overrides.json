@@ -22,13 +22,16 @@
   },
   "2512.21046": {
     "year": 2026,
-    "venue": "Accepted, Physical Review A",
+    "venue": "Physical Review A",
     "topics": [
       "Optimization"
     ],
     "summary": "A measurement-driven approach to approximate optimization, connecting weak measurement with alternating-operator methods.",
     "doi": "",
-    "journal_url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc"
+    "journal_url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "publication_stage": "accepted"
   },
   "2404.01412": {
     "year": 2025,
@@ -149,7 +152,14 @@
   "2204.01307": {
     "topics": [
       "Optimization"
-    ]
+    ],
+    "venue": "Quantum Physics and Logic (QPL 2022), EPTCS 394, 262–301 (2023)",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "year": 2023,
+    "date": "2023-11-16",
+    "metadata_source": "https://arxiv.org/abs/2204.01307",
+    "metadata_checked": "2026-10-30"
   },
   "2308.12423": {
     "title": "Design and execution of quantum circuits using tens of superconducting qubits and thousands of gates for dense Ising optimization problems",
@@ -182,7 +192,8 @@
     "publication_status": "published",
     "metadata_source": "https://api.crossref.org/works/10.1109/ipdpsw63119.2024.00183",
     "metadata_checked": "2026-10-30",
-    "date": "2024-05-27"
+    "date": "2024-05-27",
+    "publication_type": "conference"
   },
   "1908.03185": {
     "title": "Optimizing quantum heuristics with meta-learning",
@@ -205,6 +216,51 @@
     "doi": "10.1103/PhysRevA.110.052435",
     "publication_status": "published",
     "metadata_source": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.052435",
+    "metadata_checked": "2026-10-30"
+  },
+  "2606.28234": {
+    "venue": "2026 IEEE International Conference on Quantum Computing and Engineering (QCE / Quantum Week)",
+    "year": 2026,
+    "publication_type": "conference",
+    "publication_status": "published",
+    "publication_stage": "accepted",
+    "publication_url": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_source": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_checked": "2026-10-30"
+  },
+  "2604.26047": {
+    "venue": "2026 IEEE International Conference on Quantum Computing and Engineering (QCE / Quantum Week)",
+    "year": 2026,
+    "publication_type": "conference",
+    "publication_status": "published",
+    "publication_stage": "accepted",
+    "publication_url": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_source": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_checked": "2026-10-30"
+  },
+  "pmes-2017-hard-soft-constraints": {
+    "title": "Quantum Approximate Optimization with Hard and Soft Constraints",
+    "authors": [
+      "Stuart Hadfield",
+      "Zhihui Wang",
+      "Eleanor G. Rieffel",
+      "Bryan O’Gorman",
+      "Davide Venturelli",
+      "Rupak Biswas"
+    ],
+    "year": 2017,
+    "date": "2017-11-12",
+    "venue": "Second International Workshop on Post Moore’s Era Supercomputing (PMES 2017), 15–21",
+    "doi": "10.1145/3149526.3149530",
+    "publication_url": "https://doi.org/10.1145/3149526.3149530",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "topics": [
+      "Optimization",
+      "Encodings"
+    ],
+    "summary": "",
+    "metadata_source": "https://api.crossref.org/works/10.1145/3149526.3149530",
     "metadata_checked": "2026-10-30"
   }
 }
