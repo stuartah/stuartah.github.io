@@ -1,5 +1,6 @@
 import unittest
 from sync_publications import merge_records, parse_feed
+from publication_metadata import publication_status
 
 
 def feed(author='Stuart Hadfield', ident='2609.07090v2', title='A paper'):
@@ -10,6 +11,17 @@ def feed(author='Stuart Hadfield', ident='2609.07090v2', title='A paper'):
 
 
 class PublicationImportTests(unittest.TestCase):
+    def test_accepted_and_preprint_dois_do_not_count_as_published(self):
+        self.assertEqual(publication_status({'venue': 'Accepted, Physical Review A', 'doi': '10.1103/example'}), 'unpublished')
+        self.assertEqual(publication_status({'venue': 'Preprint', 'doi': '10.48550/arXiv.1234.56789'}), 'unpublished')
+
+    def test_thesis_is_separate_from_the_published_paper_filter(self):
+        self.assertEqual(publication_status({'venue': 'Ph.D. dissertation, Columbia University'}), 'thesis')
+
+    def test_journal_and_conference_references_count_as_publication(self):
+        self.assertEqual(publication_status({'venue': 'Physical Review A 114, 022404'}), 'published')
+        self.assertEqual(publication_status({'venue': '2024 IEEE IPDPS Workshops'}), 'published')
+
     def test_versions_have_one_stable_identifier(self):
         self.assertEqual(parse_feed(feed())[0]['id'], '2609.07090')
 

@@ -14,6 +14,7 @@ class Page(HTMLParser):
         self.links, self.ids, self.h1s, self.canonicals, self.descriptions = [], set(), 0, [], []
         self.in_schema, self.schema_text = False, ''
         self.schemas = []
+        self.publications = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -22,6 +23,9 @@ class Page(HTMLParser):
             self.ids.add(attrs['id'])
         if tag == 'h1':
             self.h1s += 1
+        if tag == 'article' and 'publication' in attrs.get('class', '').split():
+            assert attrs.get('data-status') in ('published', 'unpublished', 'thesis')
+            self.publications.append(attrs['id'])
         for attr in ('href', 'src'):
             if attr in attrs:
                 self.links.append(attrs[attr])
@@ -51,6 +55,8 @@ def main():
         assert page.h1s == 1 and len(page.canonicals) == 1
         assert len(page.descriptions) == 1 and page.schemas
         assert 'noindex' not in source
+        if path.parent.name == 'publications':
+            assert len(page.publications) == len(json.loads((ROOT.parent / 'data/publications.json').read_text()))
         for link in page.links:
             url = urlsplit(link)
             if url.scheme or url.netloc:

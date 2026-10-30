@@ -85,6 +85,29 @@
     "summary": ""
   },
   {
+    "id": "2509.02689",
+    "arxiv": "2509.02689",
+    "title": "Quantum Davis-Putnam-Logemann-Loveland and generalized constraints in iterative quantum algorithms",
+    "authors": [
+      "Lucas T. Brady",
+      "Stuart Hadfield"
+    ],
+    "year": 2026,
+    "date": "2026-08-04",
+    "venue": "Physical Review A 114, 022404",
+    "doi": "10.1103/8g3p-tyz1",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1103/8g3p-tyz1",
+    "metadata_checked": "2026-10-30",
+    "alternate_titles": [
+      "Quantum DPLL and Generalized Constraints in Iterative Quantum Algorithms"
+    ]
+  },
+  {
     "id": "2607.13630",
     "arxiv": "2607.13630",
     "title": "Separating Geometry From Interference in Constrained Quantum Optimization",
@@ -181,21 +204,27 @@
     "journal_url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc"
   },
   {
-    "id": "2509.02689",
-    "arxiv": "2509.02689",
-    "title": "Quantum DPLL and Generalized Constraints in Iterative Quantum Algorithms",
+    "id": "2409.15426",
+    "arxiv": "2409.15426",
+    "title": "Feedback-based optimally controlled quantum states",
     "authors": [
       "Lucas T. Brady",
       "Stuart Hadfield"
     ],
     "year": 2025,
-    "date": "2025-09-02",
-    "venue": "Preprint",
-    "doi": "",
+    "date": "2025-06-04",
+    "venue": "Physical Review A 111, 062406",
+    "doi": "10.1103/physreva.111.062406",
     "topics": [
       "Optimization"
     ],
-    "summary": ""
+    "summary": "",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1103/physreva.111.062406",
+    "metadata_checked": "2026-10-30",
+    "alternate_titles": [
+      "FOCQS: Feedback Optimally Controlled Quantum States"
+    ]
   },
   {
     "id": "2404.01412",
@@ -217,26 +246,64 @@
     "doi": "10.22331/q-2025-11-06-1906"
   },
   {
-    "id": "2409.15426",
-    "arxiv": "2409.15426",
-    "title": "FOCQS: Feedback Optimally Controlled Quantum States",
+    "id": "2309.13110",
+    "arxiv": "2309.13110",
+    "title": "Iterative quantum algorithms for maximum independent set",
     "authors": [
       "Lucas T. Brady",
       "Stuart Hadfield"
     ],
     "year": 2024,
-    "date": "2024-09-23",
-    "venue": "Preprint",
-    "doi": "",
+    "date": "2024-11-25",
+    "venue": "Physical Review A 110, 052435",
+    "doi": "10.1103/PhysRevA.110.052435",
+    "topics": [],
+    "summary": "",
+    "alternate_titles": [
+      "Iterative Quantum Algorithms for Maximum Independent Set: A Tale of Low-Depth Quantum Algorithms"
+    ],
+    "publication_status": "published",
+    "metadata_source": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.052435",
+    "metadata_checked": "2026-10-30"
+  },
+  {
+    "id": "2308.12423",
+    "arxiv": "2308.12423",
+    "title": "Design and execution of quantum circuits using tens of superconducting qubits and thousands of gates for dense Ising optimization problems",
+    "authors": [
+      "Filip B. Maciejewski",
+      "Stuart Hadfield",
+      "Benjamin Hall",
+      "Mark Hodson",
+      "Maxime Dupont",
+      "Bram Evert",
+      "James Sud",
+      "M. Sohaib Alam",
+      "Zhihui Wang",
+      "Stephen Jeffrey",
+      "Bhuvanesh Sundar",
+      "P. Aaron Lott",
+      "Shon Grabbe",
+      "Eleanor G. Rieffel",
+      "Matthew J. Reagor",
+      "Davide Venturelli"
+    ],
+    "year": 2024,
+    "date": "2024-10-28",
+    "venue": "Physical Review Applied 22, 044074",
+    "doi": "10.1103/physrevapplied.22.044074",
     "topics": [
       "Optimization"
     ],
-    "summary": ""
+    "summary": "",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1103/physrevapplied.22.044074",
+    "metadata_checked": "2026-10-30"
   },
   {
     "id": "2408.00075",
     "arxiv": "2408.00075",
-    "title": "Highly-efficient quantum Fourier transformations for some nonabelian groups",
+    "title": "Highly-efficient quantum Fourier transformations for certain non-Abelian groups",
     "authors": [
       "Edison M. Murairi",
       "M. Sohaib Alam",
@@ -245,13 +312,19 @@
       "Erik Gustafson"
     ],
     "year": 2024,
-    "date": "2024-07-31",
-    "venue": "Preprint",
-    "doi": "",
+    "date": "2024-10-01",
+    "venue": "Physical Review D 110, 074501",
+    "doi": "10.1103/physrevd.110.074501",
     "topics": [
       "Simulation"
     ],
-    "summary": ""
+    "summary": "",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1103/physrevd.110.074501",
+    "metadata_checked": "2026-10-30",
+    "alternate_titles": [
+      "Highly-efficient quantum Fourier transformations for some nonabelian groups"
+    ]
   },
   {
     "id": "2406.15601",
@@ -298,13 +371,16 @@
       "Stuart Hadfield"
     ],
     "year": 2024,
-    "date": "2024-03-18",
-    "venue": "Preprint",
-    "doi": "",
+    "date": "2024-05-27",
+    "venue": "2024 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), 1115-1127",
+    "doi": "10.1109/ipdpsw63119.2024.00183",
     "topics": [
       "Optimization"
     ],
-    "summary": ""
+    "summary": "",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1109/ipdpsw63119.2024.00183",
+    "metadata_checked": "2026-10-30"
   },
   {
     "id": "2312.02279",
@@ -382,52 +458,6 @@
     "date": "2022-11-16",
     "venue": "Physical Review Research 6:023171 (2024)",
     "doi": "10.1103/PhysRevResearch.6.023171",
-    "topics": [
-      "Optimization"
-    ],
-    "summary": ""
-  },
-  {
-    "id": "2309.13110",
-    "arxiv": "2309.13110",
-    "title": "Iterative Quantum Algorithms for Maximum Independent Set: A Tale of Low-Depth Quantum Algorithms",
-    "authors": [
-      "Lucas T. Brady",
-      "Stuart Hadfield"
-    ],
-    "year": 2023,
-    "date": "2023-09-22",
-    "venue": "Preprint",
-    "doi": "",
-    "topics": [],
-    "summary": ""
-  },
-  {
-    "id": "2308.12423",
-    "arxiv": "2308.12423",
-    "title": "Design and execution of quantum circuits using tens of superconducting qubits and thousands of gates for dense Ising optimization problems",
-    "authors": [
-      "Filip B. Maciejewski",
-      "Stuart Hadfield",
-      "Benjamin Hall",
-      "Mark Hodson",
-      "Maxime Dupont",
-      "Bram Evert",
-      "James Sud",
-      "M. Sohaib Alam",
-      "Zhihui Wang",
-      "Stephen Jeffrey",
-      "Bhuvanesh Sundar",
-      "P. Aaron Lott",
-      "Shon Grabbe",
-      "Eleanor G. Rieffel",
-      "Matthew J. Reagor",
-      "Davide Venturelli"
-    ],
-    "year": 2023,
-    "date": "2023-08-17",
-    "venue": "Preprint",
-    "doi": "",
     "topics": [
       "Optimization"
     ],
@@ -606,6 +636,28 @@
     "summary": ""
   },
   {
+    "id": "1908.03185",
+    "arxiv": "1908.03185",
+    "title": "Optimizing quantum heuristics with meta-learning",
+    "authors": [
+      "Max Wilson",
+      "Sam Stromswold",
+      "Filip Wudarski",
+      "Stuart Hadfield",
+      "Norm M. Tubman",
+      "Eleanor Rieffel"
+    ],
+    "year": 2021,
+    "date": "2021-04-13",
+    "venue": "Quantum Machine Intelligence 3, 13",
+    "doi": "10.1007/s42484-020-00022-w",
+    "topics": [],
+    "summary": "",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1007/s42484-020-00022-w",
+    "metadata_checked": "2026-10-30"
+  },
+  {
     "id": "2103.04502",
     "arxiv": "2103.04502",
     "title": "Quantum-accelerated constraint programming",
@@ -696,25 +748,6 @@
     "topics": [
       "Optimization"
     ],
-    "summary": ""
-  },
-  {
-    "id": "1908.03185",
-    "arxiv": "1908.03185",
-    "title": "Optimizing quantum heuristics with meta-learning",
-    "authors": [
-      "Max Wilson",
-      "Sam Stromswold",
-      "Filip Wudarski",
-      "Stuart Hadfield",
-      "Norm M. Tubman",
-      "Eleanor Rieffel"
-    ],
-    "year": 2019,
-    "date": "2019-08-08",
-    "venue": "Preprint",
-    "doi": "",
-    "topics": [],
     "summary": ""
   },
   {

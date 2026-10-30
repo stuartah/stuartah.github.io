@@ -3,17 +3,19 @@
 ## Design decision
 
 - [x] Style chosen: **Quiet modern**, with restrained sans serif typography (owner decision, October 30, 2026).
-- [ ] Choose a color palette before implementing the full aesthetic pass: **Ink and blue**, **Warm slate**, **Deep teal**, or **Burgundy**.
-- [ ] Apply the chosen typography, spacing, and layout consistently to the homepage and publications page.
-- [ ] Replace decorative branding, oversized display text, numbered sections, and promotional copy with a more personal academic presentation.
+- [x] Palette chosen and applied: **Ink and blue**, in day mode (owner decision, October 30, 2026).
+- [x] Apply Quiet modern typography, spacing, and layout consistently to both pages.
+- [x] Replace decorative branding, oversized display text, numbered sections, and promotional copy with a simpler academic presentation.
+- [x] Use the owner-supplied new portrait, retaining its original bytes and framing it with CSS.
 - [ ] Review the exact public biography, affiliations, contact address, portrait, and featured-paper choices with Stuart.
 
 ## Publications
 
-- [ ] Add a publication-status filter alongside search, topic, and year. Distinguish **Published**, **Not yet published**, and **Thesis**. Accepted work remains not yet published until a published version is documented.
-- [ ] Combine status filtering with the existing filters and shareable URLs; verify reset and empty-result behavior.
-- [ ] Audit incomplete publication metadata before launch. The arXiv author feed can lag journal publication; public ORCID/Crossref records already identify several records needing correction, including QDPLL, dense Ising circuits, non-Abelian Fourier transforms, measurement-based QAOA, and meta-learning.
-- [ ] Preserve editorial corrections and acceptance information during automatic refreshes, and verify duplicate handling.
+- [x] Add a publication-status filter alongside search, topic, and year. Distinguish **Published**, **Not yet published**, and **Thesis**. Accepted work remains not yet published until a published version is documented.
+- [x] Combine status filtering with the existing filters and shareable URLs; verify reset and empty-result behavior.
+- [x] Correct seven verified published records: QDPLL, dense Ising circuits, non-Abelian Fourier transforms, measurement-based QAOA, meta-learning, FOCQS, and iterative MIS. Preserve sources and check dates in the publication overrides.
+- [ ] Owner reviews the final publication list, including records without a confirmed journal/conference reference. Status follows the available publication metadata.
+- [x] Preserve editorial corrections and acceptance information during refreshes; validate stable IDs, duplicate handling, published status, acceptance, and the separate thesis category.
 - [ ] Confirm the weekly/manual publication-refresh workflow after public deployment.
 
 ## Public launch

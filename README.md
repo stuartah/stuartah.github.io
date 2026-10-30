@@ -1,6 +1,6 @@
 # Stuart Hadfield — research website
 
-A small static site for GitHub Pages: a homepage and a publication list. No package installation or application server is required. The original portrait is retained.
+A small static site for GitHub Pages: a homepage and a publication list. No package installation or application server is required. The owner-selected design is Quiet modern with the Ink and blue palette, using a fixed light appearance. The new owner-supplied portrait is retained byte for byte in `assets/stuart-hadfield.jpg` and framed with CSS; no image retouching is applied.
 
 ## Editing
 
@@ -23,9 +23,11 @@ python3 scripts/build.py
 
 The importer reads `https://arxiv.org/a/hadfield_s_1.atom`, an identified author feed. It checks authorship, merges by stable arXiv ID, removes duplicate DOIs, and preserves existing records if a paper is absent upstream. Invalid or failed responses leave the cached list untouched. The visitor never waits for an external publication service.
 
+The list can be filtered by search, publication status, topic, and year; filters combine and persist in the URL. Published journal/conference papers, work not yet published (including accepted papers), and the dissertation are distinguished. A bare DOI does not establish publication.
+
 `data/publications.json` is the cached bibliography. `data/overrides.json` holds intentional corrections, acceptance status, selected summaries, and topic labels; it takes precedence over feed metadata. New browsing labels are inferred conservatively from titles and arXiv subject categories. Titles, authors, journal references, and dates come from public records. Display years use the journal reference when supplied, otherwise the preprint year; individual overrides can refine this.
 
-The list is not guaranteed to include work absent from the arXiv author record. Google Scholar and ORCID remain linked. Google Scholar is not scraped. Other metadata sources can be added later.
+The list is not guaranteed to include work absent from the arXiv author record. Google Scholar and ORCID remain linked. Google Scholar is not scraped. Seven verified publication updates are recorded in the overrides with publisher/Crossref source URLs and check dates. Alternate preprint titles remain searchable when a published title differs. Other metadata sources can be added later.
 
 After launch, GitHub Actions refreshes publications weekly and on manual request, saves changed records, rebuilds the site, and publishes the same build. Failed imports stop publication and leave the live version intact. Repository protections may require adapting direct publication-update commits to pull requests.
 
