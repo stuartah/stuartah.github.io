@@ -8,6 +8,7 @@
 - [x] Replace decorative branding, oversized display text, numbered sections, and promotional copy with a simpler academic presentation.
 - [x] Use the owner-supplied new portrait, retaining its original bytes and framing it with CSS.
 - [x] Expand Background from the older Columbia/GitHub sites: advisers, education, QuAIL history, engineering work, broader interests, and Q4Climate. Rename the research area Algorithms & Complexity.
+- [x] Link the existing “Columbia University” text in Background quietly to the former Columbia homepage, matching the current GitHub page.
 - [ ] Review the exact public biography, affiliations, contact address, portrait, and featured-paper choices with Stuart.
 
 ## Publications
