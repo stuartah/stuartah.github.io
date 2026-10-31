@@ -21,6 +21,14 @@
 - [ ] Replace “to appear” details with final proceedings/journal metadata when available.
 - [ ] Confirm the weekly/manual publication-refresh workflow after public deployment.
 
+## Domains — owner plan, October 31, 2026
+
+- [x] Plan to use both `stuarthadfield.me` and `stuarthadfield.si`, with `.me` as the main address and `.si` redirecting to it.
+- [ ] Register both domains after confirming final availability and checkout prices.
+- [ ] Verify and connect `.me` to GitHub Pages, including HTTPS and `www` handling.
+- [ ] Configure an HTTPS permanent (301) redirect from `.si` to `.me`, preserving requested paths; verify both the homepage and `/publications/`.
+- [ ] Update canonical URLs, structured data, sitemap, Clicky hostname guard/allowed domains, and Search Console for the chosen main domain before launch.
+
 ## Public launch
 
 - [ ] Stuart reviews and accepts the exact preview for launch.
@@ -43,7 +51,6 @@
 
 ## Later decisions
 
-- [ ] Decide whether to use a personal domain; check availability before purchasing or changing DNS.
 - [ ] Revisit publication sources beyond arXiv if needed for more complete journal metadata. Do not scrape Google Scholar.
 
 Talks, a resources page, and a CV are outside the first-version scope.
