@@ -148,7 +148,7 @@ def home():
       </div>
       <div class="intro-bio">
         <p>I study quantum algorithms for optimization and simulation, with a focus on their performance and computational complexity.</p>
-        <p>I work with USRA’s Research Institute for Advanced Computer Science and the Quantum Artificial Intelligence Laboratory (QuAIL) at NASA Ames. I received my Ph.D. in computer science from Columbia University.</p>
+        <p>I work with USRA’s Research Institute for Advanced Computer Science and the Quantum Artificial Intelligence Laboratory (QuAIL) at NASA Ames Research Center. I received my Ph.D. in computer science from Columbia University.</p>
         <div class="intro-links"><a href="{SCHOLAR}">Google Scholar</a><a href="{ORCID}">ORCID</a><a href="https://arxiv.org/a/hadfield_s_1">arXiv</a><a href="https://www.linkedin.com/in/stuart-hadfield-4b250715">LinkedIn</a></div>
       </div>
     </div>
@@ -169,7 +169,7 @@ def home():
     <p>Before my Ph.D., I received a master’s degree in computer science from Columbia, an honours degree in theoretical physics from the University of Melbourne, and a bachelor’s degree in engineering physics from the University of British Columbia. My honours thesis studied fault-tolerant quantum computation. I also worked in software and hardware engineering, specializing in embedded systems and performance optimization.</p>
     <p>My broader interests include the mathematical foundations of quantum physics and computation, and the ways science and technology can improve people’s lives. I am a founding member of <a href="https://q4climate.org/">Q4Climate</a>, an initiative exploring quantum computing and climate change.</p>
   </section>
-  <section class="contact" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p><a class="contact-email" href="mailto:shadfield@usra.edu">shadfield@usra.edu</a></p></section>
+  <section class="contact" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p><a class="contact-email" href="mailto:shadfield@usra.edu">shadfield@usra.edu</a></p><p>Based in New York, NY.</p></section>
 </div>
 '''
     return shell('', 'Stuart Hadfield | Quantum Algorithms, Optimization & Complexity', 'Stuart Hadfield is a quantum computer scientist at USRA/RIACS and NASA QuAIL. Research in quantum algorithms, optimization, complexity, and simulation.', body)

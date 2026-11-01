@@ -12,7 +12,8 @@
 - [x] Link Joseph F. Traub, Alfred V. Aho, and Anargyros Papageorgiou to their Columbia homepages, and NASA QuAIL and RIACS to their research group pages in the same Background paragraph.
 - [x] Introductory links ordered Google Scholar, ORCID, arXiv, LinkedIn, using the LinkedIn URL from the prior GitHub page. Homepage section heading changed to Research Interests. Quantum simulation description updated to the owner’s exact scientific-computing, quantum-chemistry and high-energy-physics wording.
 - [x] Update Selected publications: remove QRAO compression from the featured list; add the Boolean/Hamiltonian paper, Wang et al. (2018), NDAR, ND-AWS, and dihedral gates. Keep all works in the full publication list. Spell out Quantum Artificial Intelligence Laboratory (QuAIL) in the introduction and remove collaboration from the homepage wording. The spring 2018 background sentence names both NASA QuAIL and USRA’s Research Institute for Advanced Computer Science (RIACS).
-- [ ] Review the exact public biography, affiliations, contact address, portrait, and featured-paper choices with Stuart.
+- [x] Stuart accepted version 1 on November 1, 2026, including the public biography, affiliations, contact address, portrait, and featured-paper choices.
+- [x] Use the full NASA Ames Research Center name in the introduction and add “Based in New York, NY.” in Contact.
 
 ## Publications
 
@@ -35,7 +36,7 @@
 
 ## Public launch
 
-- [ ] Stuart reviews and accepts the exact preview for launch.
+- [x] Stuart accepted the reviewed preview as version 1 on November 1, 2026; domain setup and public deployment remain to be completed.
 - [ ] Select **GitHub Actions** as the repository's Pages publishing source.
 - [ ] Merge the reviewed branch and confirm both public pages, HTTPS, navigation, downloads, and phone layout.
 - [ ] Confirm that deployment and publication refreshes work under the repository's actual branch-protection settings.
@@ -59,4 +60,4 @@
 
 Talks, a resources page, and a CV are outside the first-version scope.
 
-The current public homepage stays in place while designs are being reviewed. This checklist records work; it does not create reminders or background execution.
+The current public homepage stays in place until the planned domain setup and public deployment. This checklist records work; it does not create reminders or background execution.
