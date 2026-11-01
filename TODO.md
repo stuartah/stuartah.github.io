@@ -9,6 +9,7 @@
 - [x] Use the owner-supplied new portrait, retaining its original bytes and framing it with CSS.
 - [x] Expand Background from the older Columbia/GitHub sites: advisers, education, QuAIL history, engineering work, broader interests, and Q4Climate. Rename the research area Algorithms & Complexity.
 - [x] Link the existing “Columbia University” text in Background quietly to the former Columbia homepage, matching the current GitHub page.
+- [x] Introductory links ordered Google Scholar, ORCID, LinkedIn, using the LinkedIn URL from the prior GitHub page. Homepage section heading changed to Research Interests. Quantum simulation description updated to the owner’s exact scientific-computing, quantum-chemistry and high-energy-physics wording.
 - [ ] Review the exact public biography, affiliations, contact address, portrait, and featured-paper choices with Stuart.
 
 ## Publications

@@ -146,17 +146,17 @@ def home():
       <div class="intro-bio">
         <p>I study quantum algorithms for optimization and simulation, with a focus on their performance and computational complexity.</p>
         <p>I work with USRA’s Research Institute for Advanced Computer Science and the QuAIL collaboration at NASA Ames. I received my Ph.D. in computer science from Columbia University.</p>
-        <div class="intro-links"><a href="mailto:shadfield@usra.edu">Email</a><a href="{SCHOLAR}">Google Scholar</a><a href="{ORCID}">ORCID</a></div>
+        <div class="intro-links"><a href="{SCHOLAR}">Google Scholar</a><a href="{ORCID}">ORCID</a><a href="https://www.linkedin.com/in/stuart-hadfield-4b250715">LinkedIn</a></div>
       </div>
     </div>
     <figure class="portrait"><img src="{PHOTO}" width="1789" height="2048" alt="Stuart Hadfield" fetchpriority="high"></figure>
   </section>
   <section class="research" id="research" aria-labelledby="research-title">
-    <h2 id="research-title">Research</h2>
+    <h2 id="research-title">Research Interests</h2>
     <div class="research-areas">
       <div><h3><a href="publications/?topic=Optimization">Quantum optimization</a></h3><p>QAOA, the quantum alternating operator ansatz, and constrained combinatorial problems.</p></div>
       <div><h3><a href="publications/?topic=Complexity">Algorithms &amp; Complexity</a></h3><p>Algorithm design and analysis, approximation guarantees, state preparation, and the limits of quantum advantage.</p></div>
-      <div><h3><a href="publications/?topic=Simulation">Quantum simulation</a></h3><p>Algorithms and circuit primitives for scientific computing and physical systems, including lattice gauge theories.</p></div>
+      <div><h3><a href="publications/?topic=Simulation">Quantum simulation</a></h3><p>Algorithms and circuit primitives for scientific computing and simulating physical systems, from quantum chemistry to high energy physics.</p></div>
     </div>
   </section>
   <section class="selected-work" aria-labelledby="selected-title"><h2 id="selected-title">Selected publications</h2><ul class="selected-list">{selection}</ul><a class="browse-papers" href="publications/">All publications and preprints</a></section>
