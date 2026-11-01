@@ -14,6 +14,7 @@
 - [x] Update Selected publications: remove QRAO compression from the featured list; add the Boolean/Hamiltonian paper, Wang et al. (2018), NDAR, ND-AWS, and dihedral gates. Keep all works in the full publication list. Spell out Quantum Artificial Intelligence Laboratory (QuAIL) in the introduction and remove collaboration from the homepage wording. The spring 2018 background sentence names both NASA QuAIL and USRA’s Research Institute for Advanced Computer Science (RIACS).
 - [x] Stuart accepted version 1 on November 1, 2026, including the public biography, affiliations, contact address, portrait, and featured-paper choices.
 - [x] Use the full NASA Ames Research Center name in the introduction and add “Based in New York, NY.” in Contact.
+- [x] Add a short research-internship note in Contact, linking to the Feynman Quantum Academy for opportunities and application details.
 
 ## Publications
 
