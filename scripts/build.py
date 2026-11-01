@@ -242,7 +242,7 @@ def main():
             shutil.rmtree(item)
         else:
             item.unlink()
-    for name in ['index.html', '404.html', 'publications.bib', 'robots.txt', 'sitemap.xml', '.nojekyll']:
+    for name in ['index.html', '404.html', 'publications.bib', 'robots.txt', 'sitemap.xml', '.nojekyll', 'googlec17f3c4efc3142ce.html']:
         shutil.copy2(ROOT / name, dist / name)
     for name in ['assets', 'publications']:
         shutil.copytree(ROOT / name, dist / name, dirs_exist_ok=True)

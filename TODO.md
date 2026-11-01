@@ -25,7 +25,7 @@
 - [ ] Owner reviews the final publication list, including records without a confirmed journal/conference reference. Status follows the available publication metadata.
 - [x] Preserve editorial corrections and acceptance information during refreshes; validate stable IDs, duplicate handling, published status, acceptance, and the separate thesis category.
 - [ ] Replace “to appear” details with final proceedings/journal metadata when available.
-- [ ] Confirm the weekly/manual publication-refresh workflow after public deployment.
+- [x] Manual arXiv refresh and deployment succeeded after public launch (GitHub Actions run 41357083905, November 1, 2026); the weekly schedule is enabled on main.
 
 ## Domains — owner plan, October 31, 2026
 
@@ -40,9 +40,9 @@
 Owner instruction, November 1, 2026: carry out as much of the launch as possible, with owner interaction for required sign-in, checkout, or verification. Version 1 is accepted. Prepare and push the final copy, mark the PR ready after successful checks, configure hosting and owned domains, then merge and verify the public deployment. Keep `.me` as the main domain and `.si` as the redirect. Domain purchase and public-account settings still require access; no new paid service or credential is assumed.
 
 - [x] Stuart accepted the reviewed preview as version 1 on November 1, 2026; domain setup and public deployment remain to be completed.
-- [ ] Select **GitHub Actions** as the repository's Pages publishing source. The GitHub connector can push and merge; changing Pages settings needs the owner's signed-in browser session.
-- [ ] Merge the reviewed branch and confirm both public pages, HTTPS, navigation, downloads, and phone layout.
-- [ ] Confirm that deployment and publication refreshes work under the repository's actual branch-protection settings.
+- [x] Selected **GitHub Actions** as the Pages publishing source in the owner's authenticated GitHub session, November 1, 2026.
+- [x] Merged PR #1 at 78a31a466ee7f8da4284f93e79ee7928fad605c2. Public homepage and publications page, HTTPS, conference/status filters, reset, and the 41-record BibTeX download verified. Deployment run 41356686373 succeeded. Prior 390px phone QA passed; a final live phone spot check remains.
+- [x] Public deployment and manual publication refresh both passed under the repository's current settings.
 
 ## Clicky
 
@@ -63,4 +63,4 @@ Owner instruction, November 1, 2026: carry out as much of the launch as possible
 
 Talks, a resources page, and a CV are outside the first-version scope.
 
-The current public homepage stays in place until the planned domain setup and public deployment. This checklist records work; it does not create reminders or background execution.
+Version 1 is live at https://stuartah.github.io/ as of November 1, 2026. Custom domains, analytics dashboard confirmation, Search Console setup, and external profile links remain in progress. This checklist records work; it does not create reminders or background execution.
