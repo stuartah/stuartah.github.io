@@ -13,7 +13,7 @@
 - [x] Introductory links ordered Google Scholar, ORCID, arXiv, LinkedIn, using the LinkedIn URL from the prior GitHub page. Homepage section heading changed to Research Interests. Quantum simulation description updated to the owner’s exact scientific-computing, quantum-chemistry and high-energy-physics wording.
 - [x] Update Selected publications: remove QRAO compression from the featured list; add the Boolean/Hamiltonian paper, Wang et al. (2018), NDAR, ND-AWS, and dihedral gates. Keep all works in the full publication list. Spell out Quantum Artificial Intelligence Laboratory (QuAIL) in the introduction and remove collaboration from the homepage wording. The spring 2018 background sentence names both NASA QuAIL and USRA’s Research Institute for Advanced Computer Science (RIACS).
 - [x] Stuart accepted version 1 on November 1, 2026, including the public biography, affiliations, contact address, portrait, and featured-paper choices.
-- [x] Use the full NASA Ames Research Center name in the introduction and add “Based in New York, NY.” in Contact.
+- [x] Use the full NASA Ames Research Center name in the introduction and add “New York, NY” in Contact.
 - [x] Add a short research-internship note in Contact, linking to the Feynman Quantum Academy for opportunities and application details.
 
 ## Publications
@@ -37,8 +37,10 @@
 
 ## Public launch
 
+Owner instruction, November 1, 2026: carry out as much of the launch as possible, with owner interaction for required sign-in, checkout, or verification. Version 1 is accepted. Prepare and push the final copy, mark the PR ready after successful checks, configure hosting and owned domains, then merge and verify the public deployment. Keep `.me` as the main domain and `.si` as the redirect. Domain purchase and public-account settings still require access; no new paid service or credential is assumed.
+
 - [x] Stuart accepted the reviewed preview as version 1 on November 1, 2026; domain setup and public deployment remain to be completed.
-- [ ] Select **GitHub Actions** as the repository's Pages publishing source.
+- [ ] Select **GitHub Actions** as the repository's Pages publishing source. The GitHub connector can push and merge; changing Pages settings needs the owner's signed-in browser session.
 - [ ] Merge the reviewed branch and confirm both public pages, HTTPS, navigation, downloads, and phone layout.
 - [ ] Confirm that deployment and publication refreshes work under the repository's actual branch-protection settings.
 
@@ -50,8 +52,8 @@
 
 ## Google search
 
-- [ ] Verify the URL-prefix property `https://stuartah.github.io/` in Google Search Console using the verification file or meta tag Google supplies.
-- [ ] Submit `https://stuartah.github.io/sitemap.xml` and request indexing of the homepage and publications page.
+- [ ] Verify the Domain property `stuarthadfield.me` in Google Search Console using the DNS TXT record Google supplies. If the GitHub address launches first, its URL-prefix property can be verified separately.
+- [ ] Submit `https://stuarthadfield.me/sitemap.xml` and request indexing of the homepage and publications page after the custom domain is live.
 - [ ] Update the link on the Columbia homepage and, where editable, the Scholar, ORCID, and institutional profiles.
 - [ ] Check indexing and search appearance after Google has had time to crawl the public version.
 
