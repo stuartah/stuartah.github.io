@@ -1,0 +1,73 @@
+name: Build, refresh publications, and publish
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      refresh_publications:
+        description: Refresh the publication list from arXiv
+        type: boolean
+        default: true
+  schedule:
+    - cron: '17 6 * * 0'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - name: Refresh public author metadata
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_publications)
+        run: python3 scripts/sync_publications.py
+      - name: Check publication import behavior
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Build static pages
+        run: python3 scripts/build.py
+      - name: Validate generated pages
+        run: python3 scripts/check_site.py
+      - name: Save publication updates
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_publications))
+        run: |
+          git add data/publications.json index.html publications/index.html publications.bib sitemap.xml robots.txt 404.html
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh publications from the public arXiv author feed'
+            git push
+          fi
+      - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v5
+      - name: Upload public site
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4

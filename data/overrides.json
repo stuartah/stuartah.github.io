@@ -1,0 +1,275 @@
+{
+  "2610.09584": {
+    "topics": [
+      "Complexity",
+      "Optimization"
+    ],
+    "summary": "A framework for quantum approximation guarantees, with conditional separations between quantum and classical algorithms."
+  },
+  "2609.31520": {
+    "topics": [
+      "Complexity",
+      "Optimization"
+    ],
+    "summary": "Why the existence of good quantum states does not make those states efficiently accessible."
+  },
+  "2609.07090": {
+    "topics": [
+      "Complexity",
+      "Encodings"
+    ],
+    "summary": "How packing classical variables into fewer qubits can increase the worst-case complexity of optimization."
+  },
+  "2512.21046": {
+    "year": 2026,
+    "venue": "Physical Review A",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "A measurement-driven approach to approximate optimization, connecting weak measurement with alternating-operator methods.",
+    "doi": "",
+    "journal_url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "publication_stage": "accepted"
+  },
+  "2404.01412": {
+    "year": 2025,
+    "venue": "Quantum 9, 1906",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "An adaptive remapping strategy that uses knowledge of device noise to guide quantum optimization.",
+    "doi": "10.22331/q-2025-11-06-1906"
+  },
+  "2312.02279": {
+    "year": 2024,
+    "venue": "Nature Reviews Physics 6, 718–735",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "A field-wide review of quantum optimization, its building blocks, benchmarks, and open questions.",
+    "doi": "10.1038/s42254-024-00770-9"
+  },
+  "2203.14432": {
+    "year": 2023,
+    "venue": "Quantum 7, 1111",
+    "topics": [
+      "Encodings",
+      "Optimization"
+    ],
+    "summary": "Encoding-independent tools for designing quantum algorithms for discrete optimization.",
+    "doi": "10.22331/q-2023-09-14-1111"
+  },
+  "2207.10007": {
+    "year": 2023,
+    "venue": "Quantum 7, 1002",
+    "topics": [
+      "Simulation"
+    ],
+    "summary": "Using two-unitary decompositions to implement non-unitary processes in quantum simulation.",
+    "doi": "10.22331/q-2023-05-15-1002"
+  },
+  "2105.06996": {
+    "year": 2022,
+    "venue": "Quantum Science and Technology 8, 015017",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "An analytical connection between alternating quantum circuits and the structure of classical cost functions.",
+    "doi": "10.1088/2058-9565/aca3ce"
+  },
+  "2012.04713": {
+    "year": 2021,
+    "venue": "Quantum Information Processing 20, 359",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "How the classical symmetries of an objective function constrain QAOA dynamics.",
+    "doi": "10.1007/s11128-021-03298-4"
+  },
+  "1804.09130": {
+    "year": 2021,
+    "venue": "ACM Transactions on Quantum Computing 2(4)",
+    "topics": [
+      "Encodings"
+    ],
+    "summary": "A toolkit for constructing Hamiltonians that represent Boolean and real-valued functions.",
+    "doi": "10.1145/3478519"
+  },
+  "1709.03489": {
+    "year": 2019,
+    "venue": "Algorithms 12(2), 34",
+    "topics": [
+      "Optimization",
+      "Encodings"
+    ],
+    "summary": "The quantum alternating operator ansatz extends QAOA to a wider range of operators and constrained problems.",
+    "doi": "10.3390/a12020034"
+  },
+  "1805.03265": {
+    "year": 2018,
+    "venue": "Ph.D. dissertation, Columbia University",
+    "topics": [
+      "Optimization",
+      "Simulation"
+    ],
+    "summary": "My dissertation on quantum algorithms for scientific computing, Hamiltonian simulation, and approximate optimization.",
+    "doi": ""
+  },
+  "2509.02689": {
+    "topics": [
+      "Optimization"
+    ],
+    "title": "Quantum Davis-Putnam-Logemann-Loveland and generalized constraints in iterative quantum algorithms",
+    "year": 2026,
+    "venue": "Physical Review A 114, 022404",
+    "doi": "10.1103/8g3p-tyz1",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1103/8g3p-tyz1",
+    "metadata_checked": "2026-10-30",
+    "alternate_titles": [
+      "Quantum DPLL and Generalized Constraints in Iterative Quantum Algorithms"
+    ],
+    "date": "2026-08-04"
+  },
+  "2409.15426": {
+    "topics": [
+      "Optimization"
+    ],
+    "title": "Feedback-based optimally controlled quantum states",
+    "year": 2025,
+    "venue": "Physical Review A 111, 062406",
+    "doi": "10.1103/physreva.111.062406",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1103/physreva.111.062406",
+    "metadata_checked": "2026-10-30",
+    "alternate_titles": [
+      "FOCQS: Feedback Optimally Controlled Quantum States"
+    ],
+    "date": "2025-06-04"
+  },
+  "2204.01307": {
+    "topics": [
+      "Optimization"
+    ],
+    "venue": "Quantum Physics and Logic (QPL 2022), EPTCS 394, 262–301 (2023)",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "year": 2023,
+    "date": "2023-11-16",
+    "metadata_source": "https://arxiv.org/abs/2204.01307",
+    "metadata_checked": "2026-10-30"
+  },
+  "2308.12423": {
+    "title": "Design and execution of quantum circuits using tens of superconducting qubits and thousands of gates for dense Ising optimization problems",
+    "year": 2024,
+    "venue": "Physical Review Applied 22, 044074",
+    "doi": "10.1103/physrevapplied.22.044074",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1103/physrevapplied.22.044074",
+    "metadata_checked": "2026-10-30",
+    "date": "2024-10-28"
+  },
+  "2408.00075": {
+    "title": "Highly-efficient quantum Fourier transformations for certain non-Abelian groups",
+    "year": 2024,
+    "venue": "Physical Review D 110, 074501",
+    "doi": "10.1103/physrevd.110.074501",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1103/physrevd.110.074501",
+    "metadata_checked": "2026-10-30",
+    "alternate_titles": [
+      "Highly-efficient quantum Fourier transformations for some nonabelian groups"
+    ],
+    "date": "2024-10-01"
+  },
+  "2403.11514": {
+    "title": "Measurement-Based Quantum Approximate Optimization",
+    "year": 2024,
+    "venue": "2024 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), 1115-1127",
+    "doi": "10.1109/ipdpsw63119.2024.00183",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1109/ipdpsw63119.2024.00183",
+    "metadata_checked": "2026-10-30",
+    "date": "2024-05-27",
+    "publication_type": "conference"
+  },
+  "1908.03185": {
+    "title": "Optimizing quantum heuristics with meta-learning",
+    "year": 2021,
+    "venue": "Quantum Machine Intelligence 3, 13",
+    "doi": "10.1007/s42484-020-00022-w",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1007/s42484-020-00022-w",
+    "metadata_checked": "2026-10-30",
+    "date": "2021-04-13"
+  },
+  "2309.13110": {
+    "title": "Iterative quantum algorithms for maximum independent set",
+    "alternate_titles": [
+      "Iterative Quantum Algorithms for Maximum Independent Set: A Tale of Low-Depth Quantum Algorithms"
+    ],
+    "year": 2024,
+    "date": "2024-11-25",
+    "venue": "Physical Review A 110, 052435",
+    "doi": "10.1103/PhysRevA.110.052435",
+    "publication_status": "published",
+    "metadata_source": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.052435",
+    "metadata_checked": "2026-10-30"
+  },
+  "2606.28234": {
+    "venue": "2026 IEEE International Conference on Quantum Computing and Engineering (QCE / Quantum Week)",
+    "year": 2026,
+    "publication_type": "conference",
+    "publication_status": "published",
+    "publication_stage": "accepted",
+    "publication_url": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_source": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_checked": "2026-10-30"
+  },
+  "2604.26047": {
+    "venue": "2026 IEEE International Conference on Quantum Computing and Engineering (QCE / Quantum Week)",
+    "year": 2026,
+    "publication_type": "conference",
+    "publication_status": "published",
+    "publication_stage": "accepted",
+    "publication_url": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_source": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
+    "metadata_checked": "2026-10-30"
+  },
+  "pmes-2017-hard-soft-constraints": {
+    "title": "Quantum Approximate Optimization with Hard and Soft Constraints",
+    "authors": [
+      "Stuart Hadfield",
+      "Zhihui Wang",
+      "Eleanor G. Rieffel",
+      "Bryan O’Gorman",
+      "Davide Venturelli",
+      "Rupak Biswas"
+    ],
+    "year": 2017,
+    "date": "2017-11-12",
+    "venue": "Second International Workshop on Post Moore’s Era Supercomputing (PMES 2017), 15–21",
+    "doi": "10.1145/3149526.3149530",
+    "publication_url": "https://doi.org/10.1145/3149526.3149530",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "topics": [
+      "Optimization",
+      "Encodings"
+    ],
+    "summary": "",
+    "metadata_source": "https://api.crossref.org/works/10.1145/3149526.3149530",
+    "metadata_checked": "2026-10-30"
+  },
+  "1706.02998": {
+    "summary": "Analytical results for QAOA on MaxCut, including a fermionic treatment of ring graphs and parameter setting."
+  },
+  "2607.09368": {
+    "summary": "A noise-aware warm-starting approach that uses hardware noise as a resource for quantum optimization."
+  },
+  "2108.13305": {
+    "summary": "Efficient quantum circuits for the Fourier transform and group operations needed to simulate dihedral lattice gauge theories."
+  }
+}
