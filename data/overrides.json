@@ -262,5 +262,14 @@
     "summary": "",
     "metadata_source": "https://api.crossref.org/works/10.1145/3149526.3149530",
     "metadata_checked": "2026-10-30"
+  },
+  "1706.02998": {
+    "summary": "Analytical results for QAOA on MaxCut, including a fermionic treatment of ring graphs and parameter setting."
+  },
+  "2607.09368": {
+    "summary": "A noise-aware warm-starting approach that uses hardware noise as a resource for quantum optimization."
+  },
+  "2108.13305": {
+    "summary": "Efficient quantum circuits for the Fourier transform and group operations needed to simulate dihedral lattice gauge theories."
   }
 }

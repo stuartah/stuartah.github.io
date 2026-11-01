@@ -146,7 +146,7 @@
     "topics": [
       "Optimization"
     ],
-    "summary": ""
+    "summary": "A noise-aware warm-starting approach that uses hardware noise as a resource for quantum optimization."
   },
   {
     "id": "2606.28234",
@@ -615,7 +615,7 @@
     "topics": [
       "Simulation"
     ],
-    "summary": ""
+    "summary": "Efficient quantum circuits for the Fourier transform and group operations needed to simulate dihedral lattice gauge theories."
   },
   {
     "id": "2105.06996",
@@ -826,7 +826,7 @@
     "topics": [
       "Optimization"
     ],
-    "summary": ""
+    "summary": "Analytical results for QAOA on MaxCut, including a fermionic treatment of ring graphs and parameter setting."
   },
   {
     "id": "pmes-2017-hard-soft-constraints",
