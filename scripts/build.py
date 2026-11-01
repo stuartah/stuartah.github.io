@@ -125,9 +125,12 @@ def shell(page, title, description, body):
 
 def selected_paper(ident):
     p = BY_ID[ident]
+    venue = publication_venue(p)
+    if str(p['year']) not in venue:
+        venue += f", {p['year']}"
     return f'''<li class="selected-paper">
   <h3><a href="{paper_url(p)}">{e(p['title'])}</a></h3>
-  <p class="paper-meta">{authors(p)} · {e(publication_venue(p))}, {p['year']}</p>
+  <p class="paper-meta">{authors(p)} · {e(venue)}</p>
   <p class="paper-summary">{e(p['summary'])}</p>
 </li>'''
 
@@ -162,7 +165,7 @@ def home():
   <section class="selected-work" aria-labelledby="selected-title"><h2 id="selected-title">Selected publications</h2><ul class="selected-list">{selection}</ul><a class="browse-papers" href="publications/">All publications and preprints</a></section>
   <section class="background" id="about" aria-labelledby="background-title">
     <h2 id="background-title">Background</h2>
-    <p>I received my Ph.D. in computer science from <a href="https://www.cs.columbia.edu/~stuartah/" title="Former Columbia homepage">Columbia University</a> in 2018, working in theoretical computer science and quantum computing. My advisers were Joseph F. Traub, Alfred V. Aho, and Anargyros Papageorgiou. My dissertation, <a href="https://arxiv.org/abs/1805.03265">Quantum Algorithms for Scientific Computing and Approximate Optimization</a>, is freely available on arXiv. I joined NASA QuAIL in spring 2018.</p>
+    <p>I received my Ph.D. in computer science from <a href="https://www.cs.columbia.edu/~stuartah/" title="Former Columbia homepage">Columbia University</a> in 2018, working in theoretical computer science and quantum computing. My advisers were Joseph F. Traub, Alfred V. Aho, and Anargyros Papageorgiou. My dissertation, <a href="https://arxiv.org/abs/1805.03265">Quantum Algorithms for Scientific Computing and Approximate Optimization</a>, is freely available on arXiv. I joined NASA QuAIL and USRA’s Research Institute for Advanced Computer Science (RIACS) in spring 2018.</p>
     <p>Before my Ph.D., I received a master’s degree in computer science from Columbia, an honours degree in theoretical physics from the University of Melbourne, and a bachelor’s degree in engineering physics from the University of British Columbia. My honours thesis studied fault-tolerant quantum computation. I also worked in software and hardware engineering, specializing in embedded systems and performance optimization.</p>
     <p>My broader interests include the mathematical foundations of quantum physics and computation, and the ways science and technology can improve people’s lives. I am a founding member of <a href="https://q4climate.org/">Q4Climate</a>, an initiative exploring quantum computing and climate change.</p>
   </section>
