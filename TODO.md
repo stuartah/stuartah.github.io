@@ -9,6 +9,7 @@
 - [x] Use the owner-supplied new portrait, retaining its original bytes and framing it with CSS.
 - [x] Expand Background from the older Columbia/GitHub sites: advisers, education, QuAIL history, engineering work, broader interests, and Q4Climate. Rename the research area Algorithms & Complexity.
 - [x] Link the existing “Columbia University” text in Background quietly to the former Columbia homepage, matching the current GitHub page.
+- [x] Link Joseph F. Traub, Alfred V. Aho, and Anargyros Papageorgiou to their Columbia homepages, and NASA QuAIL and RIACS to their research group pages in the same Background paragraph.
 - [x] Introductory links ordered Google Scholar, ORCID, arXiv, LinkedIn, using the LinkedIn URL from the prior GitHub page. Homepage section heading changed to Research Interests. Quantum simulation description updated to the owner’s exact scientific-computing, quantum-chemistry and high-energy-physics wording.
 - [x] Update Selected publications: remove QRAO compression from the featured list; add the Boolean/Hamiltonian paper, Wang et al. (2018), NDAR, ND-AWS, and dihedral gates. Keep all works in the full publication list. Spell out Quantum Artificial Intelligence Laboratory (QuAIL) in the introduction and remove collaboration from the homepage wording. The spring 2018 background sentence names both NASA QuAIL and USRA’s Research Institute for Advanced Computer Science (RIACS).
 - [ ] Review the exact public biography, affiliations, contact address, portrait, and featured-paper choices with Stuart.
