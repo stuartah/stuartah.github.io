@@ -114,7 +114,7 @@ def shell(page, title, description, body):
 </header>
 <main id="main">{body}</main>
 <footer class="site-footer wrap">
-  <span>Stuart A. Hadfield</span>
+  <span>Stuart Hadfield</span>
   <div class="footer-links"><a href="{SCHOLAR}">Google Scholar</a><a href="{ORCID}">ORCID</a><a href="https://arxiv.org/a/hadfield_s_1">arXiv</a></div>
 </footer>
 <!-- Existing Clicky tracker runs only on the public production hostname. -->
@@ -141,7 +141,7 @@ def home():
   <section class="intro" aria-labelledby="home-title">
     <div class="intro-copy">
       <div class="intro-name">
-        <h1 id="home-title">Stuart A. Hadfield</h1>
+        <h1 id="home-title">Stuart Hadfield</h1>
         <p class="intro-role">Quantum computer scientist</p>
         <p class="intro-affiliation"><a href="https://riacs.usra.edu/quantum/">USRA RIACS</a> · <a href="https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/nasa-quail/">NASA QuAIL</a></p>
       </div>

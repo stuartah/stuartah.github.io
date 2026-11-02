@@ -14,6 +14,7 @@
 - [x] Update Selected publications: remove QRAO compression from the featured list; add the Boolean/Hamiltonian paper, Wang et al. (2018), NDAR, ND-AWS, and dihedral gates. Keep all works in the full publication list. Spell out Quantum Artificial Intelligence Laboratory (QuAIL) in the introduction and remove collaboration from the homepage wording. The spring 2018 background sentence names both NASA QuAIL and USRA’s Research Institute for Advanced Computer Science (RIACS).
 - [x] Stuart accepted version 1 on November 1, 2026, including the public biography, affiliations, contact address, portrait, and featured-paper choices.
 - [x] Use the full NASA Ames Research Center name in the introduction and add “New York, NY” in Contact.
+- [x] Remove the middle initial from the homepage name and shared footer; preserve names as published in citation records.
 - [x] Add a short research-internship note in Contact, linking to the Feynman Quantum Academy for opportunities and application details.
 
 ## Publications
@@ -26,6 +27,7 @@
 - [x] Preserve editorial corrections and acceptance information during refreshes; validate stable IDs, duplicate handling, published status, acceptance, and the separate thesis category.
 - [ ] Replace “to appear” details with final proceedings/journal metadata when available.
 - [x] Manual arXiv refresh and deployment succeeded after public launch (GitHub Actions run 41357083905, November 1, 2026); the weekly schedule is enabled on main.
+- [x] Enabled a separate Sunday-morning ChatGPT Website Maintenance review of the public Scholar profile, with verified metadata changes applied to the repository and deployed after checks. First scheduled date November 8, 2026, around 08:00 New York time. Source-access limits are reported; primary publisher/DOI/arXiv verification protects curated metadata and selected works.
 
 ## Domains — owner plan, October 31, 2026
 
@@ -47,7 +49,9 @@ Owner instruction, November 1, 2026: carry out as much of the launch as possible
 ## Clicky
 
 - [x] Added `stuarthadfield.me`, `www.stuarthadfield.me`, and `stuartah.github.io` to **additional domains** for existing Clicky site ID `101117148`; Clicky confirmed Successfully updated. Domain validation remains enabled and outbound tracking remains enabled. Existing Columbia data/site ID preserved.
-- [ ] Confirm the first independent page view and outbound event in Clicky. Production script loading was verified on `.me`; signed-in-owner test visits have not appeared in the dashboard. Clicky documents automatic exclusion of owners’ visits, so use an independent/private browser for the final event test. Preview visits remain excluded.
+- [ ] Confirm an outbound event in Clicky using an independent/private browser. Clicky documents automatic exclusion of owners’ visits. Preview visits remain excluded.
+- [x] The authenticated Clicky Domains report now includes `stuarthadfield.me` hits alongside Columbia traffic, confirming receipt from the new website. Aggregate counts are retained privately; outbound-event receipt remains unverified.
+- [x] Include aggregate Clicky checks in the private weekly Website Maintenance task and a concise traffic section in the existing owner Project Status & Backup report. Preserve its current monthly cadence and existing recipient. Keep analytics data private.
 - [x] Updated the production-hostname guard for `.me`, its `www` variant, and the original GitHub address.
 
 ## Google search
@@ -63,7 +67,7 @@ Owner instruction, November 1, 2026: carry out as much of the launch as possible
 
 ## Later decisions
 
-- [ ] Revisit publication sources beyond arXiv if needed for more complete journal metadata. Do not scrape Google Scholar.
+- [x] Supplement the arXiv feed with the scheduled public Scholar-profile review and verified publisher/DOI metadata. Respect source-access rules and do not bulk-scrape Scholar.
 
 Talks, a resources page, and a CV are outside the first-version scope.
 
