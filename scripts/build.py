@@ -191,7 +191,7 @@ def home():
     <p>Before my Ph.D., I received a master’s degree in computer science from Columbia, an honours degree in theoretical physics from the University of Melbourne, and a bachelor’s degree in engineering physics from the University of British Columbia. My honours thesis studied fault-tolerant quantum computation. I also worked in software and hardware engineering, specializing in embedded systems and performance optimization.</p>
     <p>My broader interests include the mathematical foundations of quantum physics and computation, and the ways science and technology can improve people’s lives. I am a founding member of <a href="https://q4climate.org/">Q4Climate</a>, an initiative exploring quantum computing and climate change.</p>
   </section>
-  <section class="contact" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p><a class="contact-email" href="mailto:shadfield@usra.edu">shadfield@usra.edu</a></p><p>New York, NY</p><p class="internship-note">We are often looking for research interns in quantum computing and related areas. See the <a href="https://riacs.usra.edu/quantum/academy/">Feynman Quantum Academy</a> for application details.</p></section>
+  <section class="contact" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p><a class="contact-email" href="mailto:stuart.hadfield@columbia.edu">stuart.hadfield@columbia.edu</a></p><p>New York, NY</p><p class="internship-note">We are often looking for research interns in quantum computing and related areas. See the <a href="https://riacs.usra.edu/quantum/academy/">Feynman Quantum Academy</a> for application details.</p></section>
 </div>
 '''
     return shell('', 'Stuart Hadfield | Quantum Algorithms, Optimization & Complexity', 'Stuart Hadfield is a quantum computer scientist at USRA/RIACS and NASA QuAIL. Research in quantum algorithms, optimization, complexity, and simulation.', body)
@@ -242,7 +242,7 @@ def publications():
     <div class="empty-state" id="empty-state" hidden><h2>No matching publications</h2><p>Try a different title, author, or keyword.</p></div>
     <p class="pub-note">For my broader publication record, see <a href="{SCHOLAR}">Google Scholar</a>.</p>
   </section>
-  <div class="publications-contact"><a href="mailto:shadfield@usra.edu">Contact me</a></div>
+  <div class="publications-contact"><a href="mailto:stuart.hadfield@columbia.edu">Contact me</a></div>
 </div>'''
     return shell('publications', 'Publications | Stuart Hadfield', 'Papers and preprints by Stuart Hadfield on quantum optimization, QAOA, computational complexity, quantum encodings, and simulation. Open-access links and citations.', body)
 
