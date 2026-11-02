@@ -6,6 +6,8 @@ A small static site for GitHub Pages: a homepage and a publication list. No pack
 
 The shared page layout and homepage copy live in `scripts/build.py`; styles and behavior live in `assets/`.
 
+The compact Recent & upcoming section reads `data/news.json`. Keep at most three curated, dated updates in display order, with primary-source links and check dates. Paper milestones and confirmed talks can appear here without a separate Talks page; do not turn it into a complete publication feed. Use past-tense or neutral wording after an event has passed.
+
 ```sh
 python3 scripts/build.py
 python3 scripts/check_site.py

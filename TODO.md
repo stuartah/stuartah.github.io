@@ -16,6 +16,7 @@
 - [x] Use the full NASA Ames Research Center name in the introduction and add “New York, NY” in Contact.
 - [x] Remove the middle initial from the homepage name and shared footer; preserve names as published in citation records.
 - [x] Add a short research-internship note in Contact, linking to the Feynman Quantum Academy for opportunities and application details.
+- [x] Add a compact Recent & upcoming section below Research Interests, with at most three dated public paper/event updates. Initial entries: PRA acceptance, quantum approximation complexity preprint, and two IEEE Quantum Week papers. Preserve the quiet style and existing selected publications.
 
 ## Publications
 
@@ -70,6 +71,6 @@ Owner instruction, November 1, 2026: carry out as much of the launch as possible
 
 - [x] Supplement the arXiv feed with the scheduled public Scholar-profile review and verified publisher/DOI metadata. Respect source-access rules and do not bulk-scrape Scholar.
 
-Talks, a resources page, and a CV are outside the first-version scope.
+A separate Talks page, a resources page, and a CV remain outside scope. Selected paper milestones and confirmed recent/upcoming talks can appear in the compact homepage updates section.
 
 Version 1 is live at https://stuarthadfield.me/ as of November 1, 2026, with the original GitHub URL redirecting to it. The .si redirect activation, independent analytics event confirmation, Google indexing/search appearance, and external profile links remain in progress. This checklist records work; it does not create reminders or background execution.

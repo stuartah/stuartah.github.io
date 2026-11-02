@@ -139,6 +139,23 @@ def selected_paper(ident):
 </li>'''
 
 
+def recent_updates():
+    entries = json.loads((ROOT / 'data/news.json').read_text())
+    if len(entries) > 3:
+        raise ValueError('Keep the homepage to at most three recent updates.')
+    if not entries:
+        return ''
+    items = []
+    for entry in entries:
+        text = ''.join(
+            f'<a href="{e(part["url"], quote=True)}">{e(part["text"])}</a>'
+            if part.get('url') else e(part['text'])
+            for part in entry['segments']
+        )
+        items.append(f'<li><time datetime="{e(entry["date"], quote=True)}">{e(entry["date_label"])}</time><p>{text}</p></li>')
+    return '<section class="recent-updates" id="news" aria-labelledby="news-title"><h2 id="news-title">Recent &amp; upcoming</h2><ul class="updates-list">' + ''.join(items) + '</ul></section>'
+
+
 def home():
     selection = ''.join(selected_paper(ident) for ident in ['2610.09584', '1709.03489', '2312.02279', '1804.09130', '1706.02998', '2404.01412', '2607.09368', '2108.13305'])
     body = f'''
@@ -166,6 +183,7 @@ def home():
       <div><h3><a href="publications/?topic=Simulation">Quantum simulation</a></h3><p>Algorithms and circuit primitives for scientific computing and simulating physical systems, from quantum chemistry to high energy physics.</p></div>
     </div>
   </section>
+  {recent_updates()}
   <section class="selected-work" aria-labelledby="selected-title"><h2 id="selected-title">Selected publications</h2><ul class="selected-list">{selection}</ul><a class="browse-papers" href="publications/">All publications and preprints</a></section>
   <section class="background" id="about" aria-labelledby="background-title">
     <h2 id="background-title">Background</h2>

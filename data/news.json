@@ -1,0 +1,77 @@
+[
+  {
+    "id": "measurement-driven-pra-acceptance",
+    "date": "2026-10-22",
+    "date_label": "Oct 2026",
+    "segments": [
+      {
+        "text": "Measurement-driven quantum approximate optimization",
+        "url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc"
+      },
+      {
+        "text": " accepted in Physical Review A."
+      }
+    ],
+    "sources": [
+      "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc"
+    ],
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "quantum-approximation-complexity-preprint",
+    "date": "2026-10-07",
+    "date_label": "Oct 2026",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "Quantum Approximation Complexity of Classical Optimization Problems",
+        "url": "https://arxiv.org/abs/2610.09584"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.09584"
+    ],
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "ieee-quantum-week-2026",
+    "date": "2026-09-17",
+    "date_label": "Sep 2026",
+    "segments": [
+      {
+        "text": "Two papers at "
+      },
+      {
+        "text": "IEEE Quantum Week",
+        "url": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/"
+      },
+      {
+        "text": " in Toronto: "
+      },
+      {
+        "text": "adaptive remapping",
+        "url": "https://arxiv.org/abs/2606.28234"
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "iterative warm-start optimization",
+        "url": "https://arxiv.org/abs/2604.26047"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://qce.quantum.ieee.org/2026/",
+      "https://qce.quantum.ieee.org/2026/wp-content/uploads/sites/13/2026/08/QCE26-Technical-Papers-Schedule-V123.pdf"
+    ],
+    "checked": "2026-11-02"
+  }
+]
