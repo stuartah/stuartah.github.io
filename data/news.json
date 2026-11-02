@@ -44,17 +44,17 @@
     "date_label": "Sep 2026",
     "segments": [
       {
-        "text": "Two talks and two proceedings papers at "
+        "text": "Two papers in the proceedings of "
       },
       {
         "text": "IEEE Quantum Week",
         "url": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/"
       },
       {
-        "text": " in Toronto (one work in common). Proceedings papers: "
+        "text": " in Toronto: "
       },
       {
-        "text": "adaptive remapping",
+        "text": "NDAR-qudits",
         "url": "https://arxiv.org/abs/2606.28234"
       },
       {
@@ -65,14 +65,30 @@
         "url": "https://arxiv.org/abs/2604.26047"
       },
       {
-        "text": "."
+        "text": ". Two talks: "
+      },
+      {
+        "text": "NDAR-qudits",
+        "url": "https://arxiv.org/abs/2606.28234"
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "QAOA complexity",
+        "url": "https://sites.google.com/view/quaco-qce/"
+      },
+      {
+        "text": " (QuACO workshop)."
       }
     ],
     "sources": [
       "https://qce.quantum.ieee.org/2026/",
-      "https://qce.quantum.ieee.org/2026/wp-content/uploads/sites/13/2026/08/QCE26-Technical-Papers-Schedule-V123.pdf"
+      "https://qce.quantum.ieee.org/2026/wp-content/uploads/sites/13/2026/08/QCE26-Technical-Papers-Schedule-V123.pdf",
+      "https://sites.google.com/view/quaco-qce/",
+      "https://riacs.usra.edu/quantum/news/usra-scientists-four-talks-one-award-ieee-qce-2026/"
     ],
     "checked": "2026-11-02",
-    "author_confirmation": "Stuart Hadfield confirmed two talks and two proceedings papers, with only one work overlapping, on 2026-11-02."
+    "author_confirmation": "Stuart Hadfield confirmed talks on NDAR-qudits and QAOA complexity, with the latter at the QuACO workshop, on 2026-11-02."
   }
 ]
