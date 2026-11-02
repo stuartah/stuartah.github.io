@@ -65,21 +65,21 @@
         "url": "https://arxiv.org/abs/2604.26047"
       },
       {
-        "text": ". Two talks: "
+        "text": ". I gave two talks: a technical program talk on "
       },
       {
         "text": "NDAR-qudits",
         "url": "https://arxiv.org/abs/2606.28234"
       },
       {
-        "text": " and "
+        "text": " and an invited workshop talk on "
       },
       {
         "text": "QAOA complexity",
         "url": "https://sites.google.com/view/quaco-qce/"
       },
       {
-        "text": " (QuACO workshop)."
+        "text": " at QuACO."
       }
     ],
     "sources": [
@@ -89,6 +89,6 @@
       "https://riacs.usra.edu/quantum/news/usra-scientists-four-talks-one-award-ieee-qce-2026/"
     ],
     "checked": "2026-11-02",
-    "author_confirmation": "Stuart Hadfield confirmed talks on NDAR-qudits and QAOA complexity, with the latter at the QuACO workshop, on 2026-11-02."
+    "author_confirmation": "Stuart Hadfield confirmed that he gave the technical program talk on NDAR-qudits and the invited QuACO workshop talk on QAOA complexity, on 2026-11-02."
   }
 ]
