@@ -41,10 +41,15 @@ def bibtex(paper):
         fields.update(eprint=paper['arxiv'], archivePrefix='arXiv')
     kind = publication_type(paper)
     entry_type = {'journal': 'article', 'conference': 'inproceedings', 'thesis': 'phdthesis'}.get(kind, 'misc')
+    if kind == 'thesis' and paper.get('thesis_type') == 'honours':
+        entry_type = 'misc'
     if kind in ('journal', 'conference'):
         fields['journal' if kind == 'journal' else 'booktitle'] = paper['venue']
     elif kind == 'thesis':
-        fields['school'] = 'Columbia University'
+        if paper.get('thesis_type') == 'honours':
+            fields['howpublished'] = paper['venue']
+        else:
+            fields['school'] = paper.get('school', 'Columbia University')
     if is_to_appear(paper):
         fields['note'] = 'To appear'
     if paper.get('doi'):
@@ -181,7 +186,7 @@ def publication(paper):
     venue = publication_venue(paper)
     searchable = ' '.join([paper['title'], *paper.get('alternate_titles', []), *paper['authors'], venue, str(paper['year']), *topics, paper.get('summary', ''), paper.get('arxiv', '')])
     journal = paper.get('journal_url') or paper.get('publication_url') or ('https://doi.org/' + paper['doi'] if paper.get('doi') else '')
-    journal_label = 'Conference' if kind == 'conference' else 'Publication'
+    journal_label = 'Conference' if kind == 'conference' else 'PDF' if kind == 'thesis' and journal.endswith('.pdf') else 'Publication'
     journal_link = f'<a href="{e(journal, quote=True)}">{journal_label}</a>' if journal else ''
     preprint_links = f'<a href="{paper_url(paper)}">arXiv</a><a href="https://arxiv.org/pdf/{paper["arxiv"]}">PDF</a>' if paper.get('arxiv') else ''
     summary = f'<details><summary>Summary</summary><div>{e(paper["summary"])}</div></details>' if paper.get('summary') else ''
@@ -213,7 +218,7 @@ def publications():
         <div class="field"><label for="publication-year">Year</label><select id="publication-year"><option value="">All years</option>{year_options}</select></div>
       </div>
       <div class="filter-status"><span id="publication-count" role="status" aria-live="polite">{len(PAPERS)} works</span><button class="reset-filters" type="button" hidden>Clear filters</button></div>
-      <p class="status-note" id="publication-status-note">Published includes accepted papers, marked “to appear.” The dissertation is listed separately.</p>
+      <p class="status-note" id="publication-status-note">Published includes accepted papers, marked “to appear.” Theses are listed separately.</p>
     </div>
     <div class="pub-list">{''.join(publication(p) for p in PAPERS)}</div>
     <div class="empty-state" id="empty-state" hidden><h2>No matching publications</h2><p>Try a different title, author, or keyword.</p></div>

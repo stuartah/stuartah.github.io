@@ -42,6 +42,24 @@ class PublicationImportTests(unittest.TestCase):
     def test_thesis_is_separate_from_the_published_paper_filter(self):
         self.assertEqual(publication_status({'venue': 'Ph.D. dissertation, Columbia University'}), 'thesis')
 
+    def test_melbourne_honours_thesis_survives_refresh_and_exports_correct_degree(self):
+        from build import bibtex, PAPERS
+        existing = {p['id']: p for p in PAPERS}
+        ident = 'melbourne-2008-surface-code-thesis'
+        records = {p['id']: p for p in merge_records(PAPERS, parse_feed(feed()), {})}
+        thesis = records[ident]
+        self.assertEqual(thesis, existing[ident])
+        self.assertEqual(publication_status(thesis), 'thesis')
+        self.assertEqual(publication_type(thesis), 'thesis')
+        self.assertEqual(thesis['school'], 'University of Melbourne')
+        citation = bibtex(thesis)
+        self.assertIn('Honours thesis', citation)
+        self.assertIn('University of Melbourne', citation)
+        self.assertNotIn('@phdthesis', citation)
+        self.assertNotIn('Columbia University', citation)
+        self.assertIn('@phdthesis', bibtex(records['1805.03265']))
+        self.assertIn('Columbia University', bibtex(records['1805.03265']))
+
     def test_journal_and_conference_references_count_as_publication(self):
         self.assertEqual(publication_status({'venue': 'Physical Review A 114, 022404'}), 'published')
         self.assertEqual(publication_status({'venue': '2024 IEEE IPDPS Workshops'}), 'published')

@@ -19,6 +19,7 @@
 
 ## Publications
 
+- [x] Add the 2008 University of Melbourne Bachelor of Science Honours thesis, Error Rate Thresholds for Physical Implementations of the Surface Code, using the original PDF and title-page metadata. Retain it during arXiv refreshes and export the honours degree correctly in BibTeX.
 - [x] Add a publication-status filter alongside search, topic, and year. Distinguish **Published**, **Not yet published**, and **Thesis**. By owner instruction, accepted papers count as Published and are marked “to appear.”
 - [x] Add an independent journal/conference/preprint/thesis filter; show QPL 2022 and other conference names explicitly, include both IEEE Quantum Week papers as to appear, and restore the distinct PMES 2017 conference paper.
 - [x] Combine status filtering with the existing filters and shareable URLs; verify reset and empty-result behavior.

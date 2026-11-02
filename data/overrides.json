@@ -271,5 +271,26 @@
   },
   "2108.13305": {
     "summary": "Efficient quantum circuits for the Fourier transform and group operations needed to simulate dihedral lattice gauge theories."
+  },
+  "melbourne-2008-surface-code-thesis": {
+    "title": "Error Rate Thresholds for Physical Implementations of the Surface Code",
+    "authors": [
+      "Stuart Hadfield"
+    ],
+    "year": 2008,
+    "date": "2008-11-03",
+    "venue": "Bachelor of Science Honours thesis, School of Physics, University of Melbourne",
+    "publication_url": "https://www.cs.columbia.edu/~stuartah/SH_Thesis_2008.pdf",
+    "publication_type": "thesis",
+    "publication_status": "thesis",
+    "thesis_type": "honours",
+    "school": "University of Melbourne",
+    "topics": [
+      "Error correction"
+    ],
+    "summary": "",
+    "doi": "",
+    "metadata_source": "https://www.cs.columbia.edu/~stuartah/SH_Thesis_2008.pdf",
+    "metadata_checked": "2026-11-02"
   }
 }
