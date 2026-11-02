@@ -76,10 +76,17 @@
       },
       {
         "text": "QAOA complexity",
+        "url": "https://arxiv.org/abs/2608.11385"
+      },
+      {
+        "text": " at "
+      },
+      {
+        "text": "QuACO",
         "url": "https://sites.google.com/view/quaco-qce/"
       },
       {
-        "text": " at QuACO."
+        "text": "."
       }
     ],
     "sources": [
