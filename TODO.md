@@ -54,8 +54,8 @@ Owner instruction, November 1, 2026: carry out as much of the launch as possible
 
 - [x] Verified the URL-prefix property `https://stuartah.github.io/` and requested homepage indexing. Its sitemap was submitted but last showed Couldn’t fetch; publications indexing is unconfirmed.
 - [x] Google confirmed Domain-property ownership for `stuarthadfield.me` via DNS TXT. Keep the Google and GitHub ownership TXT records.
-- [x] Google acknowledged submission of `https://stuarthadfield.me/sitemap.xml` and accepted indexing requests for both the `.me` homepage and publications page. The sitemap initially showed Couldn’t fetch while HTTPS was being issued; direct HTTPS retrieval now returns 200 application/xml.
-- [ ] Confirm successful sitemap processing after Google’s refetch. The sitemap was resubmitted once after HTTPS became active; no duplicate page-indexing requests were made.
+- [x] Google acknowledged submission of `https://stuarthadfield.me/sitemap.xml` and accepted indexing requests for both the `.me` homepage and publications page. After HTTPS became active, Google processed the sitemap successfully and discovered both URLs; direct HTTPS retrieval also returns 200 application/xml.
+- [x] Google sitemap status is Success, with two discovered pages. The sitemap was resubmitted once after HTTPS became active; no duplicate page-indexing requests were made.
 - [ ] Update the link on the Columbia homepage and, where editable, the Scholar, ORCID, and institutional profiles.
 - [ ] Check indexing and search appearance after Google has had time to crawl the public version.
 
@@ -65,4 +65,4 @@ Owner instruction, November 1, 2026: carry out as much of the launch as possible
 
 Talks, a resources page, and a CV are outside the first-version scope.
 
-Version 1 is live at https://stuarthadfield.me/ as of November 1, 2026, with the original GitHub URL redirecting to it. The .si redirect activation, independent analytics event confirmation, Google sitemap/indexing processing, and external profile links remain in progress. This checklist records work; it does not create reminders or background execution.
+Version 1 is live at https://stuarthadfield.me/ as of November 1, 2026, with the original GitHub URL redirecting to it. The .si redirect activation, independent analytics event confirmation, Google indexing/search appearance, and external profile links remain in progress. This checklist records work; it does not create reminders or background execution.
