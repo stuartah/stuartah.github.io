@@ -175,6 +175,7 @@ def home():
     </div>
     <figure class="portrait"><img src="{PHOTO}" width="1789" height="2048" alt="Stuart Hadfield" fetchpriority="high"></figure>
   </section>
+  {recent_updates()}
   <section class="research" id="research" aria-labelledby="research-title">
     <h2 id="research-title">Research Interests</h2>
     <div class="research-areas">
@@ -183,7 +184,6 @@ def home():
       <div><h3><a href="publications/?topic=Simulation">Quantum simulation</a></h3><p>Algorithms and circuit primitives for scientific computing and simulating physical systems, from quantum chemistry to high energy physics.</p></div>
     </div>
   </section>
-  {recent_updates()}
   <section class="selected-work" aria-labelledby="selected-title"><h2 id="selected-title">Selected publications</h2><ul class="selected-list">{selection}</ul><a class="browse-papers" href="publications/">All publications and preprints</a></section>
   <section class="background" id="about" aria-labelledby="background-title">
     <h2 id="background-title">Background</h2>

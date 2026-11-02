@@ -16,7 +16,7 @@
 - [x] Use the full NASA Ames Research Center name in the introduction and add “New York, NY” in Contact.
 - [x] Remove the middle initial from the homepage name and shared footer; preserve names as published in citation records.
 - [x] Add a short research-internship note in Contact, linking to the Feynman Quantum Academy for opportunities and application details.
-- [x] Add a compact Recent & upcoming section below Research Interests, with at most three dated public paper/event updates. Initial entries: PRA acceptance, quantum approximation complexity preprint, and two IEEE Quantum Week papers. Preserve the quiet style and existing selected publications.
+- [x] Add a compact Recent & upcoming section below the introduction and before Research Interests, with at most three dated public paper/event updates. Initial entries: PRA acceptance, quantum approximation complexity preprint, and two IEEE Quantum Week papers in the proceedings and two talks presented, confirmed by the owner. Preserve the quiet style and existing selected publications.
 
 ## Publications
 
