@@ -56,6 +56,8 @@ Owner instruction, November 1, 2026: carry out as much of the launch as possible
 - [x] Google confirmed Domain-property ownership for `stuarthadfield.me` via DNS TXT. Keep the Google and GitHub ownership TXT records.
 - [x] Google acknowledged submission of `https://stuarthadfield.me/sitemap.xml` and accepted indexing requests for both the `.me` homepage and publications page. After HTTPS became active, Google processed the sitemap successfully and discovered both URLs; direct HTTPS retrieval also returns 200 application/xml.
 - [x] Google sitemap status is Success, with two discovered pages. The sitemap was resubmitted once after HTTPS became active; no duplicate page-indexing requests were made.
+- [x] Submitted Search Console Change of Address from `stuartah.github.io` to `stuarthadfield.me`. Google passed redirect/ownership validation and confirmed the move is in progress on November 1, 2026 ET. Both Search Console properties and their verification methods are retained.
+- [ ] Monitor Google’s canonical selection: the first homepage crawl succeeded and indexing is allowed, but Google currently reports Duplicate, Google chose different canonical than user. The declared canonical is correctly `.me`; Google did not show its selected alternative. The accepted move notification, existing redirects and canonical/sitemap signals should be allowed to process before further changes. Do not repeatedly request indexing.
 - [ ] Update the link on the Columbia homepage and, where editable, the Scholar, ORCID, and institutional profiles.
 - [ ] Check indexing and search appearance after Google has had time to crawl the public version.
 
