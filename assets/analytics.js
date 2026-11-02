@@ -2,7 +2,7 @@
  * Preview visits and local checks should not pollute production analytics.
  */
 (() => {
-  if (window.location.hostname !== 'stuartah.github.io') return;
+  if (!['stuarthadfield.me', 'www.stuarthadfield.me', 'stuartah.github.io'].includes(window.location.hostname)) return;
   const script = document.createElement('script');
   script.src = 'https://static.getclicky.com/js';
   script.async = true;

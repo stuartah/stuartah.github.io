@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stuartah.github.io/sitemap.xml
+Sitemap: https://stuarthadfield.me/sitemap.xml

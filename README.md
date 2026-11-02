@@ -35,13 +35,15 @@ After launch, GitHub Actions refreshes publications weekly and on manual request
 
 1. Review and merge the redesign branch.
 2. In **Settings → Pages → Build and deployment**, choose **GitHub Actions** as the publishing source, then run the site workflow. The included workflow validates pull requests without deploying them.
-3. Confirm the deployment at `https://stuartah.github.io/`.
+3. The production domain is `https://stuarthadfield.me/`. GitHub Pages also redirects the original `stuartah.github.io` address and `www.stuarthadfield.me` to it.
+
+Both personal domains were registered at Porkbun on November 1, 2026. The `.me` apex uses an ALIAS to `stuartah.github.io`; `www` uses a CNAME to the same target. Keep the GitHub ownership TXT record. Porkbun forwards the `.si` apex and `www` to `.me` with 301 redirects and path preservation. DNS propagation, HTTPS and redirect checks are tracked in `TODO.md`.
 
 ## Clicky
 
-The tracker reuses **site ID 101117148** from the Columbia homepage, using HTTPS and asynchronous loading. It runs only on `stuartah.github.io`, so local and review previews do not create analytics traffic.
+The tracker reuses **site ID 101117148** from the Columbia homepage, using HTTPS and asynchronous loading. The hostname guard permits `stuarthadfield.me`, its `www` variant, and `stuartah.github.io`; local and review previews do not create analytics traffic.
 
-In Clicky's existing site preferences, add `stuartah.github.io` to **additional domains**, keeping domain validation enabled. This combines both domains under the existing site ID; Clicky's Domains report can distinguish them. If a personal domain is added later, update that setting and the hostname guard in `assets/analytics.js`. Successful event receipt must be checked in the authenticated Clicky dashboard after launch; it cannot be verified from public source code.
+In Clicky's existing site preferences, add `stuarthadfield.me`, `www.stuarthadfield.me`, and `stuartah.github.io` to **additional domains**, keeping domain validation enabled. This combines the new website and the Columbia homepage under the existing site ID; Clicky's Domains report can distinguish them. Successful event receipt must be checked in the authenticated Clicky dashboard after launch; it cannot be verified from public source code.
 
 ## Google search
 
@@ -49,8 +51,8 @@ The site includes static crawlable text and links, unique titles and description
 
 After the site is public:
 
-1. Add the URL-prefix property `https://stuartah.github.io/` to Google Search Console and verify ownership using an HTML file or meta tag supplied by Google. A `github.io` subdomain is not a domain whose DNS we control.
-2. Submit `https://stuartah.github.io/sitemap.xml` and use URL Inspection to request indexing of the homepage and publications page.
+1. Add the Domain property `stuarthadfield.me` to Google Search Console and verify using Google’s DNS TXT record. Retain the already verified URL-prefix property `https://stuartah.github.io/` and its verification file.
+2. Submit `https://stuarthadfield.me/sitemap.xml` and use URL Inspection to request indexing of the homepage and publications page.
 3. Link to this address from the Columbia page, Google Scholar profile, ORCID, and institutional profile where editable.
 
-Google decides whether and when to index pages. Requests and sitemaps help discovery but do not guarantee indexing or ranking. If a custom domain is chosen later, update the single `ORIGIN` constant in the builder and set up redirects and verification for that domain.
+Google decides whether and when to index pages. Requests and sitemaps help discovery but do not guarantee indexing or ranking. The builder’s `ORIGIN` constant is `https://stuarthadfield.me`; generated canonical URLs, structured data, social metadata, robots and sitemap use that address.
