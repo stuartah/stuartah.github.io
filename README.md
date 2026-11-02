@@ -37,7 +37,7 @@ After launch, GitHub Actions refreshes publications weekly and on manual request
 2. In **Settings → Pages → Build and deployment**, choose **GitHub Actions** as the publishing source, then run the site workflow. The included workflow validates pull requests without deploying them.
 3. The production domain is `https://stuarthadfield.me/`. GitHub Pages also redirects the original `stuartah.github.io` address and `www.stuarthadfield.me` to it.
 
-Both personal domains were registered at Porkbun on November 1, 2026. The `.me` apex uses an ALIAS to `stuartah.github.io`; `www` uses a CNAME to the same target. Keep the GitHub ownership TXT record. Porkbun forwards the `.si` apex and `www` to `.me` with 301 redirects and path preservation. DNS propagation, HTTPS and redirect checks are tracked in `TODO.md`.
+Both personal domains were registered at Porkbun on November 1, 2026. The `.me` apex uses an ALIAS to `stuartah.github.io`; `www` uses a CNAME to the same target. Keep the GitHub ownership TXT record. Porkbun has saved 301 forwarding rules for the `.si` apex and `www` to `.me` with path preservation; registry delegation and forwarding verification remain pending. DNS propagation, HTTPS and redirect checks are tracked in `TODO.md`.
 
 ## Clicky
 
