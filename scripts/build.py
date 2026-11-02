@@ -131,7 +131,6 @@ def selected_paper(ident):
     return f'''<li class="selected-paper">
   <h3><a href="{paper_url(p)}">{e(p['title'])}</a></h3>
   <p class="paper-meta">{authors(p)} · {e(venue)}</p>
-  <p class="paper-summary">{e(p['summary'])}</p>
 </li>'''
 
 
@@ -144,7 +143,7 @@ def home():
       <div class="intro-name">
         <h1 id="home-title">Stuart A. Hadfield</h1>
         <p class="intro-role">Quantum computer scientist</p>
-        <p class="intro-affiliation"><a href="https://riacs.usra.edu/quantum/">USRA / RIACS</a> · <a href="https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/nasa-quail/">NASA QuAIL</a></p>
+        <p class="intro-affiliation"><a href="https://riacs.usra.edu/quantum/">USRA RIACS</a> · <a href="https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/nasa-quail/">NASA QuAIL</a></p>
       </div>
       <div class="intro-bio">
         <p>I study quantum algorithms for optimization and simulation, with a focus on their performance and computational complexity.</p>
