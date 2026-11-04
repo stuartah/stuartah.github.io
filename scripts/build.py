@@ -167,7 +167,7 @@ def news_archive():
 
 
 def home():
-    selection = ''.join(selected_paper(ident) for ident in ['2610.09584', '1709.03489', '2312.02279', '1804.09130', '1706.02998', '2404.01412', '2607.09368', '2108.13305'])
+    selection = ''.join(selected_paper(ident) for ident in ['2611.00678', '2610.09584', '1709.03489', '2312.02279', '1804.09130', '1706.02998', '2303.05509', '2404.01412', '2607.09368', '2108.13305'])
     body = f'''
 <div class="wrap">
   <section class="intro" aria-labelledby="home-title">

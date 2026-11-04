@@ -598,6 +598,42 @@
     "metadata_checked": "2026-10-30"
   },
   {
+    "id": "2303.05509",
+    "arxiv": "2303.05509",
+    "title": "Quantum-enhanced greedy combinatorial optimization solver",
+    "authors": [
+      "Maxime Dupont",
+      "Bram Evert",
+      "Mark J. Hodson",
+      "Bhuvanesh Sundar",
+      "Stephen Jeffrey",
+      "Yuki Yamaguchi",
+      "Dennis Feng",
+      "Filip B. Maciejewski",
+      "Stuart Hadfield",
+      "M. Sohaib Alam",
+      "Zhihui Wang",
+      "Shon Grabbe",
+      "P. Aaron Lott",
+      "Eleanor G. Rieffel",
+      "Davide Venturelli",
+      "Matthew J. Reagor"
+    ],
+    "year": 2023,
+    "date": "2023-11-10",
+    "venue": "Science Advances 9(45), eadi0487 (2023)",
+    "doi": "10.1126/sciadv.adi0487",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "metadata_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10637743/",
+    "metadata_checked": "2026-11-04",
+    "arxiv_submitted": "2023-03-09"
+  },
+  {
     "id": "2305.04455",
     "arxiv": "2305.04455",
     "title": "Quantum Alternating Operator Ansatz (QAOA) beyond low depth with gradually changing unitaries",
