@@ -45,7 +45,13 @@ def bibtex(paper):
     entry_type = {'journal': 'article', 'conference': 'inproceedings', 'thesis': 'phdthesis'}.get(kind, 'misc')
     if kind == 'thesis' and paper.get('thesis_type') == 'honours':
         entry_type = 'misc'
-    if kind in ('journal', 'conference'):
+    if paper.get('bibtex_entry_type') == 'incollection':
+        entry_type = 'incollection'
+        fields['booktitle'] = paper['booktitle']
+        for field in ('series', 'volume', 'pages', 'publisher'):
+            if paper.get(field):
+                fields[field] = paper[field]
+    elif kind in ('journal', 'conference'):
         fields['journal' if kind == 'journal' else 'booktitle'] = paper['venue']
     elif kind == 'thesis':
         if paper.get('thesis_type') == 'honours':
@@ -157,7 +163,7 @@ def news_archive():
         + news_items([entry for entry in NEWS if entry['date'].startswith(year)]) + '</section>'
         for year in years
     )
-    body = '<div class="wrap"><section class="page-intro"><h1>News</h1><p>Paper updates and talks.</p></section><div class="news-archive">' + groups + '</div></div>'
+    body = '<div class="wrap"><section class="page-intro"><h1>News</h1><p>Publications, talks, and other research news.</p></section><div class="news-archive">' + groups + '</div></div>'
     collection = [
         {'@type': 'ListItem', 'position': i + 1, 'url': ORIGIN + '/news/#news-' + entry['id'],
          'name': ''.join(part['text'] for part in entry['segments'])}

@@ -789,6 +789,33 @@
     "summary": ""
   },
   {
+    "id": "2107.05362",
+    "title": "Quantum technologies for climate change: Preliminary assessment",
+    "authors": [
+      "Casey Berger",
+      "Agustin Di Paolo",
+      "Tracey Forrest",
+      "Stuart Hadfield",
+      "Nicolas Sawaya",
+      "Michał Stęchły",
+      "Karl Thibault"
+    ],
+    "year": 2021,
+    "date": "2021-06-23",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization",
+      "Simulation"
+    ],
+    "summary": "",
+    "publication_type": "preprint",
+    "publication_status": "unpublished",
+    "metadata_source": "https://arxiv.org/abs/2107.05362",
+    "metadata_checked": "2026-11-04",
+    "arxiv": "2107.05362"
+  },
+  {
     "id": "1908.03185",
     "arxiv": "1908.03185",
     "title": "Optimizing quantum heuristics with meta-learning",
@@ -885,6 +912,52 @@
     "doi": "10.1145/3478519"
   },
   {
+    "id": "tqe-2020-planning-heuristics",
+    "title": "Toward Quantum Gate-Model Heuristics for Real-World Planning Problems",
+    "authors": [
+      "Tobias Stollenwerk",
+      "Stuart Hadfield",
+      "Zhihui Wang"
+    ],
+    "year": 2020,
+    "date": "2020-10-13",
+    "venue": "IEEE Transactions on Quantum Engineering 1, 1–16",
+    "doi": "10.1109/tqe.2020.3030609",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "metadata_source": "https://tqe.ieee.org/2020/10/13/toward-quantum-gate-model-heuristics-for-real-world-planning-problems/",
+    "metadata_checked": "2026-11-04",
+    "publication_url": "https://doi.org/10.1109/tqe.2020.3030609"
+  },
+  {
+    "id": "cp-2020-global-constraint-filtering",
+    "title": "Quantum-Accelerated Global Constraint Filtering",
+    "authors": [
+      "Kyle E. C. Booth",
+      "Bryan O’Gorman",
+      "Jeffrey Marshall",
+      "Stuart Hadfield",
+      "Eleanor Rieffel"
+    ],
+    "year": 2020,
+    "date": "2020-09-02",
+    "venue": "Principles and Practice of Constraint Programming (CP 2020), LNCS 12333, 72–89",
+    "doi": "10.1007/978-3-030-58475-7_5",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1007/978-3-030-58475-7_5",
+    "metadata_checked": "2026-11-04",
+    "publication_url": "https://doi.org/10.1007/978-3-030-58475-7_5"
+  },
+  {
     "id": "2002.11682",
     "arxiv": "2002.11682",
     "title": "Characterizing local noise in QAOA circuits",
@@ -902,6 +975,47 @@
       "Optimization"
     ],
     "summary": ""
+  },
+  {
+    "id": "1905.02860",
+    "title": "From Ansätze to Z-Gates: A NASA View of Quantum Computing",
+    "authors": [
+      "Eleanor G. Rieffel",
+      "Stuart Hadfield",
+      "Tad Hogg",
+      "Salvatore Mandrà",
+      "Jeffrey Marshall",
+      "Gianni Mossi",
+      "Bryan O'Gorman",
+      "Eugeniu Plamadeala",
+      "Norm M. Tubman",
+      "Davide Venturelli",
+      "Walter Vinci",
+      "Zhihui Wang",
+      "Max Wilson",
+      "Filip Wudarski",
+      "Rupak Biswas"
+    ],
+    "year": 2019,
+    "date": "2019-05-08",
+    "venue": "Future Trends of HPC in a Disruptive Scenario (HPC 2018), Advances in Parallel Computing 34, 133–160",
+    "doi": "10.3233/apc190010",
+    "topics": [
+      "Optimization",
+      "Simulation"
+    ],
+    "summary": "",
+    "publication_type": "conference",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.3233/apc190010",
+    "metadata_checked": "2026-11-04",
+    "bibtex_entry_type": "incollection",
+    "booktitle": "Future Trends of HPC in a Disruptive Scenario",
+    "series": "Advances in Parallel Computing",
+    "volume": "34",
+    "pages": "133--160",
+    "publisher": "IOS Press",
+    "arxiv": "1905.02860"
   },
   {
     "id": "1709.03489",
@@ -941,6 +1055,27 @@
     ],
     "summary": "My dissertation on quantum algorithms for scientific computing, Hamiltonian simulation, and approximate optimization.",
     "doi": ""
+  },
+  {
+    "id": "njp-2018-divide-conquer",
+    "title": "Divide and conquer approach to quantum Hamiltonian simulation",
+    "authors": [
+      "Stuart Hadfield",
+      "Anargyros Papageorgiou"
+    ],
+    "year": 2018,
+    "date": "2018-04-12",
+    "venue": "New Journal of Physics 20(4), 043003",
+    "doi": "10.1088/1367-2630/aab1ef",
+    "topics": [
+      "Simulation"
+    ],
+    "summary": "",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1088/1367-2630/aab1ef",
+    "metadata_checked": "2026-11-04",
+    "publication_url": "https://doi.org/10.1088/1367-2630/aab1ef"
   },
   {
     "id": "1706.02998",
@@ -1000,11 +1135,13 @@
     "year": 2016,
     "date": "2015-11-25",
     "venue": "Quantum Information and Computation. 16, no. 3&4 (2016): 0197-0236",
-    "doi": "",
+    "doi": "10.26421/QIC16.3-4-2",
     "topics": [
       "Simulation"
     ],
-    "summary": ""
+    "summary": "",
+    "metadata_source": "https://www.rintonpress.com/journals/qiconline.html",
+    "metadata_checked": "2026-11-04"
   },
   {
     "id": "1508.01544",

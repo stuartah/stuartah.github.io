@@ -39,6 +39,27 @@ class PublicationImportTests(unittest.TestCase):
             self.assertEqual(publication_type(result[ident]), 'conference')
         self.assertIn('QPL 2022', result['2204.01307']['venue'])
 
+    def test_bibliography_backfill_survives_refresh_with_distinct_proceedings(self):
+        import json
+        from pathlib import Path
+        from build import bibtex
+        root = Path(__file__).resolve().parents[1]
+        existing = json.loads((root / 'data/publications.json').read_text())
+        overrides = json.loads((root / 'data/overrides.json').read_text())
+        records = {p['id']: p for p in merge_records(existing, parse_feed(feed()), overrides)}
+        for ident in ('2107.05362', '1905.02860', 'tqe-2020-planning-heuristics',
+                      'cp-2020-global-constraint-filtering', 'njp-2018-divide-conquer', '2303.05509'):
+            self.assertIn(ident, records)
+        self.assertNotEqual(records['cp-2020-global-constraint-filtering']['doi'], records['2103.04502']['doi'])
+        self.assertIn('@inproceedings', bibtex(records['cp-2020-global-constraint-filtering']))
+        chapter = bibtex(records['1905.02860'])
+        self.assertIn('@incollection', chapter)
+        self.assertIn('booktitle = {Future Trends of HPC in a Disruptive Scenario}', chapter)
+        self.assertIn('pages = {133--160}', chapter)
+        self.assertEqual(publication_type(records['1905.02860']), 'conference')
+        self.assertEqual(publication_status(records['2107.05362']), 'unpublished')
+        self.assertEqual(records['1511.08253']['doi'], '10.26421/QIC16.3-4-2')
+
     def test_thesis_is_separate_from_the_published_paper_filter(self):
         self.assertEqual(publication_status({'venue': 'Ph.D. dissertation, Columbia University'}), 'thesis')
 

@@ -86,7 +86,7 @@ def main():
             checked += 1
     records = json.loads((ROOT.parent / 'data/publications.json').read_text())
     assert len(records) == len({p['id'] for p in records})
-    assert sum((ROOT / 'publications.bib').read_text().count('@' + kind + '{') for kind in ('misc', 'article', 'inproceedings', 'phdthesis')) == len(records)
+    assert sum((ROOT / 'publications.bib').read_text().count('@' + kind + '{') for kind in ('misc', 'article', 'inproceedings', 'incollection', 'phdthesis')) == len(records)
     assert 'https://stuarthadfield.me/sitemap.xml' in (ROOT / 'robots.txt').read_text()
     print(f'Site checks passed: three pages, {checked} local links/assets, {len(records)} unique publication records.')
 
