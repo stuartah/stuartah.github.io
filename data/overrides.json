@@ -295,5 +295,50 @@
     "doi": "",
     "metadata_source": "https://www.cs.columbia.edu/~stuartah/SH_Thesis_2008.pdf",
     "metadata_checked": "2026-11-02"
+  },
+  "2407.01975": {
+    "year": 2026,
+    "date": "2026-08-24",
+    "venue": "ACM Transactions on Quantum Computing 7(4), 1–66 (2026)",
+    "doi": "10.1145/3821414",
+    "authors": [
+      "Hannes Leipold",
+      "Federico Spedalieri",
+      "Stuart Hadfield",
+      "Eleanor Rieffel"
+    ],
+    "topics": [
+      "Optimization"
+    ],
+    "publication_type": "journal",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1145/3821414",
+    "metadata_checked": "2026-11-04"
+  },
+  "2407.13819": {
+    "year": 2026,
+    "date": "2026-03-03",
+    "venue": "PRX Quantum 7, 010343 (2026)",
+    "doi": "10.1103/3krb-wwfx",
+    "authors": [
+      "Andrew Hardy",
+      "Priyanka Mukhopadhyay",
+      "M. Sohaib Alam",
+      "Robert Konik",
+      "Layla Hormozi",
+      "Eleanor Rieffel",
+      "Stuart Hadfield",
+      "João Barata",
+      "Raju Venugopalan",
+      "Dmitri E. Kharzeev",
+      "Nathan Wiebe"
+    ],
+    "topics": [
+      "Simulation"
+    ],
+    "publication_type": "journal",
+    "publication_status": "published",
+    "metadata_source": "https://journals.aps.org/prxquantum/abstract/10.1103/3krb-wwfx",
+    "metadata_checked": "2026-11-04"
   }
 }

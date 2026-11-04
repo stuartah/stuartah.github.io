@@ -3,7 +3,8 @@ from datetime import date, timedelta
 from html import escape
 
 HOMEPAGE_LIMIT = 5
-KINDS = ('talk', 'publication', 'preprint')
+KINDS = ('talk', 'publication', 'preprint', 'award')
+BALANCED_KINDS = ('talk', 'publication', 'preprint')
 
 
 def entry_date(entry):
@@ -34,7 +35,7 @@ def homepage_news(entries, today=None):
     if len(selected) > HOMEPAGE_LIMIT:
         raise ValueError('More pinned news than homepage slots.')
     cutoff = (today or date.today()) - timedelta(days=365)
-    for kind in KINDS:
+    for kind in BALANCED_KINDS:
         if any(entry['kind'] == kind for entry in selected):
             continue
         candidate = next((entry for entry in entries

@@ -108,6 +108,30 @@
     "summary": ""
   },
   {
+    "id": "2407.01975",
+    "arxiv": "2407.01975",
+    "title": "Imposing Constraints on Driver Hamiltonians and Mixing Operators: From Theory to Practical Implementation",
+    "authors": [
+      "Hannes Leipold",
+      "Federico Spedalieri",
+      "Stuart Hadfield",
+      "Eleanor Rieffel"
+    ],
+    "year": 2026,
+    "date": "2026-08-24",
+    "venue": "ACM Transactions on Quantum Computing 7(4), 1–66 (2026)",
+    "doi": "10.1145/3821414",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "An algebraic framework for constructing constraint-preserving Hamiltonian drivers and unitary mixers.",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "metadata_source": "https://api.crossref.org/works/10.1145/3821414",
+    "metadata_checked": "2026-11-04",
+    "arxiv_submitted": "2024-07-02"
+  },
+  {
     "id": "2608.11385",
     "arxiv": "2608.11385",
     "title": "Evaluating QAOA expectation values can be as hard as counting optimal solutions",
@@ -236,6 +260,37 @@
     "publication_url": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
     "metadata_source": "https://qce.quantum.ieee.org/2026/qce26-schedule/paper-schedule/",
     "metadata_checked": "2026-10-30"
+  },
+  {
+    "id": "2407.13819",
+    "arxiv": "2407.13819",
+    "title": "Scattering Processes from Quantum Simulation Algorithms for Scalar Field Theories",
+    "authors": [
+      "Andrew Hardy",
+      "Priyanka Mukhopadhyay",
+      "M. Sohaib Alam",
+      "Robert Konik",
+      "Layla Hormozi",
+      "Eleanor Rieffel",
+      "Stuart Hadfield",
+      "João Barata",
+      "Raju Venugopalan",
+      "Dmitri E. Kharzeev",
+      "Nathan Wiebe"
+    ],
+    "year": 2026,
+    "date": "2026-03-03",
+    "venue": "PRX Quantum 7, 010343 (2026)",
+    "doi": "10.1103/3krb-wwfx",
+    "topics": [
+      "Simulation"
+    ],
+    "summary": "Quantum algorithms and resource estimates for simulating scalar field scattering.",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "metadata_source": "https://journals.aps.org/prxquantum/abstract/10.1103/3krb-wwfx",
+    "metadata_checked": "2026-11-04",
+    "arxiv_submitted": "2024-07-18"
   },
   {
     "id": "2512.21046",

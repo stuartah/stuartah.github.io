@@ -171,6 +171,32 @@
     "pinned": true
   },
   {
+    "id": "ieee-warm-start-paper-award",
+    "date": "2026-09-14",
+    "date_label": "Sep 2026",
+    "kind": "award",
+    "segments": [
+      {
+        "text": "Iterative warm-start optimization with quantum imaginary time evolution",
+        "url": "https://arxiv.org/abs/2604.26047"
+      },
+      {
+        "text": " received the "
+      },
+      {
+        "text": "Quantum Algorithms track Best Paper Award, second runner-up",
+        "url": "https://riacs.usra.edu/quantum/news/usra-scientists-four-talks-one-award-ieee-qce-2026/"
+      },
+      {
+        "text": ", at IEEE Quantum Week."
+      }
+    ],
+    "sources": [
+      "https://riacs.usra.edu/quantum/news/usra-scientists-four-talks-one-award-ieee-qce-2026/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
     "id": "preprint-2609-07090",
     "date": "2026-09-07",
     "date_label": "Sep 2026",
@@ -215,6 +241,27 @@
     "checked": "2026-11-04"
   },
   {
+    "id": "constraints-toqc-publication",
+    "date": "2026-08-24",
+    "date_label": "Aug 2026",
+    "kind": "publication",
+    "segments": [
+      {
+        "text": "Imposing Constraints on Driver Hamiltonians and Mixing Operators: From Theory to Practical Implementation",
+        "url": "https://doi.org/10.1145/3821414"
+      },
+      {
+        "text": " published in ACM Transactions on Quantum Computing."
+      }
+    ],
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3821414",
+      "https://arxiv.org/abs/2407.01975"
+    ],
+    "checked": "2026-11-04",
+    "date_note": "Crossref publisher-deposited published-online date is August 24, 2026. Use the online publication date, not the future December issue date or unverified June dates in secondary aggregators."
+  },
+  {
     "id": "preprint-2608-11385",
     "date": "2026-08-11",
     "date_label": "Aug 2026",
@@ -233,6 +280,25 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2608.11385"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "quantum-dpll-pra-publication",
+    "date": "2026-08-04",
+    "date_label": "Aug 2026",
+    "kind": "publication",
+    "segments": [
+      {
+        "text": "Quantum Davis-Putnam-Logemann-Loveland and generalized constraints in iterative quantum algorithms",
+        "url": "https://journals.aps.org/pra/abstract/10.1103/8g3p-tyz1"
+      },
+      {
+        "text": " published in Physical Review A 114, 022404."
+      }
+    ],
+    "sources": [
+      "https://journals.aps.org/pra/abstract/10.1103/8g3p-tyz1"
     ],
     "checked": "2026-11-04"
   },
@@ -321,6 +387,48 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2604.26047"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "oslo-quantum-optimization-2026",
+    "date": "2026-03-04",
+    "date_label": "Mar 2026",
+    "kind": "talk",
+    "segments": [
+      {
+        "text": "I gave an invited talk on "
+      },
+      {
+        "text": "Hybrid Quantum-Classical Approaches to Combinatorial Optimization",
+        "url": "https://sites.google.com/view/neqst-qc4ds-workshop-2026/"
+      },
+      {
+        "text": " at the International Workshop on Quantum Optimization in Oslo, Norway."
+      }
+    ],
+    "sources": [
+      "https://sites.google.com/view/neqst-qc4ds-workshop-2026/"
+    ],
+    "checked": "2026-11-04",
+    "author_confirmation": "The owner-requested CV comparison confirms the March 4 talk date and title; the public workshop page confirms Stuart as an invited speaker and the March 4–6 Oslo event."
+  },
+  {
+    "id": "scattering-prx-quantum-publication",
+    "date": "2026-03-03",
+    "date_label": "Mar 2026",
+    "kind": "publication",
+    "segments": [
+      {
+        "text": "Scattering Processes from Quantum Simulation Algorithms for Scalar Field Theories",
+        "url": "https://journals.aps.org/prxquantum/abstract/10.1103/3krb-wwfx"
+      },
+      {
+        "text": " published in PRX Quantum 7, 010343."
+      }
+    ],
+    "sources": [
+      "https://journals.aps.org/prxquantum/abstract/10.1103/3krb-wwfx"
     ],
     "checked": "2026-11-04"
   },

@@ -42,6 +42,25 @@ class PublicationImportTests(unittest.TestCase):
     def test_thesis_is_separate_from_the_published_paper_filter(self):
         self.assertEqual(publication_status({'venue': 'Ph.D. dissertation, Columbia University'}), 'thesis')
 
+    def test_cv_backfill_keeps_verified_journal_metadata_after_arxiv_refresh(self):
+        import json
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        existing = json.loads((root / 'data/publications.json').read_text())
+        overrides = json.loads((root / 'data/overrides.json').read_text())
+        ids = ('2407.01975', '2407.13819')
+        imported = [{'id': ident, 'year': 2024, 'date': '2024-07-01',
+                     'venue': 'Preprint', 'doi': '', 'authors': ['Stuart Hadfield']}
+                    for ident in ids]
+        records = {p['id']: p for p in merge_records(existing, imported, overrides)}
+        for ident in ids:
+            self.assertEqual(publication_type(records[ident]), 'journal')
+            self.assertEqual(publication_status(records[ident]), 'published')
+            self.assertNotIn('to appear', publication_venue(records[ident]))
+            self.assertEqual(records[ident]['year'], 2026)
+            self.assertTrue(records[ident]['doi'])
+            self.assertGreater(len(records[ident]['authors']), 1)
+
     def test_melbourne_honours_thesis_survives_refresh_and_exports_correct_degree(self):
         from build import bibtex, PAPERS
         existing = {p['id']: p for p in PAPERS}

@@ -76,3 +76,5 @@ A separate Talks page, a resources page, and a CV remain outside scope. Selected
 Version 1 is live at https://stuarthadfield.me/ as of November 1, 2026, with the original GitHub URL redirecting to it. The .si redirect activation, independent analytics event confirmation, Google indexing/search appearance, and external profile links remain in progress. This checklist records work; it does not create reminders or background execution.
 
 - [x] Backfill the November 2025 NDAR publication, December 2025 Brazil plenary and measurement-driven preprint; add the November 2026 IQO Tree and pushforwards papers. Preserve the IEEE item and a reasonable talk/publication/preprint mix on the homepage.
+
+- [x] Cross-check the current CV for the same news period: add the Oslo invited talk, Quantum DPLL/PRA, scalar-field scattering/PRX Quantum, constraints/ACM publications and IEEE warm-start paper award; add the two missing journal records to the bibliography.
