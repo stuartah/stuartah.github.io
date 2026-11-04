@@ -1,5 +1,45 @@
 [
   {
+    "id": "2611.00759",
+    "arxiv": "2611.00759",
+    "title": "Leaving Quantum Bias on the Table: Pushforwards as a Path to Quantum Advantage in Constrained Optimization",
+    "authors": [
+      "Chinonso Onah",
+      "Stuart Hadfield",
+      "Kristel Michielsen"
+    ],
+    "year": 2026,
+    "date": "2026-10-31",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "A framework for turning infeasible quantum samples into feasible candidates through classical repair maps, with guarantees for the resulting sampling distribution.",
+    "metadata_source": "https://arxiv.org/abs/2611.00759",
+    "metadata_checked": "2026-11-04"
+  },
+  {
+    "id": "2611.00678",
+    "arxiv": "2611.00678",
+    "title": "Iterative Quantum Optimization: From Greedy Reductions to Branch-and-Bound",
+    "authors": [
+      "Stuart Hadfield",
+      "Lucas T. Braydwood",
+      "Eleanor Rieffel"
+    ],
+    "year": 2026,
+    "date": "2026-10-31",
+    "venue": "Preprint",
+    "doi": "",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "An anytime search framework combining quantum-guided reductions, incumbent updates, classical bounds, and backtracking.",
+    "metadata_source": "https://arxiv.org/abs/2611.00678",
+    "metadata_checked": "2026-11-04"
+  },
+  {
     "id": "2610.09584",
     "arxiv": "2610.09584",
     "title": "Quantum Approximation Complexity of Classical Optimization Problems",
@@ -206,7 +246,7 @@
       "Hadfield, Stuart"
     ],
     "year": 2026,
-    "date": "2026-01-01",
+    "date": "2025-12-24",
     "venue": "Physical Review A",
     "topics": [
       "Optimization"
@@ -216,7 +256,9 @@
     "journal_url": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc",
     "publication_type": "journal",
     "publication_status": "published",
-    "publication_stage": "accepted"
+    "publication_stage": "accepted",
+    "metadata_source": "https://arxiv.org/abs/2512.21046",
+    "metadata_checked": "2026-11-04"
   },
   {
     "id": "2409.15426",

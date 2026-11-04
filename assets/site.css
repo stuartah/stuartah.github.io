@@ -11,3 +11,5 @@
 .contact .internship-note{margin-top:16px;max-width:760px}
 .recent-updates{border-top:1px solid var(--rule);padding:27px 0 30px}.updates-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}.updates-list li{display:grid;grid-template-columns:82px minmax(0,1fr);gap:18px;align-items:baseline}.updates-list time{font-size:13px;color:var(--muted);white-space:nowrap}.updates-list p{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
 @media(max-width:640px){.recent-updates{padding:24px 0}.updates-list{gap:14px}.updates-list li{grid-template-columns:67px minmax(0,1fr);gap:12px}.updates-list time{font-size:12px}}
+
+.all-news{display:inline-block;margin-top:17px;font-size:14px}.news-archive{padding-bottom:38px}.news-year{padding:0 0 30px}.news-year+.news-year{border-top:1px solid var(--rule);padding-top:28px}.news-year h2{margin-bottom:19px}.news-archive .updates-list{gap:18px}

@@ -1,12 +1,12 @@
 # Stuart Hadfield — research website
 
-A small static site for GitHub Pages: a homepage and a publication list. No package installation or application server is required. The owner-selected design is Quiet modern with the Ink and blue palette, using a fixed light appearance. The new owner-supplied portrait is retained byte for byte in `assets/stuart-hadfield.jpg` and framed with CSS; no image retouching is applied.
+A small static site for GitHub Pages: a homepage, a publication list, and a news archive. No package installation or application server is required. The owner-selected design is Quiet modern with the Ink and blue palette, using a fixed light appearance. The new owner-supplied portrait is retained byte for byte in `assets/stuart-hadfield.jpg` and framed with CSS; no image retouching is applied.
 
 ## Editing
 
 The shared page layout and homepage copy live in `scripts/build.py`; styles and behavior live in `assets/`.
 
-The compact Recent & upcoming section reads `data/news.json`. Keep at most three curated, dated updates in display order, with primary-source links and check dates. Paper milestones and confirmed talks can appear here without a separate Talks page; do not turn it into a complete publication feed. Use past-tense or neutral wording after an event has passed.
+The Recent & upcoming section and `/news/` archive share `data/news.json`. All owner-approved announcements remain in the archive, newest first and grouped by year. The homepage shows at most five: retain explicit `pinned` entries (the IEEE item is pinned for now), reserve a recent talk, publication milestone and new preprint when each category is available within the last year, then fill with the newest items. Category preference does not force stale announcements into the selection. Review old pins with Stuart. Use `kind: talk|publication|preprint`, public primary-source links, check dates, and past-tense wording after events. Dates may use YYYY-MM for month-only announcements; publication records retain exact arXiv submission dates. Removing a pin or a homepage slot never deletes archive history. Future new announcements still require Stuart's selection; the existing weekly task proposes candidates and maintains the approved list.
 
 ```sh
 python3 scripts/build.py

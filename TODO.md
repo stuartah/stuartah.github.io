@@ -16,7 +16,7 @@
 - [x] Use the full NASA Ames Research Center name in the introduction and add “New York, NY” in Contact.
 - [x] Remove the middle initial from the homepage name and shared footer; preserve names as published in citation records.
 - [x] Add a short research-internship note in Contact, linking to the Feynman Quantum Academy for opportunities and application details.
-- [x] Add a compact Recent & upcoming section below the introduction and before Research Interests, with at most three dated public paper/event updates. Initial entries: PRA acceptance, quantum approximation complexity preprint, and two IEEE Quantum Week papers in the proceedings and two talks presented, confirmed by the owner. Preserve the quiet style and existing selected publications.
+- [x] Add a compact Recent & upcoming section below the introduction and before Research Interests, with at most five dated public paper/event updates and a shared /news/ archive. Initial entries: PRA acceptance, quantum approximation complexity preprint, and two IEEE Quantum Week papers in the proceedings and two talks presented, confirmed by the owner. Preserve the quiet style and existing selected publications.
 
 ## Publications
 
@@ -74,3 +74,5 @@ Owner instruction, November 1, 2026: carry out as much of the launch as possible
 A separate Talks page, a resources page, and a CV remain outside scope. Selected paper milestones and confirmed recent/upcoming talks can appear in the compact homepage updates section.
 
 Version 1 is live at https://stuarthadfield.me/ as of November 1, 2026, with the original GitHub URL redirecting to it. The .si redirect activation, independent analytics event confirmation, Google indexing/search appearance, and external profile links remain in progress. This checklist records work; it does not create reminders or background execution.
+
+- [x] Backfill the November 2025 NDAR publication, December 2025 Brazil plenary and measurement-driven preprint; add the November 2026 IQO Tree and pushforwards papers. Preserve the IEEE item and a reasonable talk/publication/preprint mix on the homepage.

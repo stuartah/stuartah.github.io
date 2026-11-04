@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
+from news import HOMEPAGE_LIMIT, ordered_news
+
 ROOT = Path(__file__).resolve().parents[1] / 'dist'
 
 
@@ -15,12 +17,15 @@ class Page(HTMLParser):
         self.in_schema, self.schema_text = False, ''
         self.schemas = []
         self.publications = []
+        self.news_ids = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if 'id' in attrs:
             assert attrs['id'] not in self.ids, f'Duplicate ID {attrs["id"]}'
             self.ids.add(attrs['id'])
+        if tag == 'li' and attrs.get('id', '').startswith('news-'):
+            self.news_ids.append(attrs['id'].removeprefix('news-'))
         if tag == 'h1':
             self.h1s += 1
         if tag == 'article' and 'publication' in attrs.get('class', '').split():
@@ -49,7 +54,7 @@ class Page(HTMLParser):
 
 def main():
     checked = 0
-    for path in [ROOT / 'index.html', ROOT / 'publications/index.html']:
+    for path in [ROOT / 'index.html', ROOT / 'publications/index.html', ROOT / 'news/index.html']:
         page = Page()
         source = path.read_text()
         page.feed(source)
@@ -58,6 +63,12 @@ def main():
         assert 'noindex' not in source
         if path.parent.name == 'publications':
             assert len(page.publications) == len(json.loads((ROOT.parent / 'data/publications.json').read_text()))
+        if path == ROOT / 'index.html':
+            assert len(page.news_ids) <= HOMEPAGE_LIMIT
+        if path.parent.name == 'news':
+            entries = ordered_news(json.loads((ROOT.parent / 'data/news.json').read_text()))
+            assert page.news_ids == [entry['id'] for entry in entries], 'Archive must retain every approved item in date order.'
+            assert len(page.schemas[0]['mainEntity']['itemListElement']) == len(entries)
         for link in page.links:
             url = urlsplit(link)
             if url.scheme or url.netloc:
@@ -77,7 +88,7 @@ def main():
     assert len(records) == len({p['id'] for p in records})
     assert sum((ROOT / 'publications.bib').read_text().count('@' + kind + '{') for kind in ('misc', 'article', 'inproceedings', 'phdthesis')) == len(records)
     assert 'https://stuarthadfield.me/sitemap.xml' in (ROOT / 'robots.txt').read_text()
-    print(f'Site checks passed: two pages, {checked} local links/assets, {len(records)} unique publication records.')
+    print(f'Site checks passed: three pages, {checked} local links/assets, {len(records)} unique publication records.')
 
 
 if __name__ == '__main__':

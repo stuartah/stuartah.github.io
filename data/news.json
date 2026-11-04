@@ -1,5 +1,51 @@
 [
   {
+    "id": "tree-iqo-preprint",
+    "date": "2026-11",
+    "date_label": "Nov 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "Iterative Quantum Optimization: From Greedy Reductions to Branch-and-Bound",
+        "url": "https://arxiv.org/abs/2611.00678"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.00678"
+    ],
+    "checked": "2026-11-04",
+    "date_note": "Month of the public arXiv announcement/identifier; v1 was submitted on 2026-10-31."
+  },
+  {
+    "id": "pushforwards-preprint",
+    "date": "2026-11",
+    "date_label": "Nov 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint with Chinonso Onah and Kristel Michielsen: "
+      },
+      {
+        "text": "Leaving Quantum Bias on the Table: Pushforwards as a Path to Quantum Advantage in Constrained Optimization",
+        "url": "https://arxiv.org/abs/2611.00759"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.00759"
+    ],
+    "checked": "2026-11-04",
+    "date_note": "Month of the public arXiv announcement/identifier; v1 was submitted on 2026-10-31."
+  },
+  {
     "id": "measurement-driven-pra-acceptance",
     "date": "2026-10-22",
     "date_label": "Oct 2026",
@@ -15,7 +61,8 @@
     "sources": [
       "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc"
     ],
-    "checked": "2026-11-02"
+    "checked": "2026-11-02",
+    "kind": "publication"
   },
   {
     "id": "quantum-approximation-complexity-preprint",
@@ -36,7 +83,30 @@
     "sources": [
       "https://arxiv.org/abs/2610.09584"
     ],
-    "checked": "2026-11-02"
+    "checked": "2026-11-02",
+    "kind": "preprint"
+  },
+  {
+    "id": "preprint-2609-31520",
+    "date": "2026-09-25",
+    "date_label": "Sep 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "Complexity Barriers to State Preparation in Quantum Approximate Optimization",
+        "url": "https://arxiv.org/abs/2609.31520"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2609.31520"
+    ],
+    "checked": "2026-11-04"
   },
   {
     "id": "ieee-quantum-week-2026",
@@ -96,6 +166,226 @@
       "https://riacs.usra.edu/quantum/news/usra-scientists-four-talks-one-award-ieee-qce-2026/"
     ],
     "checked": "2026-11-02",
-    "author_confirmation": "Stuart Hadfield confirmed that he gave the technical program talk on NDAR-qudits and the invited QuACO workshop talk on QAOA complexity, on 2026-11-02."
+    "author_confirmation": "Stuart Hadfield confirmed that he gave the technical program talk on NDAR-qudits and the invited QuACO workshop talk on QAOA complexity, on 2026-11-02.",
+    "kind": "talk",
+    "pinned": true
+  },
+  {
+    "id": "preprint-2609-07090",
+    "date": "2026-09-07",
+    "date_label": "Sep 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "Complexity Amplification from Compression in Quantum Random Access Optimization",
+        "url": "https://arxiv.org/abs/2609.07090"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2609.07090"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "preprint-2608-25151",
+    "date": "2026-08-25",
+    "date_label": "Aug 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "No Free Compression in Quantum Relaxations for Optimization",
+        "url": "https://arxiv.org/abs/2608.25151"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2608.25151"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "preprint-2608-11385",
+    "date": "2026-08-11",
+    "date_label": "Aug 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "Evaluating QAOA expectation values can be as hard as counting optimal solutions",
+        "url": "https://arxiv.org/abs/2608.11385"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2608.11385"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "preprint-2607-13630",
+    "date": "2026-07-15",
+    "date_label": "Jul 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "Separating Geometry From Interference in Constrained Quantum Optimization",
+        "url": "https://arxiv.org/abs/2607.13630"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2607.13630"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "preprint-2607-09368",
+    "date": "2026-07-10",
+    "date_label": "Jul 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "Quantum Approximate Optimization via Noise-Directed Adaptive Warm-Starting",
+        "url": "https://arxiv.org/abs/2607.09368"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2607.09368"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "preprint-2606-28234",
+    "date": "2026-06-26",
+    "date_label": "Jun 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "Noise-Directed Adaptive Remapping for Integer Optimization: from qubits to (encoded) qudits",
+        "url": "https://arxiv.org/abs/2606.28234"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2606.28234"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "preprint-2604-26047",
+    "date": "2026-04-28",
+    "date_label": "Apr 2026",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint: "
+      },
+      {
+        "text": "Iterative warm-start optimization with quantum imaginary time evolution",
+        "url": "https://arxiv.org/abs/2604.26047"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2604.26047"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "measurement-driven-arxiv",
+    "date": "2025-12-24",
+    "date_label": "Dec 2025",
+    "kind": "preprint",
+    "segments": [
+      {
+        "text": "New preprint with Tobias Stollenwerk: "
+      },
+      {
+        "text": "Measurement-driven Quantum Approximate Optimization",
+        "url": "https://arxiv.org/abs/2512.21046"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2512.21046"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "id": "brazil-weciq-wcq-2025",
+    "date": "2025-12-11",
+    "date_label": "Dec 2025",
+    "kind": "talk",
+    "segments": [
+      {
+        "text": "I gave a plenary talk on "
+      },
+      {
+        "text": "Hybrid Quantum-Classical Approaches to Combinatorial Optimization",
+        "url": "https://workshop-cq.ufsc.br/2025/en/"
+      },
+      {
+        "text": " at VIII WECIQ/WCQ in Florianópolis, Brazil."
+      }
+    ],
+    "sources": [
+      "https://workshop-cq.ufsc.br/2025/en/"
+    ],
+    "checked": "2026-11-04",
+    "author_confirmation": "Stuart requested an archive item for his Brazil talk on 2026-11-04; the public event program confirms the title, plenary speaker and December 11 date."
+  },
+  {
+    "id": "ndar-quantum-publication",
+    "date": "2025-11-06",
+    "date_label": "Nov 2025",
+    "kind": "publication",
+    "segments": [
+      {
+        "text": "Improving Quantum Approximate Optimization by Noise-Directed Adaptive Remapping",
+        "url": "https://quantum-journal.org/papers/q-2025-11-06-1906/"
+      },
+      {
+        "text": " published in Quantum 9, 1906."
+      }
+    ],
+    "sources": [
+      "https://quantum-journal.org/papers/q-2025-11-06-1906/"
+    ],
+    "checked": "2026-11-04"
   }
 ]

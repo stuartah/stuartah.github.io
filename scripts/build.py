@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import shutil
 
+from news import homepage_news, news_items, ordered_news
 from publication_metadata import is_to_appear, publication_status, publication_type, publication_venue
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,6 +15,7 @@ ORCID = 'https://orcid.org/0000-0002-4607-3921'
 PHOTO = 'assets/stuart-hadfield.jpg'
 PAPERS = sorted(json.loads((ROOT / 'data/publications.json').read_text()), key=lambda p: (p['year'], p.get('date', ''), p['id']), reverse=True)
 BY_ID = {p['id']: p for p in PAPERS}
+NEWS = ordered_news(json.loads((ROOT / 'data/news.json').read_text()))
 
 
 def natural_name(name):
@@ -58,7 +60,7 @@ def bibtex(paper):
     return '@' + entry_type + '{' + key + ',\n' + ''.join('  ' + k + ' = {' + v + '},\n' for k, v in fields.items()) + '}\n'
 
 
-def shell(page, title, description, body):
+def shell(page, title, description, body, collection=None):
     prefix = '../' if page else './'
     canonical = ORIGIN + ('/' + page + '/' if page else '/')
     person = {
@@ -74,7 +76,7 @@ def shell(page, title, description, body):
         '@context': 'https://schema.org', '@type': 'ProfilePage' if not page else 'CollectionPage',
         'url': canonical, 'name': title,
         'mainEntity': person if not page else {
-            '@type': 'ItemList', 'itemListElement': [
+            '@type': 'ItemList', 'itemListElement': collection if collection is not None else [
                 {'@type': 'ListItem', 'position': i + 1, 'url': paper_url(p), 'name': p['title']}
                 for i, p in enumerate(PAPERS)
             ]
@@ -140,20 +142,26 @@ def selected_paper(ident):
 
 
 def recent_updates():
-    entries = json.loads((ROOT / 'data/news.json').read_text())
-    if len(entries) > 3:
-        raise ValueError('Keep the homepage to at most three recent updates.')
+    entries = homepage_news(NEWS)
     if not entries:
         return ''
-    items = []
-    for entry in entries:
-        text = ''.join(
-            f'<a href="{e(part["url"], quote=True)}">{e(part["text"])}</a>'
-            if part.get('url') else e(part['text'])
-            for part in entry['segments']
-        )
-        items.append(f'<li><time datetime="{e(entry["date"], quote=True)}">{e(entry["date_label"])}</time><p>{text}</p></li>')
-    return '<section class="recent-updates" id="news" aria-labelledby="news-title"><h2 id="news-title">Recent &amp; upcoming</h2><ul class="updates-list">' + ''.join(items) + '</ul></section>'
+    return '<section class="recent-updates" id="news" aria-labelledby="news-title"><h2 id="news-title">Recent &amp; upcoming</h2>' + news_items(entries) + '<a class="all-news" href="news/">All news →</a></section>'
+
+
+def news_archive():
+    years = sorted({entry['date'][:4] for entry in NEWS}, reverse=True)
+    groups = ''.join(
+        f'<section class="news-year" aria-labelledby="year-{year}"><h2 id="year-{year}">{year}</h2>'
+        + news_items([entry for entry in NEWS if entry['date'].startswith(year)]) + '</section>'
+        for year in years
+    )
+    body = '<div class="wrap"><section class="page-intro"><h1>News</h1><p>Paper updates and talks.</p></section><div class="news-archive">' + groups + '</div></div>'
+    collection = [
+        {'@type': 'ListItem', 'position': i + 1, 'url': ORIGIN + '/news/#news-' + entry['id'],
+         'name': ''.join(part['text'] for part in entry['segments'])}
+        for i, entry in enumerate(NEWS)
+    ]
+    return shell('news', 'News | Stuart Hadfield', 'News from Stuart Hadfield: papers, publications, and talks.', body, collection)
 
 
 def home():
@@ -251,9 +259,11 @@ def main():
     (ROOT / 'index.html').write_text(home())
     (ROOT / 'publications').mkdir(exist_ok=True)
     (ROOT / 'publications/index.html').write_text(publications())
+    (ROOT / 'news').mkdir(exist_ok=True)
+    (ROOT / 'news/index.html').write_text(news_archive())
     (ROOT / 'publications.bib').write_text('\n'.join(bibtex(p) for p in PAPERS))
     (ROOT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {ORIGIN}/sitemap.xml\n')
-    (ROOT / 'sitemap.xml').write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{ORIGIN}/</loc></url><url><loc>{ORIGIN}/publications/</loc></url></urlset>\n')
+    (ROOT / 'sitemap.xml').write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{ORIGIN}/</loc></url><url><loc>{ORIGIN}/publications/</loc></url><url><loc>{ORIGIN}/news/</loc></url></urlset>\n')
     not_found = '<section class="error-page wrap"><h1>Page not found</h1><p>The page you’re looking for isn’t here.</p><a href="/">Return home</a></section>'
     error = shell('', 'Page not found | Stuart Hadfield', 'Return to Stuart Hadfield’s research website.', not_found).replace('<head>', '<head>\n  <meta name="robots" content="noindex">').replace('href="./', 'href="/').replace('src="./', 'src="/')
     (ROOT / '404.html').write_text(error)
@@ -266,9 +276,9 @@ def main():
             item.unlink()
     for name in ['index.html', '404.html', 'publications.bib', 'robots.txt', 'sitemap.xml', '.nojekyll', 'googlec17f3c4efc3142ce.html']:
         shutil.copy2(ROOT / name, dist / name)
-    for name in ['assets', 'publications']:
+    for name in ['assets', 'publications', 'news']:
         shutil.copytree(ROOT / name, dist / name, dirs_exist_ok=True)
-    print(f'Built two pages and bibliography for {len(PAPERS)} works.')
+    print(f'Built three pages and bibliography for {len(PAPERS)} works.')
 
 
 if __name__ == '__main__':
