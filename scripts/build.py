@@ -83,6 +83,7 @@ def shell(page, title, description, body, collection=None):
         }
     }
     active = ' aria-current="page"' if page == 'publications' else ''
+    news_active = ' aria-current="page"' if page == 'news' else ''
     structured = json.dumps(schema, ensure_ascii=False).replace('<', '\\u003c')
     return f'''<!doctype html>
 <html lang="en">
@@ -116,6 +117,7 @@ def shell(page, title, description, body, collection=None):
   <nav id="primary-nav" aria-label="Main navigation">
     <a href="{prefix}#research">Research</a>
     <a href="{prefix}publications/"{active}>Publications</a>
+    <a href="{prefix}news/"{news_active}>News</a>
     <a href="{prefix}#contact">Contact</a>
   </nav>
 </header>
