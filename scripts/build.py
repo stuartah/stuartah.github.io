@@ -170,7 +170,7 @@ def home():
       <div class="intro-bio">
         <p>I study quantum algorithms for optimization and simulation, with a focus on their performance and computational complexity.</p>
         <p>I work with USRA’s Research Institute for Advanced Computer Science and the Quantum Artificial Intelligence Laboratory (QuAIL) at NASA Ames Research Center. I received my Ph.D. in computer science from Columbia University.</p>
-        <div class="intro-links"><a href="{SCHOLAR}">Google Scholar</a><a href="{ORCID}">ORCID</a><a href="https://arxiv.org/a/hadfield_s_1">arXiv</a><a href="https://www.linkedin.com/in/stuart-hadfield-4b250715">LinkedIn</a></div>
+        <div class="intro-links"><a href="{SCHOLAR}">Google Scholar</a><a href="{ORCID}">ORCID</a><a href="https://arxiv.org/a/hadfield_s_1">arXiv</a><a href="https://inspirehep.net/authors/1913623">INSPIRE</a><a href="https://www.linkedin.com/in/stuart-hadfield-4b250715">LinkedIn</a></div>
       </div>
     </div>
     <figure class="portrait"><img src="{PHOTO}" width="1789" height="2048" alt="Stuart Hadfield" fetchpriority="high"></figure>
