@@ -126,6 +126,7 @@ def shell(page, title, description, body, collection=None):
     <a href="{prefix}#research">Research</a>
     <a href="{prefix}publications/"{active}>Publications</a>
     <a href="{prefix}news/"{news_active}>News</a>
+    <a href="{prefix}music/"{music_active}>Music</a>
     <a href="{prefix}#contact">Contact</a>
   </nav>
 </header>
@@ -175,16 +176,36 @@ def news_archive():
 
 
 def music():
-    album = MUSIC
-    body = f'''<div class="wrap music-page">
-  <section class="page-intro"><h1>Music</h1><p>An album from my time with Ponderosa.</p></section>
-  <section class="music-album" aria-labelledby="album-title">
-    <a class="album-cover" href="{e(album['url'], quote=True)}" aria-label="Listen to {e(album['artist'], quote=True)} — {e(album['title'], quote=True)} on YouTube"><img src="../{e(album['image'], quote=True)}" alt="Artwork for {e(album['title'], quote=True)}" width="480" height="360"></a>
-    <div class="album-copy"><p class="album-meta">{e(album['artist'])} · {album['year']}</p><h2 id="album-title">{e(album['title'])}</h2><a class="album-listen" href="{e(album['url'], quote=True)}">Listen on YouTube <span aria-hidden="true">↗</span></a></div>
-  </section>
-</div>'''
-    collection = [{'@type': 'ListItem', 'position': 1, 'url': album['url'], 'name': album['artist'] + ' — ' + album['title']}]
-    return shell('music', 'Music | Stuart Hadfield', 'Ponderosa — Attack of the Rosa! (2005). An album from Stuart Hadfield’s time with Ponderosa.', body, collection)
+    sections = []
+    collection = []
+    for position, album in enumerate(MUSIC['albums'], 1):
+        ident = album['id']
+        title_id = ident + '-title'
+        description = ''.join(f'<p>{e(paragraph)}</p>' for paragraph in album['description'])
+        header = f'<p class="album-meta">Ponderosa · {e(album["dateline"])}</p><h2 id="{title_id}">{e(album["title"])}</h2><div class="album-description">{description}</div>'
+        if album['kind'] == 'youtube':
+            tracks = ''.join(
+                f'<li><a href="{e(album["url"], quote=True)}&amp;t={track["start_seconds"]}s"><span>{e(track["title"])}</span><time>{e(track["time"])}</time></a></li>'
+                for track in album['tracks']
+            )
+            sections.append(f'''<section class="music-album music-album-featured" id="{ident}" aria-labelledby="{title_id}">
+    <a class="album-cover" href="{e(album['url'], quote=True)}" aria-label="Listen to Ponderosa — {e(album['title'], quote=True)} on YouTube"><img src="../{e(album['image'], quote=True)}" alt="Artwork for {e(album['title'], quote=True)}" width="480" height="360"></a>
+    <div class="album-copy">{header}<a class="album-listen" href="{e(album['url'], quote=True)}">Listen to the full album on YouTube <span aria-hidden="true">↗</span></a><ol class="youtube-tracks" aria-label="{e(album['title'], quote=True)} tracks">{tracks}</ol></div>
+  </section>''')
+        else:
+            tracks = ''.join(
+                f'''<li class="audio-track"><span class="track-number" aria-hidden="true">{number:02d}</span><span class="track-title" id="{ident}-track-{number}">{e(track['title'])}</span><span class="track-duration">{e(track['time'])}</span><audio controls preload="none" controlslist="nodownload" aria-labelledby="{title_id} {ident}-track-{number}"><source src="../{e(track['file'], quote=True)}" type="audio/mpeg">Your browser does not support audio playback.</audio></li>'''
+                for number, track in enumerate(album['tracks'], 1)
+            )
+            sections.append(f'''<section class="music-album music-recording" id="{ident}" aria-labelledby="{title_id}" data-recording>
+    <div class="recording-heading"><div class="album-copy">{header}</div><button class="play-album" type="button" hidden>Play album</button></div>
+    <ol class="audio-tracks" aria-label="{e(album['title'], quote=True)} tracks">{tracks}</ol><p class="playback-status" role="status"></p>
+  </section>''')
+        collection.append({'@type': 'ListItem', 'position': position, 'url': ORIGIN + '/music/#' + ident, 'name': 'Ponderosa — ' + album['title']})
+    bio = ''.join(f'<p>{e(paragraph)}</p>' for paragraph in MUSIC['bio']['paragraphs'])
+    history = MUSIC['bio']['archive']
+    body = '<div class="wrap music-page"><section class="page-intro"><h1>Music</h1><p>I play guitar and piano.</p></section><section class="band-bio" aria-labelledby="band-title"><h2 id="band-title">Ponderosa</h2>' + bio + f'<p class="band-archive">From the archives: <a href="{e(history["url"], quote=True)}">{e(history["label"])}</a>.</p></section>' + ''.join(sections) + '</div>'
+    return shell('music', 'Music | Stuart Hadfield', 'Stuart Hadfield plays guitar and piano and was the lead guitarist in Ponderosa. Listen to Attack of the Rosa!, Live at the Fairview, and the CDIS Sessions.', body, collection)
 
 
 def home():

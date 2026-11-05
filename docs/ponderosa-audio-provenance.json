@@ -1,0 +1,182 @@
+[
+  {
+    "album": "fairview",
+    "filename": "01-Uhhh....mp3",
+    "sha256": "26c0cfff3ca3dc47b5fa1c807a2bbfa7163be140af5cbb8323c226adb26ac983",
+    "bytes": 6807553,
+    "duration": 170.057143,
+    "tags": {
+      "genre": "Other",
+      "album": "Live at the Fairview Pub 13/02/05",
+      "artist": "Ponderosa",
+      "date": "2005"
+    },
+    "public_file": "assets/audio/fairview-01-uhhh.mp3",
+    "public_encoding": "MP3, 192 kbps stereo listening copy; original 320 kbps recording retained in uploaded archive",
+    "public_bytes": 4081514,
+    "public_sha256": "bb4715a4e2d03a5a40234eb5f93772f2cf03e30d4f0b5a0ff996016f19de3337"
+  },
+  {
+    "album": "fairview",
+    "filename": "02-Trotskyist Terrorist Counterrevoltionary.mp3",
+    "sha256": "50e3066050870d5fb47e15b9df9fd50906f56358ebac8f140f147d4911b9473f",
+    "bytes": 8267276,
+    "duration": 206.550204,
+    "tags": {
+      "genre": "Other",
+      "album": "Live at the Fairview Pub 13/02/05",
+      "artist": "Ponderosa",
+      "date": "2005"
+    },
+    "public_file": "assets/audio/fairview-02-trotskyist-terrorist-counterrevolutionary.mp3",
+    "public_encoding": "MP3, 192 kbps stereo listening copy; original 320 kbps recording retained in uploaded archive",
+    "public_bytes": 4957974,
+    "public_sha256": "a35c1206fc08e9d4d33bf356cf827d1f36d2714bed1a5445067119f6fff82f0c"
+  },
+  {
+    "album": "fairview",
+    "filename": "03-Jimmy.mp3",
+    "sha256": "760193c38bf36119c1baca4e4460ebfcee8ef4d055389fe5d51a7794b7b73480",
+    "bytes": 12387308,
+    "duration": 309.55102,
+    "tags": {
+      "genre": "Other",
+      "album": "Live at the Fairview Pub 13/02/05",
+      "artist": "Ponderosa",
+      "date": "2005"
+    },
+    "public_file": "assets/audio/fairview-03-jimmy.mp3",
+    "public_encoding": "MP3, 192 kbps stereo listening copy; original 320 kbps recording retained in uploaded archive",
+    "public_bytes": 7429367,
+    "public_sha256": "0fa9590dcb872b854a504edfbf61c7ab372c967e890ddcfb061a6bf6ea285648"
+  },
+  {
+    "album": "fairview",
+    "filename": "04-Alien Amnesia.mp3",
+    "sha256": "8822e61eae03277b6a10b317012ca6df41aff1b5305b39db652a6b0d5a692670",
+    "bytes": 10807423,
+    "duration": 270.053878,
+    "tags": {
+      "genre": "Other",
+      "album": "Live at the Fairview Pub 13/02/05",
+      "artist": "Ponderosa",
+      "date": "2005"
+    },
+    "public_file": "assets/audio/fairview-04-alien-amnesia.mp3",
+    "public_encoding": "MP3, 192 kbps stereo listening copy; original 320 kbps recording retained in uploaded archive",
+    "public_bytes": 6481436,
+    "public_sha256": "58cb4c21e74ce9115448c0443219443a8ec2c80560c131fa8aca97bd172f2803"
+  },
+  {
+    "album": "fairview",
+    "filename": "05-Dick in the Wind.mp3",
+    "sha256": "cd7a65e1935168342c66a96060e926ee1a98e60fbeeb41a596b7c43daea67070",
+    "bytes": 21927227,
+    "duration": 548.04898,
+    "tags": {
+      "genre": "Other",
+      "album": "Live at the Fairview Pub 13/02/05",
+      "artist": "Ponderosa",
+      "date": "2005"
+    },
+    "public_file": "assets/audio/fairview-05-dick-in-the-wind.mp3",
+    "public_encoding": "MP3, 192 kbps stereo listening copy; original 320 kbps recording retained in uploaded archive",
+    "public_bytes": 13153945,
+    "public_sha256": "a27738a28539d23febb72f6dfb7b9cd6c0368f5b222270f36524277dee6f7092"
+  },
+  {
+    "album": "fairview",
+    "filename": "Worm on a line.mp3",
+    "sha256": "911b4a77db06578a8ca93037add52726919212887f4d8308a3c1dad0954c2233",
+    "bytes": 11205704,
+    "duration": 280.058776,
+    "tags": {
+      "genre": "Other",
+      "album": "Live at the Fairview Pub 13/02/05",
+      "title": "06-Worm on a line",
+      "artist": "Ponderosa",
+      "date": "2005"
+    },
+    "public_file": "assets/audio/fairview-06-worm-on-a-line.mp3",
+    "public_encoding": "MP3, 192 kbps stereo listening copy; original 320 kbps recording retained in uploaded archive",
+    "public_bytes": 6721582,
+    "public_sha256": "38bc38d06a9187080b505227e91f24cf31e51aff47c86463fc93bb741194ee25"
+  },
+  {
+    "album": "fairview",
+    "filename": "07-Hullerto.mp3",
+    "sha256": "716428aa8b81822b85cee96baaa90bca05ba96b0f28c8e5630e0c09caada988a",
+    "bytes": 8987210,
+    "duration": 224.548571,
+    "tags": {
+      "genre": "Other",
+      "album": "Live at the Fairview Pub 13/02/05",
+      "artist": "Ponderosa",
+      "date": "2005"
+    },
+    "public_file": "assets/audio/fairview-07-hullerto.mp3",
+    "public_encoding": "MP3, 192 kbps stereo listening copy; original 320 kbps recording retained in uploaded archive",
+    "public_bytes": 5389935,
+    "public_sha256": "b02a075fcd972a8e09f338a376fddc25149462f85fc9df26a10570a5f0df9ba7"
+  },
+  {
+    "album": "cdis",
+    "filename": "Uhhh....mp3",
+    "sha256": "6403fd91be8ceabf7a17d6c34290b3bca4546b398e979e74b8bd1bba200c98b9",
+    "bytes": 2805760,
+    "duration": 175.31575,
+    "tags": {
+      "title": "Uhhh...",
+      "album": "CDIS Sessions",
+      "comment": "",
+      "genre": "Rock",
+      "track": "1",
+      "artist": "Ponderosa",
+      "date": "2003"
+    },
+    "public_file": "assets/audio/cdis-01-uhhh.mp3",
+    "public_encoding": "Original MP3, 128 kbps; unchanged",
+    "public_bytes": 2805760,
+    "public_sha256": "6403fd91be8ceabf7a17d6c34290b3bca4546b398e979e74b8bd1bba200c98b9"
+  },
+  {
+    "album": "cdis",
+    "filename": "Da Stahrs Ahnd Da Stripes.mp3",
+    "sha256": "b871d261bf0105a46a3a532609410a50aa57f7095d91529f95bdf7abeb2519e7",
+    "bytes": 5220352,
+    "duration": 326.225125,
+    "tags": {
+      "title": "Da Stahrs Ahnd Da Stripes",
+      "album": "CDIS Sessions",
+      "comment": "",
+      "genre": "Rock",
+      "track": "2",
+      "artist": "Ponderosa",
+      "date": "2003"
+    },
+    "public_file": "assets/audio/cdis-02-da-stahrs-ahnd-da-stripes.mp3",
+    "public_encoding": "Original MP3, 128 kbps; unchanged",
+    "public_bytes": 5220352,
+    "public_sha256": "b871d261bf0105a46a3a532609410a50aa57f7095d91529f95bdf7abeb2519e7"
+  },
+  {
+    "album": "cdis",
+    "filename": "Tell me it's you.mp3",
+    "sha256": "e6d64418c75833f65c866971925e3dceb5bb4cd65a620f24bd7b15c8dc347526",
+    "bytes": 4155392,
+    "duration": 259.639,
+    "tags": {
+      "title": "Tell me it's you",
+      "album": "CDIS Sessions",
+      "comment": "",
+      "genre": "Rock",
+      "track": "3",
+      "artist": "Ponderosa",
+      "date": "2003"
+    },
+    "public_file": "assets/audio/cdis-03-tell-me-it-s-you.mp3",
+    "public_encoding": "Original MP3, 128 kbps; unchanged",
+    "public_bytes": 4155392,
+    "public_sha256": "e6d64418c75833f65c866971925e3dceb5bb4cd65a620f24bd7b15c8dc347526"
+  }
+]

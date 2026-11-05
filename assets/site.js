@@ -87,3 +87,36 @@ document.querySelectorAll('.copy-citation').forEach(button => button.addEventLis
     button.textContent = 'Select the citation above to copy';
   }
 }));
+
+// Keep one recording playing at a time and continue through each album in order.
+const recordings = [...document.querySelectorAll('.music-recording audio')];
+document.querySelectorAll('[data-recording]').forEach(album => {
+  const tracks = [...album.querySelectorAll('audio')];
+  const button = album.querySelector('.play-album');
+  const status = album.querySelector('.playback-status');
+  const play = track => track.play().catch(() => {
+    status.textContent = 'Playback could not start. Please try the track’s play button.';
+  });
+  tracks.forEach((track, index) => {
+    track.addEventListener('play', () => {
+      recordings.forEach(other => { if (other !== track) other.pause(); });
+      status.textContent = '';
+    });
+    track.addEventListener('ended', () => {
+      if (tracks[index + 1]) {
+        tracks[index + 1].currentTime = 0;
+        play(tracks[index + 1]);
+      }
+    });
+    track.addEventListener('error', () => {
+      status.textContent = 'This track could not be loaded. Please try again.';
+    });
+  });
+  if (tracks.length && button) {
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      tracks[0].currentTime = 0;
+      play(tracks[0]);
+    });
+  }
+});

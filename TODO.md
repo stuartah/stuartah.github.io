@@ -78,3 +78,12 @@ Version 1 is live at https://stuarthadfield.me/ as of November 1, 2026, with the
 - [x] Backfill the November 2025 NDAR publication, December 2025 Brazil plenary and measurement-driven preprint; add the November 2026 IQO Tree and pushforwards papers. Preserve the IEEE item and a reasonable talk/publication/preprint mix on the homepage.
 
 - [x] Cross-check the current CV for the same news period: add the Oslo invited talk, Quantum DPLL/PRA, scalar-field scattering/PRX Quantum, constraints/ACM publications and IEEE warm-start paper award; add the two missing journal records to the bibliography.
+
+## Music
+
+- [x] Add Music to the shared primary navigation and introduce guitar and piano.
+- [x] Add a short Ponderosa biography identifying Stuart as lead guitarist, with a surviving 2004 SHiNDiG listing.
+- [x] Expand Attack of the Rosa! from the YouTube description; list all ten tracks with direct timestamp links.
+- [x] Add all seven Fairview and three CDIS recordings with browser playback and no download links. Native download controls are suppressed where supported; public playback cannot prevent copying.
+- [x] Search for historical band/Myspace material and images. No original Myspace URL or further correctly identified band photos were recovered; retain the verified album cover.
+- [ ] Travel map deferred by owner.
