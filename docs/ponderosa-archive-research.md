@@ -15,3 +15,11 @@ Searched both web indexes for the exact album title, distinctive song titles, Ne
 No original Myspace URL, additional band-member identities or correctly identified band photographs were recovered. The recovered Myspace Ponderosa tracks concern a different Atlanta band. The later Vancouver band The Ponderosas and the Ponderosa festival are also distinct. No photos or biography from those projects are used.
 
 Wayback services were unavailable on this run. UBC’s Discorder archive presented an access challenge, its documented API required registration, and other contemporary PDF leads returned missing or unavailable responses. These are retrieval limits, not evidence that historical material never existed. The site therefore keeps a concise biography grounded in the owner’s account, recordings and surviving release description, and links the historical gig listing without inventing further history.
+
+## ChartAttack quotation
+
+On 5 November 2026, Stuart supplied a historical 2005 ChartAttack review excerpt and asked to display “Low-fi, loud and totally excellent.” The short quotation is credited to ChartAttack (2005) beside Attack of the Rosa!. The original URL is preserved in the HTML blockquote citation and metadata: http://www.chartattack.com/damn/2005/07/2211.cfm . The quotation is owner-supplied; this pass did not independently recover the original review. The original URL returned 403 and the Wayback availability endpoint returned 429. The visible attribution is plain text rather than a misleading claim of an accessible review link.
+
+## Fairview venue image search
+
+An additional photo search on 5 November 2026 found a suitable exterior by Charlie Smith, with the original blue awnings and venue signage, published in Georgia Straight in April 2018. https://www.straight.com/news/1051886/architect-submits-rezoning-inquiry-replace-park-inn-suites-hospital-oriented-project . Its publisher’s terms require written permission for republication: https://www.straight.com/terms-and-conditions . It has not been added to the site. A bounded Commons/Flickr CC/venue and hotel-name search found no suitable openly reusable exterior or empty-venue image. Photographs of menus, food and unrelated musicians were excluded. No permission request was sent.

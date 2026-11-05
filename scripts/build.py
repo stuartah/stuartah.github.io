@@ -183,6 +183,9 @@ def music():
         title_id = ident + '-title'
         description = ''.join(f'<p>{e(paragraph)}</p>' for paragraph in album['description'])
         header = f'<p class="album-meta">Ponderosa · {e(album["dateline"])}</p><h2 id="{title_id}">{e(album["title"])}</h2><div class="album-description">{description}</div>'
+        if album.get('review'):
+            review = album['review']
+            header += f'<blockquote class="album-review" cite="{e(review["source_url"], quote=True)}"><p>“{e(review["text"]) }”</p><footer><cite>{e(review["publication"])}</cite>, {review["year"]}</footer></blockquote>'
         if album['kind'] == 'youtube':
             tracks = ''.join(
                 f'<li><a href="{e(album["url"], quote=True)}&amp;t={track["start_seconds"]}s"><span>{e(track["title"])}</span><time>{e(track["time"])}</time></a></li>'

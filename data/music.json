@@ -79,6 +79,13 @@
         "description": "https://www.youtube.com/watch?v=FKN-Aj_FBhs",
         "artwork": "https://i.ytimg.com/vi/FKN-Aj_FBhs/hqdefault.jpg",
         "checked": "2026-11-05"
+      },
+      "review": {
+        "text": "Low-fi, loud and totally excellent.",
+        "publication": "ChartAttack",
+        "year": 2005,
+        "source_url": "http://www.chartattack.com/damn/2005/07/2211.cfm",
+        "provenance": "Historical quotation and source URL supplied by Stuart Hadfield on 5 November 2026. Original review was not independently recovered: original URL returned 403 and Wayback availability returned 429."
       }
     },
     {
