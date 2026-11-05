@@ -211,7 +211,7 @@ def music():
     bio = ''.join(f'<p>{e(paragraph)}</p>' for paragraph in MUSIC['bio']['paragraphs'])
     history = MUSIC['bio']['archive']
     body = '<div class="wrap music-page"><section class="page-intro"><h1>Music</h1><p>I play guitar and piano.</p></section><section class="band-bio" aria-labelledby="band-title"><h2 id="band-title">Ponderosa</h2>' + bio + f'<p class="band-archive">From the archives: <a href="{e(history["url"], quote=True)}">{e(history["label"])}</a>.</p></section>' + ''.join(sections) + '</div>'
-    return shell('music', 'Music | Stuart Hadfield', 'Stuart Hadfield plays guitar and piano and was the lead guitarist in Ponderosa. Listen to Attack of the Rosa!, Live at the Fairview, and the CDIS Sessions.', body, collection)
+    return shell('music', 'Music | Stuart Hadfield', 'Stuart Hadfield plays guitar and piano and was the lead guitarist in Ponderosa. Listen to Attack of the Rosa!, Live at the Fairview, and the CDIS Sessions EP.', body, collection)
 
 
 def home():
