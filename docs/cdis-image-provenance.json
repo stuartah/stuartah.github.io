@@ -1,5 +1,5 @@
 {
-  "asset": "assets/cdis-control-room-enhanced.jpg",
+  "asset": "assets/cdis-control-room-brighter.jpg",
   "source": {
     "kind": "Owner-supplied screenshot of a CDIS advertisement",
     "original_filename": "Screenshot 2026-11-05 at 2.48.02 PM.png",
@@ -13,15 +13,27 @@
       "Cropped away the advertisement header, page border and printed caption",
       "Removed colored vertical scan lines and reduced apparent compression artifacts",
       "Lifted dark shadows and balanced warm wood tones",
-      "Retained the original room composition and period equipment"
+      "Retained the original room composition and period equipment",
+      "Small exposure and dark-midtone lift for thumbnail readability; preserve warm studio atmosphere"
     ],
-    "fidelity_note": "Enhanced derivative, not a recovered high-resolution original. Generative restoration may interpret indistinct fine details. Used as a CDIS venue illustration; no claim that this is the particular room in which the 2003 session was recorded."
+    "fidelity_note": "Enhanced derivative, not a recovered high-resolution original. Generative restoration may interpret indistinct fine details. Used as a CDIS venue illustration; no claim that this is the particular room in which the 2003 session was recorded.",
+    "brightness_followup": "Second image-generation edit requested only a subtle approximately +0.15 stop tonal lift; no recovered-master claim. Previous edited asset retained."
   },
   "output": {
     "width": 1200,
     "height": 675,
-    "bytes": 189739,
-    "sha256": "262ceceec29910d656404b6c8e4070d46799c709c4e3bef9f860f10f38526be2"
+    "bytes": 125544,
+    "sha256": "36fbf84362edfe175dc17b7745a6f3c2e4a8dc1e41688d952fe17094868d044b"
   },
-  "checked": "2026-11-05"
+  "checked": "2026-11-05",
+  "previous_version": {
+    "asset": "assets/cdis-control-room-enhanced.jpg",
+    "output": {
+      "width": 1200,
+      "height": 675,
+      "bytes": 189739,
+      "sha256": "262ceceec29910d656404b6c8e4070d46799c709c4e3bef9f860f10f38526be2"
+    }
+  },
+  "updated_at_et": "2026-11-05T15:05:36-05:00"
 }

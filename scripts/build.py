@@ -198,7 +198,7 @@ def music():
         else:
             recording_header = f'<div class="recording-heading"><div class="album-copy">{header}</div><button class="play-album" type="button" hidden>Play album</button></div>'
             if album.get('image'):
-                recording_header = f'<div class="recording-intro"><figure class="venue-photo"><img src="../{e(album["image"], quote=True)}" alt="{e(album["image_alt"], quote=True)}" width="{album["image_width"]}" height="{album["image_height"]}" loading="lazy" decoding="async"><figcaption>{e(album["image_caption"])}</figcaption></figure>{recording_header}</div>'
+                recording_header = f'<div class="recording-intro"><figure class="venue-photo"><img src="../{e(album["image"], quote=True)}" alt="{e(album["image_alt"], quote=True)}" width="{album["image_width"]}" height="{album["image_height"]}" loading="lazy" decoding="async"></figure>{recording_header}</div>'
             tracks = ''.join(
                 f'''<li class="audio-track"><span class="track-number" aria-hidden="true">{number:02d}</span><span class="track-title" id="{ident}-track-{number}">{e(track['title'])}</span><span class="track-duration">{e(track['time'])}</span><audio controls preload="none" controlslist="nodownload" aria-labelledby="{title_id} {ident}-track-{number}"><source src="../{e(track['file'], quote=True)}" type="audio/mpeg">Your browser does not support audio playback.</audio></li>'''
                 for number, track in enumerate(album['tracks'], 1)
