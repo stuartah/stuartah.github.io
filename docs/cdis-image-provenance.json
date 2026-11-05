@@ -1,5 +1,5 @@
 {
-  "asset": "assets/cdis-control-room-brighter.jpg",
+  "asset": "assets/cdis-control-room-toned.jpg",
   "source": {
     "kind": "Owner-supplied screenshot of a CDIS advertisement",
     "original_filename": "Screenshot 2026-11-05 at 2.48.02 PM.png",
@@ -14,16 +14,16 @@
       "Removed colored vertical scan lines and reduced apparent compression artifacts",
       "Lifted dark shadows and balanced warm wood tones",
       "Retained the original room composition and period equipment",
-      "Small exposure and dark-midtone lift for thumbnail readability; preserve warm studio atmosphere"
+      "Subtle exposure reduction relative to the first restored photo, retaining warm wood tones and useful console shadow detail"
     ],
     "fidelity_note": "Enhanced derivative, not a recovered high-resolution original. Generative restoration may interpret indistinct fine details. Used as a CDIS venue illustration; no claim that this is the particular room in which the 2003 session was recorded.",
-    "brightness_followup": "Second image-generation edit requested only a subtle approximately +0.15 stop tonal lift; no recovered-master claim. Previous edited asset retained."
+    "tone_adjustment": "Final image-generation edit requested a subtle approximately -0.15 to -0.2 stop exposure reduction from the first restored image, with the original composition and warm colors retained. This supersedes the intermediate brighter variant."
   },
   "output": {
     "width": 1200,
     "height": 675,
-    "bytes": 125544,
-    "sha256": "36fbf84362edfe175dc17b7745a6f3c2e4a8dc1e41688d952fe17094868d044b"
+    "bytes": 109984,
+    "sha256": "86511abcfe493bfb769509f42b1c0ccecfc911fd1fb915926579c20f94740e5c"
   },
   "checked": "2026-11-05",
   "previous_version": {
@@ -35,5 +35,5 @@
       "sha256": "262ceceec29910d656404b6c8e4070d46799c709c4e3bef9f860f10f38526be2"
     }
   },
-  "updated_at_et": "2026-11-05T15:05:36-05:00"
+  "updated_at_et": "2026-11-05T15:09:49-05:00"
 }
