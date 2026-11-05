@@ -192,16 +192,19 @@ def music():
                 for track in album['tracks']
             )
             sections.append(f'''<section class="music-album music-album-featured" id="{ident}" aria-labelledby="{title_id}">
-    <a class="album-cover" href="{e(album['url'], quote=True)}" aria-label="Listen to Ponderosa — {e(album['title'], quote=True)} on YouTube"><img src="../{e(album['image'], quote=True)}" alt="Artwork for {e(album['title'], quote=True)}" width="480" height="360"></a>
+    <a class="album-cover" href="{e(album['url'], quote=True)}" aria-label="Listen to Ponderosa — {e(album['title'], quote=True)} on YouTube"><img src="../{e(album['image'], quote=True)}" alt="Artwork for {e(album['title'], quote=True)}" width="{album['image_width']}" height="{album['image_height']}" decoding="async"></a>
     <div class="album-copy">{header}<a class="album-listen" href="{e(album['url'], quote=True)}">Listen to the full album on YouTube <span aria-hidden="true">↗</span></a><ol class="youtube-tracks" aria-label="{e(album['title'], quote=True)} tracks">{tracks}</ol></div>
   </section>''')
         else:
+            recording_header = f'<div class="recording-heading"><div class="album-copy">{header}</div><button class="play-album" type="button" hidden>Play album</button></div>'
+            if album.get('image'):
+                recording_header = f'<div class="recording-intro"><figure class="venue-photo"><img src="../{e(album["image"], quote=True)}" alt="{e(album["image_alt"], quote=True)}" width="{album["image_width"]}" height="{album["image_height"]}" loading="lazy" decoding="async"><figcaption>{e(album["image_caption"])}</figcaption></figure>{recording_header}</div>'
             tracks = ''.join(
                 f'''<li class="audio-track"><span class="track-number" aria-hidden="true">{number:02d}</span><span class="track-title" id="{ident}-track-{number}">{e(track['title'])}</span><span class="track-duration">{e(track['time'])}</span><audio controls preload="none" controlslist="nodownload" aria-labelledby="{title_id} {ident}-track-{number}"><source src="../{e(track['file'], quote=True)}" type="audio/mpeg">Your browser does not support audio playback.</audio></li>'''
                 for number, track in enumerate(album['tracks'], 1)
             )
             sections.append(f'''<section class="music-album music-recording" id="{ident}" aria-labelledby="{title_id}" data-recording>
-    <div class="recording-heading"><div class="album-copy">{header}</div><button class="play-album" type="button" hidden>Play album</button></div>
+    {recording_header}
     <ol class="audio-tracks" aria-label="{e(album['title'], quote=True)} tracks">{tracks}</ol><p class="playback-status" role="status"></p>
   </section>''')
         collection.append({'@type': 'ListItem', 'position': position, 'url': ORIGIN + '/music/#' + ident, 'name': 'Ponderosa — ' + album['title']})

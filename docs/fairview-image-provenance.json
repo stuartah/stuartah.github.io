@@ -1,0 +1,21 @@
+{
+  "original_uploaded_filename": "images.jpeg",
+  "original_sha256": "92d627cacba83365f93258257f33f29bbc906af7a13b69b037b3b9cad8c6260b",
+  "output": "assets/fairview-pub-edited.jpg",
+  "output_sha256": "3e7355551e16637561352952e90a8b764be21be6138f19cdfc01494bf9704cfa",
+  "edit_method": "Built-in image generation edit, followed by JPEG encoding for the website",
+  "edits": [
+    "gentle exposure and contrast correction",
+    "reduced washed-out highlights",
+    "removed small walking pedestrian",
+    "preserved full facade and sign in wide framing"
+  ],
+  "historical_date_claim": null,
+  "checked": "2026-11-05",
+  "output_bytes": 166968,
+  "output_dimensions": [
+    960,
+    596
+  ],
+  "encoding": "JPEG, resized proportionally for web delivery; no crop"
+}

@@ -1,0 +1,30 @@
+{
+  "asset": "assets/ponderosa-attack-of-the-rosa-enhanced.jpg",
+  "source": {
+    "kind": "User-supplied screenshot from YouTube",
+    "original_filename": "Screenshot 2026-11-05 at 2.25.36 PM.png",
+    "sha256": "8c661580ba8603a956b32a67d873dcd56eb8ba4dd1aab584cd3b082864d3cea4",
+    "original_unchanged": true
+  },
+  "edits": {
+    "method": "Image-generation cleanup based on supplied screenshot, followed by JPEG encoding at 1024 x 1024.",
+    "changes": [
+      "Removed surrounding black screenshot border",
+      "Reduced apparent blur and compression artifacts",
+      "Clarified artwork and lettering while retaining composition and hand-drawn style"
+    ],
+    "fidelity_note": "Enhanced derivative; generated restoration can interpret indistinct fine details. This is not a recovered original master or an archival scan."
+  },
+  "output": {
+    "width": 1024,
+    "height": 1024,
+    "bytes": 206864,
+    "sha256": "c481d97df36978cb9816f733dfda5b4ad2ad487f3f1e858e7e162673337d0bac"
+  },
+  "source_search": {
+    "checked": "2026-11-05",
+    "result": "No higher-resolution original found in bounded searches across both web search indexes. YouTube maxresdefault returned 404; sddefault was available at 640 x 480 but its artwork area is smaller than the supplied screenshot.",
+    "youtube_thumbnail": "https://i.ytimg.com/vi/FKN-Aj_FBhs/sddefault.jpg"
+  },
+  "previous_asset": "assets/ponderosa-attack-of-the-rosa.jpg"
+}

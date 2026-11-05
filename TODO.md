@@ -87,3 +87,7 @@ Version 1 is live at https://stuarthadfield.me/ as of November 1, 2026, with the
 - [x] Add all seven Fairview and three CDIS recordings with browser playback and no download links. Native download controls are suppressed where supported; public playback cannot prevent copying.
 - [x] Search for historical band/Myspace material and images. No original Myspace URL or further correctly identified band photos were recovered; retain the verified album cover.
 - [ ] Travel map deferred by owner.
+
+- [x] Add the owner-supplied Fairview Pub facade image beside the live recording, with a light edit, full sign/facade framing, accessible alt text and a responsive layout.
+
+- [x] Replace the letterboxed Rosa thumbnail with a 1024 × 1024 cleaned-up derivative from the supplied screenshot; preserve original sources and document the restoration.

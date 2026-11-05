@@ -23,3 +23,11 @@ On 5 November 2026, Stuart supplied a historical 2005 ChartAttack review excerpt
 ## Fairview venue image search
 
 An additional photo search on 5 November 2026 found a suitable exterior by Charlie Smith, with the original blue awnings and venue signage, published in Georgia Straight in April 2018. https://www.straight.com/news/1051886/architect-submits-rezoning-inquiry-replace-park-inn-suites-hospital-oriented-project . Its publisher’s terms require written permission for republication: https://www.straight.com/terms-and-conditions . It has not been added to the site. A bounded Commons/Flickr CC/venue and hotel-name search found no suitable openly reusable exterior or empty-venue image. Photographs of menus, food and unrelated musicians were excluded. No permission request was sent.
+
+### Supplied Fairview photograph added
+
+Stuart subsequently supplied a different front-on photograph, images.jpeg, and expressly requested its use for the Fairview album with edits at our discretion. That image replaces the earlier external-photo candidate. The website version is an edited derivative with exposure/contrast cleanup and the walking pedestrian removed, delivered as a proportionally resized JPEG. The full facade and central sign remain in the frame. It is a venue illustration, with no claim that the photograph dates to the 2005 performance. The uploaded original is unchanged; checksums and edit provenance are in fairview-image-provenance.json. The Charlie Smith candidate was not used.
+
+## Rosa cover cleanup
+
+The owner supplied a larger screenshot of the YouTube artwork on 5 November 2026 and requested a clearer cover. Neither web index located a higher-resolution original. YouTube has no maxresdefault for this video; its 640 × 480 sddefault contains only a small central artwork area. The supplied screenshot was therefore used for an image-generation cleanup that removes the outer black border and improves apparent clarity. The resulting 1024 × 1024 JPEG is an enhanced derivative, not a recovered master; indistinct fine details may be interpreted by the restoration. The original uploaded screenshot remains unchanged, and the former 480 × 360 thumbnail remains in the repository. See `rosa-image-provenance.json`. The page now displays the square image directly instead of enlarging a letterboxed thumbnail with CSS.
