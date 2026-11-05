@@ -1,0 +1,27 @@
+{
+  "asset": "assets/cdis-control-room-enhanced.jpg",
+  "source": {
+    "kind": "Owner-supplied screenshot of a CDIS advertisement",
+    "original_filename": "Screenshot 2026-11-05 at 2.48.02 PM.png",
+    "sha256": "8bb277d74dc137662aa3f65d5ea0bf906f007ea811c82ed8b453c2e3a5977c17",
+    "original_unchanged": true,
+    "printed_caption": "Bruce Fairbairn Control Room - one of four recording studios."
+  },
+  "edits": {
+    "method": "Built-in image-generation edit, followed by proportional downscaling and JPEG encoding for web delivery.",
+    "changes": [
+      "Cropped away the advertisement header, page border and printed caption",
+      "Removed colored vertical scan lines and reduced apparent compression artifacts",
+      "Lifted dark shadows and balanced warm wood tones",
+      "Retained the original room composition and period equipment"
+    ],
+    "fidelity_note": "Enhanced derivative, not a recovered high-resolution original. Generative restoration may interpret indistinct fine details. Used as a CDIS venue illustration; no claim that this is the particular room in which the 2003 session was recorded."
+  },
+  "output": {
+    "width": 1200,
+    "height": 675,
+    "bytes": 189739,
+    "sha256": "262ceceec29910d656404b6c8e4070d46799c709c4e3bef9f860f10f38526be2"
+  },
+  "checked": "2026-11-05"
+}
