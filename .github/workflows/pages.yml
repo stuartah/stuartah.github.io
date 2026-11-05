@@ -41,7 +41,7 @@ jobs:
       - name: Save publication updates
         if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_publications))
         run: |
-          git add data/publications.json index.html publications/index.html news/index.html publications.bib sitemap.xml robots.txt 404.html
+          git add data/publications.json index.html publications/index.html news/index.html music/index.html publications.bib sitemap.xml robots.txt 404.html
           if ! git diff --cached --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

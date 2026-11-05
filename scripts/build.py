@@ -16,6 +16,7 @@ PHOTO = 'assets/stuart-hadfield.jpg'
 PAPERS = sorted(json.loads((ROOT / 'data/publications.json').read_text()), key=lambda p: (p['year'], p.get('date', ''), p['id']), reverse=True)
 BY_ID = {p['id']: p for p in PAPERS}
 NEWS = ordered_news(json.loads((ROOT / 'data/news.json').read_text()))
+MUSIC = json.loads((ROOT / 'data/music.json').read_text())
 
 
 def natural_name(name):
@@ -90,6 +91,7 @@ def shell(page, title, description, body, collection=None):
     }
     active = ' aria-current="page"' if page == 'publications' else ''
     news_active = ' aria-current="page"' if page == 'news' else ''
+    music_active = ' aria-current="page"' if page == 'music' else ''
     structured = json.dumps(schema, ensure_ascii=False).replace('<', '\\u003c')
     return f'''<!doctype html>
 <html lang="en">
@@ -130,7 +132,7 @@ def shell(page, title, description, body, collection=None):
 <main id="main">{body}</main>
 <footer class="site-footer wrap">
   <span>Stuart Hadfield</span>
-  <div class="footer-links"><a href="{SCHOLAR}">Google Scholar</a><a href="{ORCID}">ORCID</a><a href="https://arxiv.org/a/hadfield_s_1">arXiv</a></div>
+  <div class="footer-links"><a href="{SCHOLAR}">Google Scholar</a><a href="{ORCID}">ORCID</a><a href="https://arxiv.org/a/hadfield_s_1">arXiv</a><a href="{prefix}music/"{music_active}>Music</a></div>
 </footer>
 <!-- Existing Clicky tracker runs only on the public production hostname. -->
 </body>
@@ -170,6 +172,19 @@ def news_archive():
         for i, entry in enumerate(NEWS)
     ]
     return shell('news', 'News | Stuart Hadfield', 'News from Stuart Hadfield: papers, publications, and talks.', body, collection)
+
+
+def music():
+    album = MUSIC
+    body = f'''<div class="wrap music-page">
+  <section class="page-intro"><h1>Music</h1><p>An album from my time with Ponderosa.</p></section>
+  <section class="music-album" aria-labelledby="album-title">
+    <a class="album-cover" href="{e(album['url'], quote=True)}" aria-label="Listen to {e(album['artist'], quote=True)} — {e(album['title'], quote=True)} on YouTube"><img src="../{e(album['image'], quote=True)}" alt="Artwork for {e(album['title'], quote=True)}" width="480" height="360"></a>
+    <div class="album-copy"><p class="album-meta">{e(album['artist'])} · {album['year']}</p><h2 id="album-title">{e(album['title'])}</h2><a class="album-listen" href="{e(album['url'], quote=True)}">Listen on YouTube <span aria-hidden="true">↗</span></a></div>
+  </section>
+</div>'''
+    collection = [{'@type': 'ListItem', 'position': 1, 'url': album['url'], 'name': album['artist'] + ' — ' + album['title']}]
+    return shell('music', 'Music | Stuart Hadfield', 'Ponderosa — Attack of the Rosa! (2005). An album from Stuart Hadfield’s time with Ponderosa.', body, collection)
 
 
 def home():
@@ -269,9 +284,11 @@ def main():
     (ROOT / 'publications/index.html').write_text(publications())
     (ROOT / 'news').mkdir(exist_ok=True)
     (ROOT / 'news/index.html').write_text(news_archive())
+    (ROOT / 'music').mkdir(exist_ok=True)
+    (ROOT / 'music/index.html').write_text(music())
     (ROOT / 'publications.bib').write_text('\n'.join(bibtex(p) for p in PAPERS))
     (ROOT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {ORIGIN}/sitemap.xml\n')
-    (ROOT / 'sitemap.xml').write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{ORIGIN}/</loc></url><url><loc>{ORIGIN}/publications/</loc></url><url><loc>{ORIGIN}/news/</loc></url></urlset>\n')
+    (ROOT / 'sitemap.xml').write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{ORIGIN}/</loc></url><url><loc>{ORIGIN}/publications/</loc></url><url><loc>{ORIGIN}/news/</loc></url><url><loc>{ORIGIN}/music/</loc></url></urlset>\n')
     not_found = '<section class="error-page wrap"><h1>Page not found</h1><p>The page you’re looking for isn’t here.</p><a href="/">Return home</a></section>'
     error = shell('', 'Page not found | Stuart Hadfield', 'Return to Stuart Hadfield’s research website.', not_found).replace('<head>', '<head>\n  <meta name="robots" content="noindex">').replace('href="./', 'href="/').replace('src="./', 'src="/')
     (ROOT / '404.html').write_text(error)
@@ -284,9 +301,9 @@ def main():
             item.unlink()
     for name in ['index.html', '404.html', 'publications.bib', 'robots.txt', 'sitemap.xml', '.nojekyll', 'googlec17f3c4efc3142ce.html']:
         shutil.copy2(ROOT / name, dist / name)
-    for name in ['assets', 'publications', 'news']:
+    for name in ['assets', 'publications', 'news', 'music']:
         shutil.copytree(ROOT / name, dist / name, dirs_exist_ok=True)
-    print(f'Built three pages and bibliography for {len(PAPERS)} works.')
+    print(f'Built four pages and bibliography for {len(PAPERS)} works.')
 
 
 if __name__ == '__main__':

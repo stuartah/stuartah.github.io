@@ -64,3 +64,7 @@ After the site is public:
 3. Link to this address from the Columbia page, Google Scholar profile, ORCID, and institutional profile where editable.
 
 Google decides whether and when to index pages. Requests and sitemaps help discovery but do not guarantee indexing or ranking. The builder’s `ORIGIN` constant is `https://stuarthadfield.me`; generated canonical URLs, structured data, social metadata, robots and sitemap use that address.
+
+## Music
+
+`/music/` is a small album page linked from the shared footer. The main navigation stays focused on research, publications, news and contact. Album metadata and source provenance live in `data/music.json`; the original YouTube artwork thumbnail is stored locally in `assets/ponderosa-attack-of-the-rosa.jpg`. The page uses a direct YouTube listening link. The generator builds all four pages, and publication refreshes retain the Music page and footer link.

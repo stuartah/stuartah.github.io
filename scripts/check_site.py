@@ -54,7 +54,7 @@ class Page(HTMLParser):
 
 def main():
     checked = 0
-    for path in [ROOT / 'index.html', ROOT / 'publications/index.html', ROOT / 'news/index.html']:
+    for path in [ROOT / 'index.html', ROOT / 'publications/index.html', ROOT / 'news/index.html', ROOT / 'music/index.html']:
         page = Page()
         source = path.read_text()
         page.feed(source)
@@ -88,7 +88,7 @@ def main():
     assert len(records) == len({p['id'] for p in records})
     assert sum((ROOT / 'publications.bib').read_text().count('@' + kind + '{') for kind in ('misc', 'article', 'inproceedings', 'incollection', 'phdthesis')) == len(records)
     assert 'https://stuarthadfield.me/sitemap.xml' in (ROOT / 'robots.txt').read_text()
-    print(f'Site checks passed: three pages, {checked} local links/assets, {len(records)} unique publication records.')
+    print(f'Site checks passed: four pages, {checked} local links/assets, {len(records)} unique publication records.')
 
 
 if __name__ == '__main__':

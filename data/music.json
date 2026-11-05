@@ -1,0 +1,11 @@
+{
+  "artist": "Ponderosa",
+  "title": "Attack of the Rosa!",
+  "year": 2005,
+  "url": "https://www.youtube.com/watch?v=FKN-Aj_FBhs",
+  "image": "assets/ponderosa-attack-of-the-rosa.jpg",
+  "image_source": "https://i.ytimg.com/vi/FKN-Aj_FBhs/hqdefault.jpg",
+  "metadata_source": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFKN-Aj_FBhs&format=json",
+  "legacy_source": "https://www.cs.columbia.edu/~stuartah/",
+  "metadata_checked": "2026-11-05"
+}
