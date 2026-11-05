@@ -1,0 +1,16 @@
+{
+  "asset": "assets/ponderosa-rosa-launch-poster.jpg",
+  "source": {
+    "kind": "Owner-supplied original CD launch poster",
+    "original_filename": "attack_rosa.JPG"
+  },
+  "edits": "None; website asset is byte-identical to the supplied image.",
+  "output": {
+    "width": 586,
+    "height": 945,
+    "bytes": 165110,
+    "sha256": "c1dd4c82b281cc0dc07780fd21a30cd87b0518299395961f6a0d9f0b02acf0ed"
+  },
+  "display": "Small linked poster beneath the Rosa cover on desktop; after the track list on mobile. Link opens the original image at full size.",
+  "added_at_et": "2026-11-05T15:28:10-05:00"
+}

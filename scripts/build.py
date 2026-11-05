@@ -187,13 +187,20 @@ def music():
             review = album['review']
             header += f'<blockquote class="album-review" cite="{e(review["source_url"], quote=True)}"><p>“{e(review["text"]) }”</p><footer><cite>{e(review["publication"])}</cite>, {review["year"]}</footer></blockquote>'
         if album['kind'] == 'youtube':
+            poster = album.get('poster')
+            poster_class = ' has-album-poster' if poster else ''
+            poster_html = ''
+            if poster:
+                poster_path = '../' + e(poster['image'], quote=True)
+                poster_html = f'<a class="album-poster" id="{ident}-poster" href="{poster_path}" aria-label="View the original {e(album["title"], quote=True)} CD launch poster full size"><img src="{poster_path}" alt="{e(poster["alt"], quote=True)}" width="{poster["width"]}" height="{poster["height"]}" loading="lazy" decoding="async"><span>CD launch poster <span aria-hidden="true">↗</span></span></a>'
             tracks = ''.join(
                 f'<li><a href="{e(album["url"], quote=True)}&amp;t={track["start_seconds"]}s"><span>{e(track["title"])}</span><time>{e(track["time"])}</time></a></li>'
                 for track in album['tracks']
             )
-            sections.append(f'''<section class="music-album music-album-featured" id="{ident}" aria-labelledby="{title_id}">
+            sections.append(f'''<section class="music-album music-album-featured{poster_class}" id="{ident}" aria-labelledby="{title_id}">
     <a class="album-cover" href="{e(album['url'], quote=True)}" aria-label="Listen to Ponderosa — {e(album['title'], quote=True)} on YouTube"><img src="../{e(album['image'], quote=True)}" alt="Artwork for {e(album['title'], quote=True)}" width="{album['image_width']}" height="{album['image_height']}" decoding="async"></a>
     <div class="album-copy">{header}<a class="album-listen" href="{e(album['url'], quote=True)}">Listen to the full album on YouTube <span aria-hidden="true">↗</span></a><ol class="youtube-tracks" aria-label="{e(album['title'], quote=True)} tracks">{tracks}</ol></div>
+    {poster_html}
   </section>''')
         else:
             recording_header = f'<div class="recording-heading"><div class="album-copy">{header}</div><button class="play-album" type="button" hidden>Play album</button></div>'

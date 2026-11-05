@@ -77,7 +77,8 @@
       "sources": {
         "description": "https://www.youtube.com/watch?v=FKN-Aj_FBhs",
         "artwork": "User-supplied YouTube screenshot; border removed and clarity enhanced with image generation. See docs/rosa-image-provenance.json. Original thumbnail retained.",
-        "checked": "2026-11-05"
+        "checked": "2026-11-05",
+        "poster": "Owner-supplied attack_rosa.JPG; displayed unchanged. See docs/rosa-poster-provenance.json."
       },
       "review": {
         "text": "Low-fi, loud and totally excellent.",
@@ -87,7 +88,13 @@
         "provenance": "Historical quotation and source URL supplied by Stuart Hadfield on 5 November 2026. Original review was not independently recovered: original URL returned 403 and Wayback availability returned 429."
       },
       "image_width": 1024,
-      "image_height": 1024
+      "image_height": 1024,
+      "poster": {
+        "image": "assets/ponderosa-rosa-launch-poster.jpg",
+        "alt": "Attack of the Rosa CD launch party poster: Ponderosa, The Manvils and Three Hills at The Brickyard, 315 Carrall Street, Wednesday June 22; five-dollar admission.",
+        "width": 586,
+        "height": 945
+      }
     },
     {
       "id": "fairview",
@@ -196,7 +203,7 @@
   ],
   "bio": {
     "paragraphs": [
-      "Ponderosa was a rock band from Vancouver, British Columbia. I played lead guitar. Our debut album Attack of the Rosa! was released by Neverlost Records on 22 June 2005."
+      "Ponderosa was a rock band from Vancouver, British Columbia. I played lead guitar."
     ],
     "archive": {
       "url": "https://eve.artsvictoria.ca/show/27832/view",
