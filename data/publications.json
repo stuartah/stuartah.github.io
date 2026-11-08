@@ -316,6 +316,35 @@
     "metadata_checked": "2026-11-08"
   },
   {
+    "id": "2305.04455",
+    "arxiv": "2305.04455",
+    "title": "Quantum alternating operator ansatz beyond low depth with gradually changing unitaries",
+    "authors": [
+      "Vladimir Kremenetski",
+      "Anuj Apte",
+      "Tad Hogg",
+      "Stuart Hadfield",
+      "Norm M. Tubman"
+    ],
+    "year": 2026,
+    "date": "2023-05-08",
+    "venue": "Physical Review A",
+    "doi": "10.1103/ydpy-by46",
+    "topics": [
+      "Optimization"
+    ],
+    "summary": "",
+    "alternate_titles": [
+      "Quantum Alternating Operator Ansatz (QAOA) beyond low depth with gradually changing unitaries"
+    ],
+    "journal_url": "https://journals.aps.org/pra/accepted/10.1103/ydpy-by46",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "publication_stage": "accepted",
+    "metadata_source": "https://journals.aps.org/pra/accepted/10.1103/ydpy-by46",
+    "metadata_checked": "2026-11-08"
+  },
+  {
     "id": "2409.15426",
     "arxiv": "2409.15426",
     "title": "Feedback-based optimally controlled quantum states",
@@ -632,26 +661,6 @@
     "metadata_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10637743/",
     "metadata_checked": "2026-11-04",
     "arxiv_submitted": "2023-03-09"
-  },
-  {
-    "id": "2305.04455",
-    "arxiv": "2305.04455",
-    "title": "Quantum Alternating Operator Ansatz (QAOA) beyond low depth with gradually changing unitaries",
-    "authors": [
-      "Vladimir Kremenetski",
-      "Anuj Apte",
-      "Tad Hogg",
-      "Stuart Hadfield",
-      "Norm M. Tubman"
-    ],
-    "year": 2023,
-    "date": "2023-05-08",
-    "venue": "Preprint",
-    "doi": "",
-    "topics": [
-      "Optimization"
-    ],
-    "summary": ""
   },
   {
     "id": "2207.10007",

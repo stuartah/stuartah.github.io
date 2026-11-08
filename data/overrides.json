@@ -36,6 +36,22 @@
     "metadata_source": "https://journals.aps.org/pra/accepted/10.1103/6ftg-93hc",
     "metadata_checked": "2026-11-08"
   },
+  "2305.04455": {
+    "title": "Quantum alternating operator ansatz beyond low depth with gradually changing unitaries",
+    "alternate_titles": [
+      "Quantum Alternating Operator Ansatz (QAOA) beyond low depth with gradually changing unitaries"
+    ],
+    "year": 2026,
+    "venue": "Physical Review A",
+    "doi": "10.1103/ydpy-by46",
+    "journal_url": "https://journals.aps.org/pra/accepted/10.1103/ydpy-by46",
+    "publication_type": "journal",
+    "publication_status": "published",
+    "publication_stage": "accepted",
+    "date": "2023-05-08",
+    "metadata_source": "https://journals.aps.org/pra/accepted/10.1103/ydpy-by46",
+    "metadata_checked": "2026-11-08"
+  },
   "2404.01412": {
     "year": 2025,
     "venue": "Quantum 9, 1906",
